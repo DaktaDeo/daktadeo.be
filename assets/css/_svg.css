@@ -1,0 +1,54 @@
+.fill-current { fill: currentColor; }
+
+.inline-svg {
+  display: inline-block;
+  height: 1.15rem;
+  width: 1.15rem;
+  top: 0.15rem;
+  position: relative;
+}
+
+.fill-dark-red  svg { fill: var(--dark-red); }
+.fill-red  svg { fill: var(--red); }
+.fill-orange  svg { fill: var(--orange); }
+.fill-gold  svg { fill: var(--gold); }
+.fill-yellow  svg { fill: var(--yellow); }
+.fill-purple  svg { fill: var(--purple); }
+.fill-light-purple  svg { fill: var(--light-purple); }
+.fill-hot-pink  svg { fill:  var(--hot-pink); }
+.fill-dark-pink  svg { fill: var(--dark-pink); }
+.fill-pink  svg { fill: var(--pink); }
+.fill-dark-green  svg { fill: var(--dark-green); }
+.fill-green  svg { fill: var(--green); }
+.fill-navy  svg { fill: var(--navy); }
+.fill-dark-blue  svg { fill: var(--dark-blue); }
+.fill-blue  svg { fill: var(--blue); }
+.fill-light-blue  svg { fill: var(--light-blue); }
+.fill-lightest-blue  svg { fill: var(--lightest-blue); }
+.fill-washed-blue  svg { fill: var(--washed-blue); }
+.fill-washed-green  svg { fill: var(--washed-green); }
+.fill-washed-yellow  svg { fill: var(--washed-yellow); }
+.fill-light-pink  svg { fill: var(--light-pink); }
+.fill-light-yellow  svg { fill: var(--light-yellow); }
+.fill-light-red  svg { fill: var(--light-red); }
+.fill-light-silver  svg { fill: var(--light-silver); }
+.fill-white  svg { fill:var(--white); }
+.fill-black  svg { fill: var(--black); }
+
+.fill-color .dakta { fill: var(--daktadeo-dark);}
+.fill-color .deo {fill:var(--daktadeo-light);}
+.fill-color .dot { fill: var(--daktadeo-orange);}
+.fill-color .suffix { stroke:var(--black);}
+
+.fill-color--dark .dakta { fill: var(--primary-color-dark);}
+.fill-color--dark .deo {fill:var(--daktadeo-dark);}
+.fill-color--dark .dot { fill: var(--daktadeo-orange);}
+.fill-color--dark .suffix { stroke:var(--white);}
+
+.fill-color .multipass_logo .background{fill: var(--multipass-red);}
+.fill-color .multipass_logo .suffix{
+  fill: var(--multipass-grey);
+  stroke: var(--multipass-grey);
+}
+.fill-color .multipass_logo .multipass{fill: var(--white);}
+.fill-dot .dot { fill: var(--daktadeo-orange);}
