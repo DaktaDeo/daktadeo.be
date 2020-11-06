@@ -168,7 +168,7 @@ export default {
   },
   computed: {
     navlinks() {
-      return _.orderBy(this.links, 'weight')
+      return _.sortBy(this.links, 'weight')
     },
   },
 }

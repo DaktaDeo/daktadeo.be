@@ -8,7 +8,7 @@ module.exports = {
     parser: 'babel-eslint',
   },
   globals: {
-    _: false,
+    _: true,
   },
   extends: [
     '@nuxtjs',
@@ -21,4 +21,9 @@ module.exports = {
   plugins: ['prettier', 'lodash'],
   // add your custom rules here
   rules: {},
+  settings: {
+    lodash: {
+      pragma: '_',
+    },
+  },
 }
