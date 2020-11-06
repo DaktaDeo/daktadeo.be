@@ -1,9 +1,11 @@
 ---
 title: "3D"
 date: 2017-03-02T12:00:00-05:00
-hero_image: img/hero.png
-hero_title_1: "**Together** we'll create…"
-hero_title_2: "**Dingskes** in **3D**"
+hero:
+    image: /img/hero_3d.png
+    title_1: "**Together** we'll create…"
+    title_2: "**Dingskes** in **3D**"
+    tagline: Kleinschalige, lokale, ecologische productie. Perfect op jouw maat en wensen. 
 features:
   - heading: Kleinschalig 
     icon:
@@ -55,5 +57,3 @@ features:
     copy: Wist je dat er al 1000'en kunstwerken, gebouwen en werelderfgoed digitaal gescand zijn? En ja.. die kan je printen! Wil je graag een paarse 'David' of de buste van Cleopatra met marble effect?
 
 ---
-
-Kleinschalige, lokale, ecologische productie. Perfect op jouw maat en wensen.
