@@ -40,6 +40,7 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-i18n',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -50,4 +51,21 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  i18n: {
+    locales: ['nl', 'en'],
+    defaultLocale: 'nl',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        nl: {
+          welcome: 'Welkom'
+        },
+        en: {
+          welcome: 'Welcome'
+        },
+      },
+      noPrefixDefaultLocale: true,
+    }
+  }
 }
