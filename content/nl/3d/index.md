@@ -11,6 +11,7 @@ features:
         color: green
     tagline: Tegen verspilling?
     copy: Wij ook! Enkel dat produceren wat je nodig hebt. Geen verpakking, minimaal afval.
+    id: 10
 
   - heading: Duurzaam
     image_path: /fontawesome/recycle.svg
@@ -19,8 +20,10 @@ features:
         color: dark-green
     tagline: Plastiek..dat wel.. maar dan anders.
     copy: Printen doen we in plastiek gemaakt word uit duurzame grondstoffen (oa mais). Sterker nog, in de nabije toekomst kan het zelfs terug gerecycleerd worden als grondstof voor nieuwe prints!
+    id: 20
 
   - heading: Maatwerk
+    id: 30
     icon:
         name: drumstick-bite 
         color: dark-pink 
@@ -28,6 +31,7 @@ features:
     copy: Liever een kapstokje in het roze? of eentje in het flashy groen? Eentje waar je je fiets kan aanhangen? Of eentje die perfect past op die bar die je kocht in de jaren '70? Dat kan perfect. Elke print kan je bovendien afwerken en schilderen net zoals bij modelbouw.
 
   - heading: Voor de 'kids'
+    id: 40
     icon:
         name: dragon 
         color: light-purple 
@@ -35,6 +39,7 @@ features:
     copy: Met 3D printen kan je de gekste dingen maken. Door het unieke productieprocess zijn zelfs bewegende elementen zoals bv. onze infinity cube oersterk. Perfect voor grote en kleine handjes.
 
   - heading: DIY
+    id: 50
     icon:
         name: hands-heart 
         color: dark-red
@@ -42,6 +47,7 @@ features:
     copy: Reparatie is bovendien zeer duurzaam en vaak economischer dan vervangen. Wisselstukken zijn daarentegen niet altijd te vinden. Met een 3D geprint tussenstukje en wat creativiteit lossen we dat op.
 
   - heading: The Sky is The Limit
+    id: 60
     icon:
         name: user-astronaut 
         color: light-silver

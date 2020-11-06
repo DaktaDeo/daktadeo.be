@@ -1,27 +1,43 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">daktadeo-nuxt</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
+  <div v-if="home" class="w-full max-w-screen-xl mx-auto">
+    <section v-if="hasFeatures" class="px-4 py5 md:py-4">
+      <ul class="md:grid md:grid-cols-3 md:gap-x-12 md:gap-y-8">
+        <li
+          v-for="feature in home.features"
+          :key="feature.id"
+          class="mt-10 md:mt-0"
         >
-          Documentation #D
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div
+                v-if="feature.icon"
+                class="flex items-center justify-center h-12 w-12"
+              >
+                <div class="h-12 w-12 mt-10 pr-2">
+                  <img
+                    :src="require(`~/assets/fa/${feature.icon.name}.svg`)"
+                    :alt="feature.icon.name"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="ml-4">
+              <h4
+                class="mt-4 text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9"
+              >
+                {{ feature.heading }}
+              </h4>
+              <h5 class="text-lg leading-6 font-medium text-gray-900">
+                {{ feature.tagline }}
+              </h5>
+              <p class="mt-2 text-base leading-6 text-gray-500">
+                {{ feature.copy }}
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
   </div>
 </template>
 
@@ -44,43 +60,10 @@ export default {
       home,
     }
   },
+  computed: {
+    hasFeatures() {
+      return !_.isEmpty(this.home.features)
+    },
+  },
 }
 </script>
-
-<style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
