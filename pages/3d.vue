@@ -67,6 +67,54 @@
           </li>
         </ul>
       </section>
+      <section v-if="prints" class="px-4 py8 md:py-16">
+        <div
+          class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none pb-4"
+        >
+          <h2
+            class="text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl"
+          >
+            Prints
+          </h2>
+          <p class="text-xl leading-7 text-gray-500">
+            Met 3D printen kan je de gekste dingen maken:
+          </p>
+        </div>
+
+        <ul
+          class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
+        >
+          <li>
+            <div class="space-y-4">
+              <div class="relative pb-2/3">
+                <a href="">
+                  <img
+                    class="absolute object-cover h-full w-full shadow-lg rounded-lg"
+                    src="require(`img/featured.jpg`)"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="space-y-4">
+              <div class="relative pb-2/3">
+                <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0"></div>
+                <div class="inline-flex rounded-md shadow">
+                  <a
+                    href="prints/"
+                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-on-primary-color bg-primary-color hover:text-white hover:hover-bg-primary-color transition duration-150 ease-in-out"
+                  >
+                    Meer!
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
     </div>
   </div>
 </template>
@@ -78,7 +126,7 @@ export default {
     const { $content, app } = context
     const defaultLocale = app.i18n.locale
     const home = await $content(`${defaultLocale}/3d/index`).fetch()
-    const prints = await $content(`${defaultLocale}/3d`, { deep: true })
+    const prints = await $content(`${defaultLocale}/3d/prints`, { deep: true })
       .only(['path'])
       .fetch()
 
