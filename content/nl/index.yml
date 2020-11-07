@@ -1,14 +1,14 @@
----
 title: "Together we'll create…Clever Tools that Work for Humans"
 date: 2020-03-02T12:00:00-05:00
-hero_image: /uploads/hero/de-porre.jpg 
-hero_title_1: "**Together** we'll create…"
-hero_title_2: "**Clever Tools** that **Work** for **Humans**"
-hideCrumbs: true
+hero:
+  image: img/hero.png
+  title_1: <strong class="dot">Together</strong> we'll create…
+  title_2: <strong class="accent-color-dark">Clever Tools</strong> that <strong class="deo">Work</strong> for <strong class="dot">Humans</strong>
+  tagLine: Discover, Define, Develop, Deliver, Evolve –repeat
 sections:
   - heading: ""
     cta: Dat is de toekomst.
-    link: 3d/ 
+    link: 3d/
     color_classes: bg-primary-color-light black
     image: /uploads/photos/3d/action-shot-organic-model.jpg
     copy: "Kleinschalige, lokale, ecologische productie. Perfect op jouw maat en wensen. Ideaal voor wisselstukken, haakjes, speelgoedjes, cosplay, tabletop, trinkets, figuurtjes,.. "
@@ -36,6 +36,3 @@ sections:
     copy: "Full Stack Webdevelopment: van eenvoudige one-page webpage, een Wordpress blog - met custom plugins - tot een super snelle Hugo website of een Full Featured Web-app."
     heading_partial: logo-web.html
     heading_class: fill-color--dark
----
-
-Discover, Define, Develop, Deliver, Evolve –repeat
