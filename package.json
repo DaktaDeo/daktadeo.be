@@ -30,6 +30,8 @@
     "core-js": "^3.6.5",
     "eslint-plugin-lodash": "^7.1.0",
     "lodash": "^4.17.20",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.15.4",
     "tailwindcss": "^1.9.6"

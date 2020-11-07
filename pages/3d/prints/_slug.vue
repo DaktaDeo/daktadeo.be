@@ -96,7 +96,7 @@
         <div class="leading-6 text-gray-500 text-sm">
           Laatste aanpassing:
           <time :datetime="post.updatedAt">
-            {{ post.updatedAt }}
+            {{ post.updatedAt | formatDateTimeLong }}
           </time>
         </div>
       </section>
