@@ -32,6 +32,8 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    // https://marquez.co/docs/nuxt-optimized-images/
+    '@aceforth/nuxt-optimized-images',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -60,7 +62,9 @@ export default {
       }),
     ],
   },
-
+  optimizedImages: {
+    optimizeImages: true,
+  },
   i18n: {
     locales: ['nl', 'en'],
     defaultLocale: 'nl',

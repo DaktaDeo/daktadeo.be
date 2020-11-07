@@ -11,7 +11,8 @@ print_categories:
 type: prints
 actualPrice: 2,50
 comparePrice: 
-inStock: 
+inStock:
+featuredImage: featured.jpg 
 options:
   Kleur:
   - Blauw

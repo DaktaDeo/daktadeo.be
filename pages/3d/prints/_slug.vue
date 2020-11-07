@@ -110,10 +110,7 @@ export default {
   async asyncData(context) {
     const { $content, params, app } = context
     const slug = params.slug
-    const post = await $content(
-      `${app.i18n.locale}/3d/prints/${slug}`,
-      'index'
-    ).fetch()
+    const post = await $content(`${app.i18n.locale}/3d/prints`, slug).fetch()
 
     return {
       post,

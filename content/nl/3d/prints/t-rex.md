@@ -12,7 +12,8 @@ print_categories:
 type: prints
 actualPrice: 5,00
 comparePrice: 
-inStock: 
+inStock:
+featuredImage: featured.jpg
 options:
   Kleur:
   - Wit 

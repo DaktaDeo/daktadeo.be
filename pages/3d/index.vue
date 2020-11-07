@@ -1,7 +1,7 @@
 <template>
   <div v-if="page">
     <div class="relative bg-primary-color-dark hero" role="banner">
-      <div class="max-h-full" :style="bgImage">
+      <div class="max-h-full hero">
         <div class="max-w-screen-xl mx-auto pt-32 px-4 pb-8 sm:px-6 lg:px-8">
           <div class="text-center">
             <div
@@ -81,13 +81,15 @@
         <ul
           class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
         >
-          <li v-for="print in prints" :key="print.dir">
+          <li v-for="print in prints" :key="print.slug">
             <div class="space-y-4">
               <div class="relative pb-2/3">
                 <NuxtLink :to="`3d/prints/${print.slug}`">
                   <img
                     class="absolute object-cover h-full w-full shadow-lg rounded-lg"
-                    :src="`/content${print.dir}/img/featured.jpg`"
+                    :src="
+                      require(`~/assets/img/3d/prints/${print.slug}/featured.jpg`)
+                    "
                     alt=""
                   />
                 </NuxtLink>
@@ -131,7 +133,7 @@ export default {
       prints: _.map(prints, (page) => ({
         ...page,
         path: _.replace(page.path, `/${defaultLocale}`, ''),
-        slug: _.kebabCase(_.replace(page.title, '&', '-and-')),
+        // slug: _.kebabCase(_.replace(page.title, '&', '-and-')),
       })),
       page,
     }
@@ -140,13 +142,19 @@ export default {
     hasFeatures() {
       return !_.isEmpty(this.page.features)
     },
-    bgImage() {
-      if (!_.isEmpty(this.page.hero.image)) {
-        const img = this.page.hero.image
-        return `background-image: linear-gradient(to right bottom, rgba(246, 246, 246, 0.25), rgb(48, 72, 75)), url('${img}');background-position: center center;background-repeat: no-repeat;background-size: cover`
-      }
-      return ''
-    },
   },
 }
 </script>
+<style>
+.hero {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(246, 246, 246, 0.25),
+      rgb(48, 72, 75)
+    ),
+    url('~assets/img/3d/hero.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>

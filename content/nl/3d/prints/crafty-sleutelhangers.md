@@ -10,7 +10,8 @@ print_categories:
 type: prints
 actualPrice: 2,50 #TODO
 comparePrice: 
-inStock: 
+inStock:
+featuredImage: featured.jpg 
 options:
   Kleur:
   - Rood
