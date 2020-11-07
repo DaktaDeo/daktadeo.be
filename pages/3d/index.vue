@@ -1,28 +1,25 @@
 <template>
-  <div v-if="home">
+  <div v-if="page">
     <div class="relative bg-primary-color-dark hero" role="banner">
       <div class="max-h-full" :style="bgImage">
         <div class="max-w-screen-xl mx-auto pt-32 px-4 pb-8 sm:px-6 lg:px-8">
           <div class="text-center">
-            <p
+            <div
               class="mt-1 leading-10 text-gray-200 sm:leading-none sm:tracking-tight"
             >
-              <span
-                v-if="home.hero.title_1"
+              <div
+                v-if="page.hero.title_1"
                 class="text-2xl sm:text-3xl lg:text-4xl"
-              >
-                {{ home.hero.title_1 }}
-              </span>
-              <span
-                v-if="home.hero.title_2"
+                v-html="page.hero.title_1"
+              ></div>
+              <div
+                v-if="page.hero.title_2"
+                v-html="page.hero.title_2"
                 class="text-4xl sm:text-5xl lg:text-6xl"
-              >
-                <br />
-                {{ home.hero.title_2 }}
-              </span>
-            </p>
+              ></div>
+            </div>
             <div class="max-w-xl mt-5 mx-auto text-xl leading-7 text-gray-200">
-              {{ home.hero.tagline }}
+              {{ page.hero.tagline }}
             </div>
           </div>
         </div>
@@ -32,7 +29,7 @@
       <section v-if="hasFeatures" class="px-4 py5 md:py-4">
         <ul class="md:grid md:grid-cols-3 md:gap-x-12 md:gap-y-8">
           <li
-            v-for="feature in home.features"
+            v-for="feature in page.features"
             :key="feature.id"
             class="mt-10 md:mt-0"
           >
@@ -124,7 +121,7 @@ export default {
   async asyncData(context) {
     const { $content, app } = context
     const defaultLocale = app.i18n.locale
-    const home = await $content(`${defaultLocale}/3d/index`).fetch()
+    const page = await $content(`${defaultLocale}/3d/index`).fetch()
     const prints = await $content(`${defaultLocale}/3d/prints`, { deep: true })
       .without(['body'])
       .where({ type: 'prints' })
@@ -136,16 +133,16 @@ export default {
         path: _.replace(page.path, `/${defaultLocale}`, ''),
         slug: _.kebabCase(_.replace(page.title, '&', '-and-')),
       })),
-      home,
+      page,
     }
   },
   computed: {
     hasFeatures() {
-      return !_.isEmpty(this.home.features)
+      return !_.isEmpty(this.page.features)
     },
     bgImage() {
-      if (!_.isEmpty(this.home.hero.image)) {
-        const img = this.home.hero.image
+      if (!_.isEmpty(this.page.hero.image)) {
+        const img = this.page.hero.image
         return `background-image: linear-gradient(to right bottom, rgba(246, 246, 246, 0.25), rgb(48, 72, 75)), url('${img}');background-position: center center;background-repeat: no-repeat;background-size: cover`
       }
       return ''
