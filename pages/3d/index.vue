@@ -13,34 +13,12 @@
             :key="feature.id"
             class="mt-10 md:mt-0"
           >
-            <div class="flex">
-              <div class="flex-shrink-0">
-                <div
-                  v-if="feature.icon"
-                  class="flex items-center justify-center h-12 w-12"
-                >
-                  <div class="h-12 w-12 mt-10 pr-2">
-                    <img
-                      :src="require(`~/assets/fa/${feature.icon.name}.svg`)"
-                      :alt="feature.icon.name"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="ml-4">
-                <h4
-                  class="mt-4 text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9"
-                >
-                  {{ feature.heading }}
-                </h4>
-                <h5 class="text-lg leading-6 font-medium text-gray-900">
-                  {{ feature.tagline }}
-                </h5>
-                <p class="mt-2 text-base leading-6 text-gray-500">
-                  {{ feature.copy }}
-                </p>
-              </div>
-            </div>
+            <feature-block
+              :sub-title="feature.tagline"
+              :title="feature.heading"
+              :content="feature.copy"
+              :icon="feature.icon"
+            ></feature-block>
           </li>
         </ul>
       </section>
@@ -84,8 +62,9 @@
 
 <script>
 import Hero from '@/components/Hero'
+import FeatureBlock from '@/components/FeatureBlock'
 export default {
-  components: { Hero },
+  components: { FeatureBlock, Hero },
   async asyncData(context) {
     const { $content, app } = context
     const defaultLocale = app.i18n.locale
