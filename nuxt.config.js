@@ -45,6 +45,8 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'nuxt-i18n',
+    // https://image.nuxtjs.org/
+    '@nuxt/image',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -64,6 +66,36 @@ export default {
   },
   optimizedImages: {
     optimizeImages: true,
+  },
+  image: {
+    presets: [
+      {
+        name: 'avatar',
+        modifiers: {
+          format: 'jpg',
+          width: 50,
+          height: 50,
+        },
+      },
+      {
+        name: 'jpg-cover',
+        modifiers: {
+          fit: 'cover',
+          format: 'jpg',
+          width: 300,
+          height: 300,
+        },
+      },
+      {
+        name: 'jpg-featured',
+        modifiers: {
+          fit: 'inside',
+          format: 'jpg',
+          width: 1024,
+          height: 1024,
+        },
+      },
+    ],
   },
   i18n: {
     locales: ['nl', 'en'],

@@ -14,8 +14,8 @@
               ></div>
               <div
                 v-if="page.hero.title_2"
-                v-html="page.hero.title_2"
                 class="text-4xl sm:text-5xl lg:text-6xl"
+                v-html="page.hero.title_2"
               ></div>
             </div>
             <div class="max-w-xl mt-5 mx-auto text-xl leading-7 text-gray-200">
@@ -64,7 +64,7 @@
           </li>
         </ul>
       </section>
-      <section v-if="prints" class="px-4 py8 md:py-16">
+      <section v-if="prints" class="px-4 py8 md:py-16 pt-4">
         <div
           class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none pb-4"
         >
@@ -79,36 +79,20 @@
         </div>
 
         <ul
-          class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8"
+          class="space-y-12 sm:grid sm:grid-cols-3 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-5 lg:gap-x-8"
         >
           <li v-for="print in prints" :key="print.slug">
             <div class="space-y-4">
-              <div class="relative pb-2/3">
+              <div class="relative">
                 <NuxtLink :to="`3d/prints/${print.slug}`">
-                  <img
+                  <nuxt-image
+                    sets="300,300:600,600:900"
                     class="absolute object-cover h-full w-full shadow-lg rounded-lg"
-                    :src="
-                      require(`~/assets/img/3d/prints/${print.slug}/featured.jpg`)
-                    "
-                    alt=""
+                    :src="`+jpg-featured:/img/3d/prints/${print.slug}/featured.jpg`"
+                    width="200"
+                    height="200"
                   />
                 </NuxtLink>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="space-y-4">
-              <div class="relative pb-2/3">
-                <div class="mt-8 flex lg:flex-shrink-0 lg:mt-0"></div>
-                <div class="inline-flex rounded-md shadow">
-                  <NuxtLink
-                    to="/3d/prints"
-                    class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-on-primary-color bg-primary-color hover:text-white hover:hover-bg-primary-color transition duration-150 ease-in-out"
-                  >
-                    Meer!
-                  </NuxtLink>
-                </div>
               </div>
             </div>
           </li>
