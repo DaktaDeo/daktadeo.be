@@ -1,7 +1,6 @@
 ---
 title: "Prints"
 aliases: [/catalog/]
-type: "prints"
 layout: "prints"
 ---
 Van Tol tot een echte T-Rex schedel: met 3D printen kan je de gekste dingen maken. Door het unieke productieprocess zijn zelfs bewegende elementen zoals bv. onze infinity cube oersterk. 
