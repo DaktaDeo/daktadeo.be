@@ -1,30 +1,10 @@
 <template>
   <div v-if="page">
-    <div class="relative bg-primary-color-dark hero" role="banner">
-      <div class="max-h-full hero">
-        <div class="max-w-screen-xl mx-auto pt-32 px-4 pb-8 sm:px-6 lg:px-8">
-          <div class="text-center">
-            <div
-              class="mt-1 leading-10 text-gray-200 sm:leading-none sm:tracking-tight"
-            >
-              <div
-                v-if="page.hero.title_1"
-                class="text-2xl sm:text-3xl lg:text-4xl"
-                v-html="page.hero.title_1"
-              ></div>
-              <div
-                v-if="page.hero.title_2"
-                class="text-4xl sm:text-5xl lg:text-6xl"
-                v-html="page.hero.title_2"
-              ></div>
-            </div>
-            <div class="max-w-xl mt-5 mx-auto text-xl leading-7 text-gray-200">
-              {{ page.hero.tagline }}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Hero
+      :sub-title="page.hero.title_2"
+      :title="page.hero.title_1"
+      :tag-line="page.hero.tagline"
+    ></Hero>
     <div class="w-full max-w-screen-xl mx-auto">
       <section v-if="hasFeatures" class="px-4 py5 md:py-4">
         <ul class="md:grid md:grid-cols-3 md:gap-x-12 md:gap-y-8">
@@ -103,7 +83,9 @@
 </template>
 
 <script>
+import Hero from '@/components/Hero'
 export default {
+  components: { Hero },
   async asyncData(context) {
     const { $content, app } = context
     const defaultLocale = app.i18n.locale
