@@ -39,7 +39,6 @@
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.15.4",
     "tailwindcss": "^1.9.6",
-    "vue-pinch-zoom": "^1.0.1",
     "xzoom": "^1.0.14"
   },
   "devDependencies": {

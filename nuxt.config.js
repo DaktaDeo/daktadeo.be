@@ -13,13 +13,18 @@ export default {
       { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    // script: [
+    //   { src: 'https://code.jquery.com/jquery-3.5.1.min.js' },
+    //   { src: '/xzoom.js' },
+    //   { src: '/oldstuff.js' },
+    // ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['~plugins/filters.js', '~plugins/zoomer.js'],
+  plugins: ['~plugins/filters.js'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,

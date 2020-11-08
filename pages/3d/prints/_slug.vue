@@ -127,6 +127,21 @@ export default {
         src: 'featured.jpg',
         weight: 10,
       },
+      {
+        alt: 'dit is een image',
+        src: '2.jpeg',
+        weight: 10,
+      },
+      {
+        alt: 'dit is een image',
+        src: '3.jpeg',
+        weight: 10,
+      },
+      {
+        alt: 'dit is een image',
+        src: '4.jpeg',
+        weight: 10,
+      },
     ]
 
     return {
