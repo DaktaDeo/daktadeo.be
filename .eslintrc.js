@@ -20,7 +20,9 @@ module.exports = {
   ],
   plugins: ['prettier', 'lodash'],
   // add your custom rules here
-  rules: {},
+  rules: {
+    'no-v-html': 'off',
+  },
   settings: {
     lodash: {
       pragma: '_',

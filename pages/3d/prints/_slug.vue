@@ -9,6 +9,10 @@
           {{ post.title }}
         </h1>
 
+        <section class="my-4 mb-12">
+          <Zoomy :images="gallery"></Zoomy>
+        </section>
+
         <section v-if="post.print_categories" class="my-4 mb-12">
           <h2
             class="text-2xl leading-4 tracking-tight sm:text-3xl mb-4 font-extrabold"
@@ -109,19 +113,39 @@
 
 <script>
 import Breadcrumbs from '~/components/Breadcrumbs'
+import Zoomy from '~/components/Zoomy'
 export default {
   name: 'DddPrint',
-  components: { Breadcrumbs },
+  components: { Zoomy, Breadcrumbs },
   async asyncData(context) {
     const { $content, params, app } = context
     const slug = params.slug
     const post = await $content(`${app.i18n.locale}/3d/prints`, slug).fetch()
+    const images = [
+      {
+        alt: 'dit is een image',
+        src: 'featured.jpg',
+        weight: 10,
+      },
+    ]
 
     return {
       post,
+      images,
     }
   },
   computed: {
+    baseForImages() {
+      return `/img/3d/prints/${this.post.slug}`
+    },
+    gallery() {
+      return _.map(this.images, (image) => {
+        return {
+          ...image,
+          src: `${this.baseForImages}/${image.src}`,
+        }
+      })
+    },
     crumbs() {
       return [
         {

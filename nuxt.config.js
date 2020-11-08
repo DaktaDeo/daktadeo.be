@@ -19,7 +19,7 @@ export default {
   css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['~plugins/filters.js'],
+  plugins: ['~plugins/filters.js', '~plugins/zoomer.js'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -93,6 +93,15 @@ export default {
           format: 'jpg',
           width: 1024,
           height: 1024,
+        },
+      },
+      {
+        name: 'jpg-thumbnail',
+        modifiers: {
+          fit: 'inside',
+          format: 'jpg',
+          width: 80,
+          height: 80,
         },
       },
     ],
