@@ -9,8 +9,11 @@
           {{ post.title }}
         </h1>
 
-        <section class="my-4 mb-12">
+        <section
+          class="my-4 mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-8"
+        >
           <Zoomy :images="gallery"></Zoomy>
+          <div></div>
         </section>
 
         <section v-if="post.print_categories" class="my-4 mb-12">
@@ -121,32 +124,9 @@ export default {
     const { $content, params, app } = context
     const slug = params.slug
     const post = await $content(`${app.i18n.locale}/3d/prints`, slug).fetch()
-    const images = [
-      {
-        alt: 'dit is een image',
-        src: 'featured.jpg',
-        weight: 10,
-      },
-      {
-        alt: 'dit is een image',
-        src: '2.jpeg',
-        weight: 10,
-      },
-      {
-        alt: 'dit is een image',
-        src: '3.jpeg',
-        weight: 10,
-      },
-      {
-        alt: 'dit is een image',
-        src: '4.jpeg',
-        weight: 10,
-      },
-    ]
 
     return {
       post,
-      images,
     }
   },
   computed: {
@@ -154,7 +134,7 @@ export default {
       return `/img/3d/prints/${this.post.slug}`
     },
     gallery() {
-      return _.map(this.images, (image) => {
+      return _.map(this.post.images, (image) => {
         return {
           ...image,
           src: `${this.baseForImages}/${image.src}`,

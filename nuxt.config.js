@@ -52,6 +52,8 @@ export default {
     'nuxt-i18n',
     // https://image.nuxtjs.org/
     '@nuxt/image',
+    // https://github.com/nuxt-community/device-module
+    '@nuxtjs/device',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

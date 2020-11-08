@@ -1697,6 +1697,11 @@
     consola "^2.15.0"
     defu "^3.1.0"
 
+"@nuxtjs/device@^1.2.7":
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/device/-/device-1.2.7.tgz#ccb6f33b1eed0c7725ab8668526da92534624154"
+  integrity sha512-Vyhw2ZSaUigFtRed5DjscV9jKevenvgFD5527rVAUzpSUQTcLau8NN+Zdf463bUr5xLwCDl7wUA4+1rGROmA5w==
+
 "@nuxtjs/eslint-config@^3.1.0":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@nuxtjs/eslint-config/-/eslint-config-3.1.0.tgz#7e73aa08035a743b99e64ee4337cf526a09c9973"
@@ -8361,7 +8366,7 @@ jiti@^0.1.11:
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-0.1.12.tgz#ffe4a09266d739b77721170fb73115c50b680330"
   integrity sha512-rWtqsaABBGNzTzfQkfP7DUvE9KGEIQUd6s0nITw5rDW1L9OwwtBQ5dz9hMq4YrMZqrSJr8ArrMvZ1mV1/7S3Fg==
 
-jquery@>=1.2.6, jquery@^3.5.1:
+jquery@>=1.2.6:
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
   integrity sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg==
