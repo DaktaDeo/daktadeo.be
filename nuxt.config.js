@@ -24,10 +24,16 @@ export default {
   css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['~plugins/filters.js'],
+  plugins: ['~plugins/filters.js', '~/plugins/vue-agile'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
+
+  // https://medium.com/@jpoechill/access-your-nuxt-js-development-server-on-mobile-a4d67ac88bc6
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0', // default: localhost
+  },
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
@@ -64,6 +70,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    transpile: ['vue-agile'],
     plugins: [
       new webpack.ProvidePlugin({
         // global modules

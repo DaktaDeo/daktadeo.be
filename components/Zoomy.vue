@@ -1,7 +1,9 @@
 <template>
   <client-only>
     <div v-if="images">
-      <div v-if="$device.isMobile"></div>
+      <div v-if="$device.isMobile">
+        <Carousel :images="images"></Carousel>
+      </div>
       <div v-else class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-8">
         <div>
           <ul class="grid grid-cols-2">
@@ -33,8 +35,10 @@
 </template>
 
 <script>
+import Carousel from '~/components/Carousel'
 export default {
   name: 'Zoomy',
+  components: { Carousel },
   props: {
     images: {
       type: Array,
