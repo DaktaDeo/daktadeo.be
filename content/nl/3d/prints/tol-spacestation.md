@@ -1,5 +1,5 @@
 ---
-title: Spacestation Tol
+title: Tol Spacestation 
 date: '20200508T1330'
 tags:
 - speelgoed
@@ -27,12 +27,12 @@ printProperties:
   print tijd: 1h20'39" [Charlie]
   kans op falen: zeer klein
 images:
-  - alt: Dit is een image
+  - alt: Groene Tol
     weight: 10
     src: featured.jpg
-  - alt: Dit is een image
-    weight: 21 
+  - alt: Poes gefacineerd door draaiende rode tol
+    weight: 91 
     src: 2.jpg
 ---
-
+speelgoed met nostalgie
 

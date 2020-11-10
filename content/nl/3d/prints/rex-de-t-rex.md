@@ -25,6 +25,13 @@ printProperties:
   print tijd: 2h50'50" [Charlie]
   ontwerper: DrLex
   kans op falen: hoog
+images:
+  - alt: omschrijving
+    weight: 10
+    src: featured.jpg
+  - alt: omschrijving
+    weight: 91 
+    src: 
 ---
 
 

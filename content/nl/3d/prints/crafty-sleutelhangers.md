@@ -23,30 +23,30 @@ printProperties:
   print tijd: 1h20'39" [Charlie]
   kans op falen: zeer klein 
 images:
-  - alt: Achterzijde vier rode sleutelhangers in vorm van : zwaard, bijl, schop, pikhouweel
+  - alt: Voorzijde vier rode sleutelhangers in vorm van : zwaard, bijl, schop, pikhouweel
     weight: 10
     src: featured.jpg
   - alt: Voor- en achterzijde sleutelhanger schop, rood
     weight: 21 
-    src: 2.jpeg
+    src: 2.jpg
   - alt: Voor- en achterzijde sleutelhanger bijl, rood
     weight: 25 
-    src: 3.jpeg
-  - alt: Achterzijde sleutelhanger zwaard, rood
-    weight: 30
-    src: 4.jpeg
+    src: 3.jpg
+  - alt: Voorzijde sleutelhanger zwaard, rood
+    weight: 55
+    src: 4.jpg
   - alt: Voor- en achterzijde sleutelhanger pikhouweel, rood
     weight: 40
-    src: 5.jpeg
+    src: 5.jpg
   - alt: Voor- en achterzijde sleutelhanger zwaard, rood
     weight: 50
-    src: 6.jpeg
-  - alt: Voorzijde vier rode sleutelhangers in vorm van : zwaard, bijl, schop, pikhouweel
-    weight: 50
-    src: 7.jpeg
-  - alt: Achterzijde sleutelhander pikhouweel, rood
-    weight: 60
-    src: 8.jpeg
+    src: 6.jpg
+  - alt: Achterzijde vier rode sleutelhangers in vorm van : zwaard, bijl, schop, pikhouweel
+    weight: 15
+    src: 7.jpg
+  - alt: Voorzijde sleutelhander pikhouweel, rood
+    weight: 45
+    src: 8.jpg
 
 ---
 Sleutelhanger met eigentijds figuurtje 
