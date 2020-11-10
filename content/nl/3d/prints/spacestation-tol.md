@@ -26,6 +26,13 @@ options:
 printProperties:
   print tijd: 1h20'39" [Charlie]
   kans op falen: zeer klein
+images:
+  - alt: Dit is een image
+    weight: 10
+    src: featured.jpg
+  - alt: Dit is een image
+    weight: 21 
+    src: 2.jpg
 ---
 
 

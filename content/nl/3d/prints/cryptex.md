@@ -22,6 +22,16 @@ options:
 printProperties:
   print tijd: 1h20'39" [Charlie]  #TODO
   kans op falen: zeer klein  #TODO
+images:
+  - alt: Dit is een image
+    weight: 10
+    src: featured.jpg
+  - alt: Dit is een image
+    weight: 21 
+    src: IMG_3509.jpg
+  - alt: Dit is een image
+    weight: 25 
+    src: IMG_3510.jpeg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt, libero et pretium ultricies, enim ex ullamcorper libero, id mattis massa tellus eget tellus. Nam vel convallis erat. Ut vehicula, sem ut dignissim tincidunt, dui orci dignissim arcu, non elementum erat mauris eu mauris. Pellentesque orci leo, varius at dolor et, laoreet sollicitudin dui. Sed interdum faucibus nunc quis scelerisque. Duis ullamcorper, turpis ac scelerisque tincidunt, risus libero mattis nisi, in elementum elit felis non felis. Sed condimentum turpis quis neque hendrerit consequat. Mauris ut enim quis nunc rutrum scelerisque. Integer volutpat eros sit amet egestas aliquet. Phasellus dolor ipsum, viverra ut augue vehicula, condimentum posuere ante. Cras feugiat dictum ante eget malesuada. Quisque venenatis, nisi in mattis sollicitudin, metus odio vehicula justo, id feugiat magna felis vitae nisi. Donec consequat aliquam fringilla.
 
