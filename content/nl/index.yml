@@ -6,33 +6,63 @@ hero:
   title_2: <strong class="accent-color-dark">Clever Tools</strong> that <strong class="deo">Work</strong> for <strong class="dot">Humans</strong>
   tagLine: Discover, Define, Develop, Deliver, Evolve –repeat
 sections:
-  - heading: ""
-    cta: Dat is de toekomst.
-    link: 3d/
+  - heading:
+      title: ""
+      subtitle: ""
+      image: ""
+      class: fill-color
+    cta:
+      text: Dat is de toekomst.
+      link: 3d/
     color_classes: bg-primary-color-light black
-    image: /uploads/photos/3d/action-shot-organic-model.jpg
-    copy: "Kleinschalige, lokale, ecologische productie. Perfect op jouw maat en wensen. Ideaal voor wisselstukken, haakjes, speelgoedjes, cosplay, tabletop, trinkets, figuurtjes,.. "
-    heading_class: fill-color
-    heading_partial: logo-3d.html
-  - heading: ""
-    cta: Dat doet deugd.
-    link: academy/
-    color_classes: bg-deo white
-    copy: "Kennis delen. Levenslang leren. In jouw taal, op jouw maat. Samen ervaring opdoen."
-    heading_partial: logo-academy.html
-    heading_class: "fill-color--dark"
-  - heading: ""
-    cta: Dat is Multipass.
-    link: multipass/
+    image:
+      src: /uploads/photos/3d/action-shot-organic-model.jpg
+      alt: ""
+    content: "Kleinschalige, lokale, ecologische productie. Perfect op jouw maat en wensen. Ideaal voor wisselstukken, haakjes, speelgoedjes, cosplay, tabletop, trinkets, figuurtjes,.. "
+    id: 1
+    weight: 10
+  - heading:
+      title: ""
+      subtitle: ""
+      image: ""
+      class: fill-color--dark
+    cta:
+      text: Dat doet deugd.
+      link: academy/
     color_classes: bg-primary-color-light black
-    copy: "Een SaaS app zoals geen andere: van voetbaltoernooi tot mondmaskers verkopen - van Freelance diensten tot 3D print e-shop, personeel-, productie- en voorraadbeheer. Betaalbaar, Schaalbaar en Always Connected."
-    heading_partial: logo-multipass.html
-    heading_class: fill-color
-  - heading: ""
-    cta: Dat doen wij.
-    link: web/
-    color_classes: bg-deo white
-    image: /uploads/screenshots/web/Multipass-code-impression.png
-    copy: "Full Stack Webdevelopment: van eenvoudige one-page webpage, een Wordpress blog - met custom plugins - tot een super snelle Hugo website of een Full Featured Web-app."
-    heading_partial: logo-web.html
-    heading_class: fill-color--dark
+    image:
+      src: /uploads/photos/3d/action-shot-organic-model.jpg
+      alt: ""
+    content: "Kennis delen. Levenslang leren. In jouw taal, op jouw maat. Samen ervaring opdoen."
+    id: 2
+    weight: 20
+  - heading:
+      title: ""
+      subtitle: ""
+      image: ""
+      class: fill-color
+    cta:
+      text: Dat is Multipass.
+      link: multipass/
+    color_classes: bg-primary-color-light black
+    image:
+      src: /uploads/photos/3d/action-shot-organic-model.jpg
+      alt: ""
+    content: "Een SaaS app zoals geen andere: van voetbaltoernooi tot mondmaskers verkopen - van Freelance diensten tot 3D print e-shop, personeel-, productie- en voorraadbeheer. Betaalbaar, Schaalbaar en Always Connected."
+    id: 3
+    weight: 30
+  - heading:
+      title: ""
+      subtitle: ""
+      image: ""
+      class: fill-color--dark
+    cta:
+      text: Dat doen wij.
+      link: web/
+    color_classes: bg-primary-color-light black
+    image:
+      src: /uploads/screenshots/web/Multipass-code-impression.png
+      alt: ""
+    content: "Full Stack Webdevelopment: van eenvoudige one-page webpage, een Wordpress blog - met custom plugins - tot een super snelle Hugo website of een Full Featured Web-app."
+    id: 4
+    weight: 40

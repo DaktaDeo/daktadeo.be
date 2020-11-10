@@ -22,6 +22,17 @@
           </li>
         </ul>
       </section>
+
+      <section v-if="hasSections">
+        <div v-for="item in items" :key="item.id" :class="item.color_classes">
+          <FeatureCTA
+            :cta="item.cta"
+            :heading="item.heading"
+            :image="item.image"
+            :content="item.content"
+          ></FeatureCTA>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -29,8 +40,9 @@
 <script>
 import Hero from '@/components/Hero'
 import FeatureBlock from '@/components/FeatureBlock'
+import FeatureCTA from '@/components/FeatureCTA'
 export default {
-  components: { FeatureBlock, Hero },
+  components: { FeatureCTA, FeatureBlock, Hero },
   async asyncData(context) {
     const { $content, app } = context
     const defaultLocale = app.i18n.locale
@@ -55,6 +67,9 @@ export default {
     },
     hasSections() {
       return !_.isEmpty(this.page.sections)
+    },
+    items() {
+      return _.sortBy(this.page.sections, 'weight')
     },
   },
 }

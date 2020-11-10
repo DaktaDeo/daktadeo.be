@@ -124,7 +124,7 @@ export default {
     locales: ['nl', 'en'],
     defaultLocale: 'nl',
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: 'nl',
       messages: {
         nl: {
           welcome: 'Welkom',
