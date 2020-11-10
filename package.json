@@ -71,6 +71,7 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "vue-jest": "^3.0.4",
-    "webpack": "^4.0.0"
+    "webpack": "^4.0.0",
+    "ipx" : "file:../nuxt-modules/ipx"
   }
 }
