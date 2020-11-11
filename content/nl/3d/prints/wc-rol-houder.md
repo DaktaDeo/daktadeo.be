@@ -23,5 +23,5 @@ images:
     src: featured.jpg
   - alt: WC rol houder in verhouding
     weight: 90
-    src:  1.jpg
+    src: 1.jpg
 ---
