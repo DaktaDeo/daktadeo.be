@@ -23,7 +23,7 @@ printProperties:
   print tijd: 1h20'39" [Charlie]
   kans op falen: zeer klein 
 images:
-  - alt: Voorzijde vier rode sleutelhangers in vorm van : zwaard, bijl, schop, pikhouweel
+  - alt: 'Voorzijde vier rode sleutelhangers in vorm van : zwaard, bijl, schop, pikhouweel'
     weight: 10
     src: featured.jpg
   - alt: Voor- en achterzijde sleutelhanger schop, rood
@@ -41,7 +41,7 @@ images:
   - alt: Voor- en achterzijde sleutelhanger zwaard, rood
     weight: 50
     src: 6.jpg
-  - alt: Achterzijde vier rode sleutelhangers in vorm van : zwaard, bijl, schop, pikhouweel
+  - alt: 'Achterzijde vier rode sleutelhangers in vorm van: zwaard, bijl, schop, pikhouweel'
     weight: 15
     src: 7.jpg
   - alt: Voorzijde sleutelhander pikhouweel, rood

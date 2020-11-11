@@ -32,7 +32,7 @@ printProperties:
   print tijd: 1h20'39" [Charlie]  #TODO
   kans op falen: zeer klein  #TODO
 images:
-  - alt:Alle losse onderdelen van de cryptex met Lego ventje ernaast ivm verhouding
+  - alt: Alle losse onderdelen van de cryptex met Lego ventje ernaast ivm verhouding
     weight: 10
     src: featured.jpg
   - alt: Twee losse codering ringen, wit 
