@@ -51,11 +51,8 @@ generate:
     # Install latest version of NodeJS
     - curl -o- -L https://raw.githubusercontent.com/creationix/nvm/v0.37.0/install.sh | bash
     # Make available in the current terminal
-    - export NVM_DIR="$HOME/.nvm"
-    - export PATH="$HOME/.nvm:$PATH"
-    - nvm install node
-    - nvm use node
-    - nvm alias default node
+    - export NVM_DIR="$HOME/.nvm" && . "$NVM_DIR/nvm.sh" --no-use #load nvm
+    - eval "[ -f .nvmrc ] && nvm install || nvm install stable" #install node
   script:
     - yarn --version
     - node --version
