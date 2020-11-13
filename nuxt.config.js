@@ -24,7 +24,11 @@ export default {
   css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['~plugins/filters.js', '~/plugins/vue-agile'],
+  plugins: [
+    '~plugins/filters.js',
+    '~/plugins/vue-agile',
+    '~/plugins/meta-tags',
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -60,6 +64,8 @@ export default {
     '@nuxt/image',
     // https://github.com/nuxt-community/device-module
     '@nuxtjs/device',
+    // https://github.com/nuxt-community/robots-module
+    '@nuxtjs/robots',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

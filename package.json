@@ -23,6 +23,7 @@
     }
   },
   "dependencies": {
+    "@nuxtjs/robots": "^2.4.2",
     "@tailwindcss/ui": "^0.7.2",
     "core-js": "^3.6.5",
     "eslint-plugin-lodash": "^7.1.0",

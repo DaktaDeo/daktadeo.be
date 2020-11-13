@@ -117,13 +117,25 @@
 <script>
 import Breadcrumbs from '~/components/Breadcrumbs'
 import Zoomy from '~/components/Zoomy'
+import { AutoSEO } from '~/mixins'
+
 export default {
   name: 'DddPrint',
   components: { Zoomy, Breadcrumbs },
+  mixins: [AutoSEO],
   async asyncData(context) {
     const { $content, params, app } = context
     const slug = params.slug
     const post = await $content(`${app.i18n.locale}/3d/prints`, slug).fetch()
+
+    if (_.isNil(post.meta)) post.meta = {}
+    post.meta = {
+      ...{
+        locale: app.i18n.locale,
+        title: post.title,
+        description: post.description,
+      },
+    }
 
     return {
       post,
