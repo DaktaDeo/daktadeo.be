@@ -52,8 +52,9 @@ generate:
     - yarn --version
     - npm config set "@fortawesome:registry" https://npm.fontawesome.com/ && \
     - echo '//npm.fontawesome.com/:_authToken=${FA_TOKEN}'>.npmrc
-    - yarn install --pure-lockfile --ignore-optional --non-interactive
-    - yarn generate --fail-on-error -b $APP_URL
+#    - yarn install --pure-lockfile --ignore-optional --non-interactive
+    - yarn build
+    - yarn generate --fail-on-error #-b $APP_URL
   cache:
     paths:
       - dist/
