@@ -41,20 +41,45 @@ include:
   - template: Jobs/Deploy.gitlab-ci.yml
   - template: Jobs/Browser-Performance-Testing.gitlab-ci.yml
 
+yarn:
+  stage: assets
+  dependencies:
+    - composer
+  before_script:
+    # Install yarn as outlined in (https://yarnpkg.com/lang/en/docs/install/#alternatives-stable)
+    - curl -o- -L https://yarnpkg.com/install.sh | bash
+    # Make available in the current terminal
+    - export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+  script:
+    - yarn --version
+    - npm config set "@fortawesome:registry" https://npm.fontawesome.com/ && \
+    - echo '//npm.fontawesome.com/:_authToken=${FA_TOKEN}'>.npmrc
+    - yarn add webpack-cli@3.3.10 --dev --ignore-optional --non-interactive
+    - yarn install --pure-lockfile --ignore-optional --non-interactive
+  artifacts:
+    paths:
+      - dist/
+      - node_modules/
+      - .yarn
+    expire_in: 2 hrs 20 min
+    when: always
+
 generate:
   stage: build
   script:
     - yarn generate --fail-on-error -b $APP_URL
   cache:
     paths:
-      - dist
+      - dist/
   artifacts:
     paths:
-      - dist
+      - dist/
     expire_in: 2 hrs 20 min
     when: always
   except:
     - content-editing
+  dependencies:
+    - yarn
 
 building:
   stage: deploy
