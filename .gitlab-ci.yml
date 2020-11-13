@@ -12,7 +12,6 @@ variables:
 cache:
   key: ${CI_COMMIT_REF_SLUG}
   paths:
-    - themes/daktadeo/assets
     - dist/
     - node_modules/
     - .yarn
@@ -37,54 +36,11 @@ stages:
   - cleanup
 
 include:
-  #  - NO template: Jobs/Build.gitlab-ci.yml #disabling a fresh build of the container will make auto deploy fail.
-  #  - NO template: Jobs/Test.gitlab-ci.yml
-  # - template: Jobs/Code-Quality.gitlab-ci.yml
+  - template: Jobs/Code-Quality.gitlab-ci.yml
   - template: Jobs/Deploy.gitlab-ci.yml
   - template: Jobs/Browser-Performance-Testing.gitlab-ci.yml
 
-# build these locally and commit for now. maybe they shouldn't change that often anyway
-#yarn:
-#  stage: assets
-#  image: node
-#  before_script:
-#    # Install yarn as outlined in (https://yarnpkg.com/lang/en/docs/install/#alternatives-stable)
-#    - curl -o- -L https://yarnpkg.com/install.sh | bash
-#    # Make available in the current terminal
-#    - export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-#  script:
-#    - yarn --version
-#    - npm config set "@fortawesome:registry" https://npm.fontawesome.com/ && \
-#    - echo '//npm.fontawesome.com/:_authToken=${FA_TOKEN}'>.npmrc
-#    - yarn add webpack-cli --dev --ignore-optional --non-interactive
-#    - yarn install --pure-lockfile --ignore-optional --non-interactive
-#    - cd themes/daktadeo
-#    - echo 'building js files'
-#    - yarn run build --progress false
-#  artifacts:
-#    paths:
-#      - themes/daktadeo/assets
-#    expire_in: 2 hrs 20 min
-#    when: always
-
-build_review:
-  stage: build
-  image: dinofizz/hugo
-  script:
-    - rm -rf dist
-    - hugo -d dist --gc --minify --buildFuture -b $APP_URL
-  cache:
-    paths:
-      - dist
-  artifacts:
-    paths:
-      - dist
-    expire_in: 2 hrs 20 min
-    when: always
-  except:
-    - master
-
-build_production:
+generate:
   stage: build
   image: dinofizz/hugo
   script:
@@ -97,10 +53,8 @@ build_production:
       - dist
     expire_in: 2 hrs 20 min
     when: always
-  only:
-    - master
   except:
-    - forestry
+    - content-editing
 
 building:
   stage: deploy
