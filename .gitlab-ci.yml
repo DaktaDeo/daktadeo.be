@@ -48,9 +48,14 @@ generate:
     - curl -o- -L https://yarnpkg.com/install.sh | bash
     # Make available in the current terminal
     - export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-    - apk add --update nodejs
+    # Install latest version of NodeJS
+    - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.37.0/install.sh | bash
+    - nvm install node
+    - nvm use node
+    - nvm alias default node
   script:
     - yarn --version
+    - node --version
     - npm config set "@fortawesome:registry" https://npm.fontawesome.com/ && \
     - echo '//npm.fontawesome.com/:_authToken=${FA_TOKEN}'>.npmrc
     - yarn install --pure-lockfile --ignore-optional --non-interactive
