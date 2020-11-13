@@ -64,8 +64,6 @@ generate:
     when: always
   except:
     - content-editing
-  dependencies:
-    - yarn
 
 building:
   stage: deploy
