@@ -55,7 +55,6 @@ generate:
     - eval "[ -f .nvmrc ] && nvm install || nvm install stable" #install node
   script:
     - yarn --version
-    - node --version
     - npm config set "@fortawesome:registry" https://npm.fontawesome.com/ && \
     - echo '//npm.fontawesome.com/:_authToken=${FA_TOKEN}'>.npmrc
     - yarn install --pure-lockfile --ignore-optional --non-interactive
