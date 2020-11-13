@@ -1,3 +1,4 @@
+image: registry.gitlab.com/daktadeo/multipass/multipass-rocks/builder:latest
 variables:
   GIT_SUBMODULE_STRATEGY: "normal"
   KUBERNETES_VERSION: 1.14.6
@@ -42,7 +43,6 @@ include:
 
 generate:
   stage: build
-  image: dinofizz/hugo
   script:
     - yarn generate --fail-on-error -b $APP_URL
   cache:
@@ -114,7 +114,6 @@ building:
     - echo "Pushing to registry..."
     - docker push "$CI_APPLICATION_REPOSITORY:$CI_APPLICATION_TAG"
   dependencies:
-    - build_review
-    - build_production
+    - generate
   except:
-    - forestry
+    - content-editing
