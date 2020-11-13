@@ -25,6 +25,7 @@
   "dependencies": {
     "@nuxtjs/browserconfig": "^0.0.13",
     "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/sitemap": "^2.4.0",
     "@tailwindcss/ui": "^0.7.2",
     "core-js": "^3.6.5",
     "eslint-plugin-lodash": "^7.1.0",

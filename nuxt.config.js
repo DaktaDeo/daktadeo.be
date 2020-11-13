@@ -1,5 +1,26 @@
 import webpack from 'webpack'
 
+const createSitemapRoutesPrints = async () => {
+  const routes = []
+  const { $content } = require('@nuxt/content')
+
+  let prints1 = []
+  if (prints1.length === 0)
+    prints1 = await $content('nl/3d/prints').only(['slug']).fetch()
+  for (const post of prints1) {
+    routes.push(`/3d/prints/${post.slug}`)
+  }
+
+  // let prints2 = []
+  // if (prints2.length === 0)
+  //   prints2 = await $content('en/3d/prints').only(['slug']).fetch()
+  // for (const post of prints2) {
+  //   routes.push(`/en/3d/prints/${post.slug}`)
+  // }
+
+  return routes
+}
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -63,6 +84,8 @@ export default {
     '@nuxtjs/device',
     // https://github.com/nuxt-community/robots-module
     '@nuxtjs/robots',
+    // https://github.com/nuxt-community/sitemap-module#dev
+    '@nuxtjs/sitemap',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -144,4 +167,19 @@ export default {
       noPrefixDefaultLocale: true,
     },
   },
+
+  sitemap: [
+    {
+      hostname: 'https://daktadeo.be',
+      gzip: true,
+      i18n: true,
+    },
+    {
+      hostname: 'https://daktadeo.be',
+      path: '/sitemap-3d-prints.xml',
+      routes: createSitemapRoutesPrints,
+      gzip: true,
+      i18n: false,
+    },
+  ],
 }
