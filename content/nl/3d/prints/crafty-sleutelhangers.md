@@ -28,25 +28,25 @@ images:
     src: featured.jpg
   - alt: Voor- en achterzijde sleutelhanger schop, rood
     weight: 21 
-    src: 2.jpg
+    src: 2.jpeg
   - alt: Voor- en achterzijde sleutelhanger bijl, rood
     weight: 25 
-    src: 3.jpg
+    src: 3.jpeg
   - alt: Voorzijde sleutelhanger zwaard, rood
     weight: 55
-    src: 4.jpg
+    src: 4.jpeg
   - alt: Voor- en achterzijde sleutelhanger pikhouweel, rood
     weight: 40
-    src: 5.jpg
+    src: 5.jpeg
   - alt: Voor- en achterzijde sleutelhanger zwaard, rood
     weight: 50
-    src: 6.jpg
+    src: 6.jpeg
   - alt: 'Achterzijde vier rode sleutelhangers in vorm van: zwaard, bijl, schop, pikhouweel'
     weight: 15
-    src: 7.jpg
+    src: 7.jpeg
   - alt: Voorzijde sleutelhander pikhouweel, rood
     weight: 45
-    src: 8.jpg
+    src: 8.jpeg
 
 ---
 Sleutelhanger met eigentijds figuurtje 
