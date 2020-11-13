@@ -64,7 +64,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     // https://marquez.co/docs/nuxt-optimized-images/
-    '@aceforth/nuxt-optimized-images',
+    // '@aceforth/nuxt-optimized-images',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules) --> sort order is important
