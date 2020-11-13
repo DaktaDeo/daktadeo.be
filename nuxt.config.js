@@ -10,7 +10,6 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     // script: [
@@ -24,11 +23,7 @@ export default {
   css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-    '~plugins/filters.js',
-    '~/plugins/vue-agile',
-    '~/plugins/meta-tags',
-  ],
+  plugins: ['~plugins/filters.js', '~/plugins/vue-agile'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -51,7 +46,7 @@ export default {
     '@aceforth/nuxt-optimized-images',
   ],
 
-  // Modules (https://go.nuxtjs.dev/config-modules)
+  // Modules (https://go.nuxtjs.dev/config-modules) --> sort order is important
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
@@ -60,6 +55,8 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'nuxt-i18n',
+    // https://github.com/nuxt-community/modules/tree/master/packages/browserconfig
+    '@nuxtjs/browserconfig',
     // https://image.nuxtjs.org/
     '@nuxt/image',
     // https://github.com/nuxt-community/device-module
@@ -73,6 +70,11 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
+
+  browserconfig: {
+    TileColor: '#fff',
+    square150x150logo: { '@': { src: 'icon.png' } },
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

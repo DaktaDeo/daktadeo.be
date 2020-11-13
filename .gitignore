@@ -90,3 +90,5 @@ sw.*
 *.swp
 
 cache/
+static/browserconfig.xml
+static/robots.txt

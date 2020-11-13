@@ -1,6 +1,19 @@
 export default {
   head() {
-    const defaults = {}
+    // https://github.com/AlekseyPleshkov/nuxt-social-meta
+    const defaults = {
+      url: 'https://daktadeo.be',
+      title:
+        'DaktaDeo. | 3D printing | Web Application Development in Laravel + Vue.js ',
+      site: 'DaktaDeo.',
+      description:
+        '3D printing. Full Stack Web Application Development in Laravel + Vue.js',
+      img: 'https://cdn.multipass.rocks/daktadeo/Logo_DaktaDeo.pngr',
+      locale: 'nl_BE',
+      twitter: '@daktadeo',
+      twitter_card: 'Logo DaktaDeo',
+      themeColor: '#80A5A9',
+    }
     const values = [
       {
         name: 'title',
@@ -23,6 +36,10 @@ export default {
       {
         property: 'og:title',
         content: _.get(this, 'post.meta.title', defaults.title),
+      },
+      {
+        property: 'og:site_name',
+        content: _.get(this, 'post.meta.site', defaults.site),
       },
       {
         property: 'og:description',
@@ -56,14 +73,14 @@ export default {
       },
       {
         name: 'twitter:site',
-        content: _.get(this, 'post.meta.social.twitter.site', defaults.site),
+        content: _.get(this, 'post.meta.social.site', defaults.site),
       },
       {
         name: 'twitter:creator',
         content: _.get(
           this,
           'post.meta.social.twitter.creator',
-          defaults.creator
+          defaults.twitter
         ),
       },
       {
@@ -80,20 +97,35 @@ export default {
       },
     ]
 
+    const names = _.map(
+      _.filter(values, function (o) {
+        return !_.isEmpty(o.content) && !_.isNil(o.name)
+      }),
+      (tag) => {
+        return {
+          hid: tag.name,
+          name: tag.name,
+          content: tag.content,
+        }
+      }
+    )
+
+    const properties = _.map(
+      _.filter(values, function (o) {
+        return !_.isEmpty(o.content) && !_.isNil(o.property)
+      }),
+      (tag) => {
+        return {
+          hid: tag.property,
+          property: tag.property,
+          content: tag.content,
+        }
+      }
+    )
+
     return {
       title: values.title,
-      meta: _.map(
-        _.filter(values, function (o) {
-          return !_.isEmpty(o.content) && !_.isNil(o.name)
-        }),
-        (tag) => {
-          return {
-            hid: tag.name,
-            name: tag.name,
-            content: tag.content,
-          }
-        }
-      ),
+      meta: _.concat(names, properties),
     }
     // return {
     //   title: this.post.meta.title,
