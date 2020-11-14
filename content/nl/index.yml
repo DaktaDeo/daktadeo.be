@@ -9,8 +9,10 @@ sections:
   - heading:
       title: ""
       subtitle: ""
-      image: "/img/logos/daktadeo-3d.svg"
-      class: fill-color
+      image:
+        src: "/img/logos/daktadeo-3d.svg"
+        alt: ""
+        class: fill-color
     cta:
       text: Dat is de toekomst.
       link: 3d/
@@ -24,20 +26,25 @@ sections:
   - heading:
       title: ""
       subtitle: ""
-      image: "/img/logos/daktadeo-academy.svg"
-      class: fill-color--dark
+      image:
+        src: "/img/logos/daktadeo-academy.svg"
+        alt: ""
+        class: fill-color--dark
     cta:
       text: Dat doet deugd.
       link: academy/
-    color_classes: bg-primary-color-light black
+      color_classes: bg-dakta white
+    color_classes: bg-deo white
     content: "Kennis delen. Levenslang leren. In jouw taal, op jouw maat. Samen ervaring opdoen."
     id: 2
     weight: 20
   - heading:
       title: ""
       subtitle: ""
-      image: "/img/logos/multipass.svg"
-      class: fill-color
+      image:
+        src: "/img/logos/multipass.svg"
+        class: fill-color
+        alt: ""
     cta:
       text: Dat is Multipass.
       link: multipass/
@@ -48,12 +55,15 @@ sections:
   - heading:
       title: ""
       subtitle: ""
-      image: "/img/logos/daktadeo-web.svg"
-      class: fill-color--dark
+      image:
+        src: "/img/logos/daktadeo-web.svg"
+        class: fill-color--dark
+        alt: ""
     cta:
       text: Dat doen wij.
       link: web/
-    color_classes: bg-primary-color-light black
+      color_classes: bg-dakta white
+    color_classes: bg-deo white
     image:
       src: /img/multipass-code-impression.png
       alt: ""
