@@ -9,7 +9,7 @@ print_categories:
 - Sleutelhangers
 type: prints
 images:
-  - alt: 'Voorzijde vier rode sleutelhangers in vorm van : zwaard, bijl, schop, pikhouweel'
+  - alt: 'Voorzijde vier rode sleutelhangers in vorm van: zwaard, bijl, schop, pikhouweel'
     weight: 10
     src: featured.jpeg
   - alt: 'Voor- en achterzijde sleutelhanger schop, rood'
@@ -17,7 +17,7 @@ images:
     src: 2.jpeg
   - alt: 'Voor- en achterzijde sleutelhanger bijl, rood'
     weight: 25 
-    src: '3.jpeg
+    src: 3.jpeg
   - alt: 'Voorzijde sleutelhanger zwaard, rood'
     weight: 55
     src: 4.jpeg
