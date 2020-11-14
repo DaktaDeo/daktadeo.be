@@ -19,13 +19,15 @@
         class="text-center md:text-left"
         :class="{
           'md:w-1/2': hasImage,
-          'md:w-2/3 m-auto md:text-center': !hasImage,
+          'md:w-2/3 m-auto md:text-center my-4': !hasImage,
           'md:mr-auto md:pr-10': !isEven && hasImage,
           'md:ml-auto md:pl-10': isEven && hasImage,
         }"
       >
-        <div v-if="heading.svg" :class="heading.svg.class">
-          <div v-html="require(`~/assets/${heading.svg.src}.svg?raw`)" />
+        <div v-if="heading.svg" :class="{ 'md:w-2/3 m-auto': !hasImage }">
+          <div :class="heading.svg.class">
+            <div v-html="require(`~/assets/${heading.svg.src}.svg?raw`)" />
+          </div>
         </div>
         <div
           v-if="heading.text"

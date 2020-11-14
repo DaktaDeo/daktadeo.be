@@ -3,8 +3,8 @@
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <div class="space-y-8 xl:col-span-1">
-          <div class="h-10 fill-light-silver fill-dot inline">
-            <Logo></Logo>
+          <div class="h-10 fill-light-silver fill-dot inline-svg">
+            <div v-html="require(`~/assets/logos/daktadeo.svg?raw`)" />
           </div>
           <p class="text-gray-500 text-base leading-6">
             <strong>Together</strong> we'll create..<br /><strong
@@ -29,8 +29,10 @@
             </a>
           </div>
         </div>
-        <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-          <div class="md:grid md:grid-cols-2 md:gap-8">
+        <div
+          class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-2 xl:mt-0 xl:col-span-2"
+        >
+          <div class="md:grid md:grid-cols-2 md:gap-2">
             <div>
               <h4
                 class="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase"
@@ -39,36 +41,22 @@
               </h4>
               <ul class="mt-4 space-y-4">
                 <li>
-                  <a
-                    href="/3d"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
-                  >
-                    3D printing
-                  </a>
+                  <NuxtLink to="/3d" :class="linkClasses">3D printing</NuxtLink>
                 </li>
                 <li>
-                  <a
-                    href="/academy"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
+                  <NuxtLink to="/academy" :class="linkClasses"
+                    >Academy</NuxtLink
                   >
-                    Academy
-                  </a>
                 </li>
                 <li>
-                  <a
-                    href="/multipass"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
+                  <NuxtLink to="/multipass" :class="linkClasses"
+                    >MultiPass</NuxtLink
                   >
-                    Multipass
-                  </a>
                 </li>
                 <li>
-                  <a
-                    href="/web"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
+                  <NuxtLink to="/web" :class="linkClasses"
+                    >Web Development</NuxtLink
                   >
-                    Web Development
-                  </a>
                 </li>
               </ul>
             </div>
@@ -78,43 +66,43 @@
               >
                 Support
               </h4>
-              <ul class="mt-4 space-y-4">
-                <li>
-                  <a
-                    href="#"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
-                  >
-                    Pricing
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
-                  >
-                    Documentation
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
-                  >
-                    Guides
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
-                  >
-                    API Status
-                  </a>
-                </li>
-              </ul>
+              <!--              <ul class="mt-4 space-y-4">-->
+              <!--                <li>-->
+              <!--                  <a-->
+              <!--                    href="#"-->
+              <!--                    :class="linkClasses"-->
+              <!--                  >-->
+              <!--                    Pricing-->
+              <!--                  </a>-->
+              <!--                </li>-->
+              <!--                <li>-->
+              <!--                  <a-->
+              <!--                    href="#"-->
+              <!--                    :class="linkClasses"-->
+              <!--                  >-->
+              <!--                    Documentation-->
+              <!--                  </a>-->
+              <!--                </li>-->
+              <!--                <li>-->
+              <!--                  <a-->
+              <!--                    href="#"-->
+              <!--                    :class="linkClasses"-->
+              <!--                  >-->
+              <!--                    Guides-->
+              <!--                  </a>-->
+              <!--                </li>-->
+              <!--                <li>-->
+              <!--                  <a-->
+              <!--                    href="#"-->
+              <!--                    :class="linkClasses"-->
+              <!--                  >-->
+              <!--                    API Status-->
+              <!--                  </a>-->
+              <!--                </li>-->
+              <!--              </ul>-->
             </div>
           </div>
-          <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div class="md:grid md:grid-cols-2 md:gap-2">
             <div>
               <h4
                 class="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase"
@@ -123,36 +111,26 @@
               </h4>
               <ul class="mt-4 space-y-4">
                 <li>
-                  <a
-                    href="#"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
-                  >
-                    About
-                  </a>
+                  <a href="#" :class="linkClasses"> About </a>
                 </li>
+                <!--                <li>-->
+                <!--                  <a-->
+                <!--                    href="#"-->
+                <!--                    :class="linkClasses"-->
+                <!--                  >-->
+                <!--                    Blog-->
+                <!--                  </a>-->
+                <!--                </li>-->
+                <!--                <li>-->
+                <!--                  <a-->
+                <!--                    href="#"-->
+                <!--                    :class="linkClasses"-->
+                <!--                  >-->
+                <!--                    Press-->
+                <!--                  </a>-->
+                <!--                </li>-->
                 <li>
-                  <a
-                    href="#"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
-                  >
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
-                  >
-                    Press
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
-                  >
-                    Partners
-                  </a>
+                  <a href="#" :class="linkClasses"> Partners </a>
                 </li>
               </ul>
             </div>
@@ -165,27 +143,22 @@
               <ul class="mt-4 space-y-4">
                 <li>
                   <a
-                    href="/uploads/DaktaDeo Algemene leveringsvoorwaarden v2018-09.pdf"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
+                    href="/files/DaktaDeo Algemene leveringsvoorwaarden v2018-09.pdf"
+                    :class="linkClasses"
+                    download
                   >
                     Verkoopsvoorwaarden
+                    <span
+                      class="w-2 h-2 ml-1 inline-svg"
+                      v-html="require('~/assets/icons/download.svg?raw')"
+                    ></span>
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/privacy"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
-                  >
-                    Privacy
-                  </a>
+                  <a href="/privacy" :class="linkClasses"> Privacy </a>
                 </li>
                 <li>
-                  <a
-                    href="/terms"
-                    class="text-base leading-6 text-gray-500 hover:text-gray-100"
-                  >
-                    Terms
-                  </a>
+                  <a href="/terms" :class="linkClasses"> Terms </a>
                 </li>
               </ul>
             </div>
@@ -204,15 +177,18 @@
 </template>
 
 <script>
-import Logo from '@/components/Logo'
 export default {
   name: 'Footer',
-  components: { Logo },
   props: {
     socials: {
       type: Array,
       required: false,
       default: () => [],
+    },
+    linkClasses: {
+      type: String,
+      required: false,
+      default: 'text-base leading-6 text-gray-500 hover:text-gray-100',
     },
   },
 }

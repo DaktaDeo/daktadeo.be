@@ -14,7 +14,8 @@ sections:
         class: fill-color
     cta:
       text: Dat is de toekomst.
-      link: 3d/
+      link: /3d
+      color_classes: bg-dakta white
     color_classes: bg-primary-color-light black
     image:
       src: /img/action-shot-organic-model.jpg
@@ -30,7 +31,7 @@ sections:
         class: fill-color--dark
     cta:
       text: Dat doet deugd.
-      link: academy/
+      link: /academy
       color_classes: bg-dakta white
     color_classes: bg-deo white
     content: "Kennis delen. Levenslang leren. In jouw taal, op jouw maat. Samen ervaring opdoen."
@@ -44,7 +45,7 @@ sections:
         class: fill-color
     cta:
       text: Dat is Multipass.
-      link: multipass/
+      link: /multipass
     color_classes: bg-primary-color-light black
     content: "Een SaaS app zoals geen andere: van voetbaltoernooi tot mondmaskers verkopen - van Freelance diensten tot 3D print e-shop, personeel-, productie- en voorraadbeheer. Betaalbaar, Schaalbaar en Always Connected."
     id: 3
@@ -57,7 +58,7 @@ sections:
         class: fill-color--dark
     cta:
       text: Dat doen wij.
-      link: web/
+      link: /web
       color_classes: bg-dakta white
     color_classes: bg-deo white
     image:
