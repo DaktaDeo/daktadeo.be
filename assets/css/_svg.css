@@ -45,10 +45,10 @@
 .fill-color--dark .dot { fill: var(--daktadeo-orange);}
 .fill-color--dark .suffix { stroke:var(--white);}
 
-.fill-color .multipass_logo .background{fill: var(--multipass-red);}
-.fill-color .multipass_logo .suffix{
+.fill-color .logo.multipass .background{fill: var(--multipass-red);}
+.fill-color .logo.multipass .suffix{
   fill: var(--multipass-grey);
   stroke: var(--multipass-grey);
 }
-.fill-color .multipass_logo .multipass{fill: var(--white);}
+.fill-color .logo.multipass .multipass{fill: var(--white);}
 .fill-dot .dot { fill: var(--daktadeo-orange);}

@@ -9,9 +9,8 @@ sections:
   - heading:
       title: ""
       subtitle: ""
-      image:
-        src: "/img/logos/daktadeo-3d.svg"
-        alt: ""
+      svg:
+        src: "logos/daktadeo-3d"
         class: fill-color
     cta:
       text: Dat is de toekomst.
@@ -26,9 +25,8 @@ sections:
   - heading:
       title: ""
       subtitle: ""
-      image:
-        src: "/img/logos/daktadeo-academy.svg"
-        alt: ""
+      svg:
+        src: "logos/daktadeo-academy"
         class: fill-color--dark
     cta:
       text: Dat doet deugd.
@@ -41,10 +39,9 @@ sections:
   - heading:
       title: ""
       subtitle: ""
-      image:
-        src: "/img/logos/multipass.svg"
+      svg:
+        src: "logos/multipass"
         class: fill-color
-        alt: ""
     cta:
       text: Dat is Multipass.
       link: multipass/
@@ -55,10 +52,9 @@ sections:
   - heading:
       title: ""
       subtitle: ""
-      image:
-        src: "/img/logos/daktadeo-web.svg"
+      svg:
+        src: "logos/daktadeo-web"
         class: fill-color--dark
-        alt: ""
     cta:
       text: Dat doen wij.
       link: web/

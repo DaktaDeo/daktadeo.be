@@ -65,6 +65,8 @@ export default {
     '@nuxtjs/tailwindcss',
     // https://marquez.co/docs/nuxt-optimized-images/
     '@aceforth/nuxt-optimized-images',
+    // https://github.com/nuxt-community/svg-module
+    '@nuxtjs/svg',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules) --> sort order is important
@@ -111,6 +113,7 @@ export default {
   },
   optimizedImages: {
     optimizeImages: true,
+    handleImages: ['jpeg', 'jpg', 'png'],
   },
   image: {
     presets: [
