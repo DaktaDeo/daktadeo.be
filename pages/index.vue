@@ -5,8 +5,8 @@
       :title="page.hero.title_1"
       :tag-line="page.hero.tagline"
     ></Hero>
-    <div class="w-full max-w-screen-xl mx-auto">
-      <section v-if="hasFeatures" class="px-4 py5 md:py-4">
+    <div v-if="hasFeatures" class="w-full max-w-screen-xl mx-auto">
+      <section class="px-4 py5 md:py-4">
         <ul class="md:grid md:grid-cols-3 md:gap-x-12 md:gap-y-8">
           <li
             v-for="feature in page.features"
@@ -22,14 +22,20 @@
           </li>
         </ul>
       </section>
-
-      <section v-if="hasSections">
-        <div v-for="item in items" :key="item.id" :class="item.color_classes">
+    </div>
+    <div v-if="hasSections">
+      <section>
+        <div
+          v-for="(item, index) in items"
+          :key="item.id"
+          :class="item.color_classes"
+        >
           <FeatureCTA
             :cta="item.cta"
             :heading="item.heading"
             :image="item.image"
             :content="item.content"
+            :index="index"
           ></FeatureCTA>
         </div>
       </section>

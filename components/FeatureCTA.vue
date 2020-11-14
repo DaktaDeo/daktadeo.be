@@ -1,7 +1,10 @@
 <template>
   <div class="relative">
     <div v-if="hasImage">
-      <div class="h-56 bg-indigo-600 sm:h-72 md:absolute md:h-full md:w-1/2">
+      <div
+        class="h-56 bg-indigo-600 sm:h-72 md:absolute md:h-full md:w-1/2"
+        :class="{ 'md:right-0': !isEven, 'md:left-0': isEven }"
+      >
         <img
           class="w-full h-full object-cover"
           :src="image.src"
@@ -12,7 +15,13 @@
       <div
         class="relative max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16"
       >
-        <div class="md:w-1/2">
+        <div
+          class="md:w-1/2"
+          :class="{
+            'md:mr-auto md:pr-10': !isEven,
+            'md:ml-auto md:pl-10': isEven,
+          }"
+        >
           <div :class="heading.class">
             {{ heading.image }}
           </div>
@@ -91,10 +100,18 @@ export default {
         color: null,
       }),
     },
+    index: {
+      type: Number,
+      required: false,
+      default: 1,
+    },
   },
   computed: {
     hasImage() {
       return !_.isEmpty(this.image.src)
+    },
+    isEven() {
+      return this.index % 2 === 0
     },
   },
 }
