@@ -51,6 +51,7 @@ generate:
   image: node:alpine3.12
   stage: build
   before_script:
+    - apk add --no-cache curl bash
     # Install yarn as outlined in (https://yarnpkg.com/lang/en/docs/install/#alternatives-stable)
     - curl -o- -L https://yarnpkg.com/install.sh | bash
     # Make available in the current terminal
