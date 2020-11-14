@@ -1,7 +1,7 @@
 ---
-title: Letter Cryptex
+title: 'Letter Cryptex'
 date: '20200508T1330'
-blurb: These are some nice tools
+blurb: 'These are some nice tools'
 tags:
 - craft
 - opbergdoosje
@@ -18,13 +18,13 @@ source:
     license: Creative Commons - Attribution - Non-Commerciallicense.  
 type: prints
 images:
-  - alt: Alle losse onderdelen van de cryptex met Lego ventje ernaast ivm verhouding
+  - alt: 'Alle losse onderdelen van de cryptex met popje ernaast ivm verhouding'
     weight: 10
     src: featured.jpg
-  - alt: Twee losse codering ringen, wit 
+  - alt: 'Twee losse codering ringen, wit' 
     weight: 21 
-    src: IMG_3509.jpg
-  - alt: De twee centrale cilinders, wit, met Lego ventje ivm verhouding
+    src: IMG_3509.jpg'
+  - alt: 'alle losse onderdelen met ventje ernaast ivm verhouding, wit'
     weight: 25 
     src: IMG_3510.jpg
 ---

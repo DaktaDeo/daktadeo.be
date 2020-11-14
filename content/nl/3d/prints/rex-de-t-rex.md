@@ -1,5 +1,5 @@
 ---
-title: Rex de T-Rex
+title: 'Rex de T-Rex'
 date: '20200508T1330'
 tags:
 - speelgoed
