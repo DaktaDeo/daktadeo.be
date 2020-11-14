@@ -8,20 +8,6 @@ tags:
 print_categories:
 - Sleutelhangers
 type: prints
-actualPrice: 2,50 #TODO
-comparePrice: 
-inStock:
-featuredImage: featured.jpg 
-options:
-  Kleur:
-  - Rood
-  Maat:
-  - L19 x W24 x H23cms #TODO
-  Materiaal:
-  - PLA/PHA
-printProperties:
-  print tijd: 1h20'39" [Charlie]
-  kans op falen: zeer klein 
 images:
   - alt: 'Voorzijde vier rode sleutelhangers in vorm van : zwaard, bijl, schop, pikhouweel'
     weight: 10

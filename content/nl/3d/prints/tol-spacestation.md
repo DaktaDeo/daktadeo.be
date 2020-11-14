@@ -9,23 +9,6 @@ tags:
 print_categories:
 - Speelgoed
 type: prints
-actualPrice: 2,50
-comparePrice: 
-inStock:
-featuredImage: featured.jpg 
-options:
-  Kleur:
-  - Blauw
-  - Flashy doorzichtig groen
-  - Rood
-  - Zilvergrijs
-  Maat:
-  - L19 x W24 x H23cms
-  Materiaal:
-  - PLA/PHA
-printProperties:
-  print tijd: 1h20'39" [Charlie]
-  kans op falen: zeer klein
 images:
   - alt: Groene Tol
     weight: 10

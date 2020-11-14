@@ -10,15 +10,6 @@ tags:
 print_categories:
 - Real Life 
 type: prints
-actualPrice: 5,00
-comparePrice: 
-inStock:
-featuredImage: featured.jpg
-options:
-  Kleur:
-  - Wit 
-printProperties:
-  kans op falen: middel 
 images:
   - alt: Onderkaak en bovenkaak samen als geheel, wit
     weight: 10
