@@ -52,7 +52,7 @@ generate:
   stage: build
   before_script:
     - touch ~/.bashrc
-    - apk add --update --no-cache py-pip curl bash apk make g++
+    - apk add --update --no-cache py-pip curl bash make g++
     # Install yarn as outlined in (https://yarnpkg.com/lang/en/docs/install/#alternatives-stable)
     - curl -o- -L https://yarnpkg.com/install.sh | bash
     # Make available in the current terminal
