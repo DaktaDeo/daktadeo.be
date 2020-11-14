@@ -1,5 +1,5 @@
 ---
-title: Tol Spacestation 
+title: 'Tol Spacestation'
 date: '20200508T1330'
 tags:
 - speelgoed
@@ -9,30 +9,13 @@ tags:
 print_categories:
 - Speelgoed
 type: prints
-actualPrice: 2,50
-comparePrice: 
-inStock:
-featuredImage: featured.jpg 
-options:
-  Kleur:
-  - Blauw
-  - Flashy doorzichtig groen
-  - Rood
-  - Zilvergrijs
-  Maat:
-  - L19 x W24 x H23cms
-  Materiaal:
-  - PLA/PHA
-printProperties:
-  print tijd: 1h20'39" [Charlie]
-  kans op falen: zeer klein
 images:
-  - alt: Groene Tol
+  - alt: 'Groene Tol'
     weight: 10
     src: featured.jpg
-  - alt: Poes gefacineerd door draaiende rode tol
+  - alt: 'Poes gefacineerd door draaiende rode tol'
     weight: 91 
-    src: 2.jpg
+    src: 2.jpeg
 ---
 speelgoed met nostalgie
 
