@@ -51,16 +51,7 @@ generate:
   image: node:alpine3.12
   stage: build
   before_script:
-    - apk add --no-cache \
-      autoconf \
-      automake \
-      bash \
-      g++ \
-      libc6-compat \
-      libjpeg-turbo-dev \
-      libpng-dev \
-      make \
-      nasm
+    - apk add --no-cache autoconf automake bash g++ libc6-compat libjpeg-turbo-dev libpng-dev make nasm
   script:
     - yarn --version
     - yarn install --frozen-lockfile --non-interactive  --ignore-engines
