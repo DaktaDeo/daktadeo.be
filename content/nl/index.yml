@@ -9,14 +9,14 @@ sections:
   - heading:
       title: ""
       subtitle: ""
-      image: ""
+      image: "/img/logos/daktadeo-3d.svg"
       class: fill-color
     cta:
       text: Dat is de toekomst.
       link: 3d/
     color_classes: bg-primary-color-light black
     image:
-      src: /uploads/photos/3d/action-shot-organic-model.jpg
+      src: /img/action-shot-organic-model.jpg
       alt: ""
     content: "Kleinschalige, lokale, ecologische productie. Perfect op jouw maat en wensen. Ideaal voor wisselstukken, haakjes, speelgoedjes, cosplay, tabletop, trinkets, figuurtjes,.. "
     id: 1
@@ -24,44 +24,38 @@ sections:
   - heading:
       title: ""
       subtitle: ""
-      image: ""
+      image: "/img/logos/daktadeo-academy.svg"
       class: fill-color--dark
     cta:
       text: Dat doet deugd.
       link: academy/
     color_classes: bg-primary-color-light black
-    image:
-      src: /uploads/photos/3d/action-shot-organic-model.jpg
-      alt: ""
     content: "Kennis delen. Levenslang leren. In jouw taal, op jouw maat. Samen ervaring opdoen."
     id: 2
     weight: 20
   - heading:
       title: ""
       subtitle: ""
-      image: ""
+      image: "/img/logos/multipass.svg"
       class: fill-color
     cta:
       text: Dat is Multipass.
       link: multipass/
     color_classes: bg-primary-color-light black
-    image:
-      src: /uploads/photos/3d/action-shot-organic-model.jpg
-      alt: ""
     content: "Een SaaS app zoals geen andere: van voetbaltoernooi tot mondmaskers verkopen - van Freelance diensten tot 3D print e-shop, personeel-, productie- en voorraadbeheer. Betaalbaar, Schaalbaar en Always Connected."
     id: 3
     weight: 30
   - heading:
       title: ""
       subtitle: ""
-      image: ""
+      image: "/img/logos/daktadeo-web.svg"
       class: fill-color--dark
     cta:
       text: Dat doen wij.
       link: web/
     color_classes: bg-primary-color-light black
     image:
-      src: /uploads/screenshots/web/Multipass-code-impression.png
+      src: /img/multipass-code-impression.png
       alt: ""
     content: "Full Stack Webdevelopment: van eenvoudige one-page webpage, een Wordpress blog - met custom plugins - tot een super snelle Hugo website of een Full Featured Web-app."
     id: 4
