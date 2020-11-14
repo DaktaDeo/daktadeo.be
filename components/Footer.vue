@@ -191,5 +191,14 @@ export default {
       default: 'text-base leading-6 text-gray-500 hover:text-gray-100',
     },
   },
+  // async asyncData(context) {
+  //   const { $content, app } = context
+  //   const defaultLocale = app.i18n.locale
+  //   const data = await $content(`${defaultLocale}/data.yml`).fetch()
+  //
+  //   return {
+  //     data,
+  //   }
+  // },
 }
 </script>
