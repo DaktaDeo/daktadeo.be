@@ -41,16 +41,12 @@ include:
   - template: Jobs/Deploy.gitlab-ci.yml
   - template: Jobs/Browser-Performance-Testing.gitlab-ci.yml
 
-# https://docs.gitlab.com/ee/ci/caching/#caching-nodejs-dependencies
 generate_dev:
   image: node:alpine3.12
   stage: build
   before_script:
     - apk add autoconf automake py-pip libtool make tiff jpeg zlib zlib-dev
     - apk add pkgconf nasm file gcc musl-dev bash g++ libc6-compat libjpeg-turbo-dev libpng-dev
-    - npm ci --cache .npm --prefer-offline
-    - npm config set "@fortawesome:registry" https://npm.fontawesome.com/ && \
-    - echo '//npm.fontawesome.com/:_authToken=${FA_TOKEN}'>.npmrc
   script:
     - yarn --version
     - yarn install --frozen-lockfile --non-interactive  --ignore-engines 2> >(grep -v warning 1>&2)
@@ -70,9 +66,6 @@ generate:
   before_script:
     - apk add autoconf automake py-pip libtool make tiff jpeg zlib zlib-dev
     - apk add pkgconf nasm file gcc musl-dev bash g++ libc6-compat libjpeg-turbo-dev libpng-dev
-    - npm ci --cache .npm --prefer-offline
-    - npm config set "@fortawesome:registry" https://npm.fontawesome.com/ && \
-    - echo '//npm.fontawesome.com/:_authToken=${FA_TOKEN}'>.npmrc
   script:
     - yarn --version
     - yarn install --frozen-lockfile --non-interactive  --ignore-engines 2> >(grep -v warning 1>&2)
