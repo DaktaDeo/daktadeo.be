@@ -25,7 +25,7 @@ images:
   - alt: 'Kristallen in wording met printer gegevens'
     weight: 70 
     src: sneeuwkristallen-in-wording-met-printer-gegevens.jpg
-   - alt: 'Kristallen in wording,zilver'
+  - alt: 'Kristallen in wording,zilver'
     weight: 75 
     src: kristal-zilver-in-wording.jpg
   - alt: 'Verzameld ter verwerking'
