@@ -64,14 +64,7 @@
           ></property-definition-list>
         </section>
 
-        <section>
-          <div class="leading-6 text-gray-500 text-sm">
-            Laatste aanpassing:
-            <time :datetime="post.updatedAt">
-              {{ post.updatedAt | formatDateTimeLong }}
-            </time>
-          </div>
-        </section>
+        <last-update :date="post.updatedAt"></last-update>
       </div>
     </div>
   </div>
@@ -80,6 +73,7 @@
 <script>
 import PropertyDefinitionList from '@/components/PropertyDefinitionList'
 import TagList from '@/components/TagList'
+import LastUpdate from '@/components/LastUpdate'
 import Breadcrumbs from '~/components/Breadcrumbs'
 import Zoomy from '~/components/Zoomy'
 import { AutoSEO } from '~/mixins'
@@ -87,7 +81,14 @@ import { AutoSEO } from '~/mixins'
 import Carousel from '~/components/Carousel'
 export default {
   name: 'DddPrint',
-  components: { TagList, PropertyDefinitionList, Zoomy, Breadcrumbs, Carousel },
+  components: {
+    LastUpdate,
+    TagList,
+    PropertyDefinitionList,
+    Zoomy,
+    Breadcrumbs,
+    Carousel,
+  },
   mixins: [AutoSEO],
   async asyncData(context) {
     const { $content, params, app } = context
