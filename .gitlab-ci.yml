@@ -47,6 +47,25 @@ before_script:
   - npm config set "@fortawesome:registry" https://npm.fontawesome.com/ && \
   - echo '//npm.fontawesome.com/:_authToken=${FA_TOKEN}'>.npmrc
 
+generate_dev:
+  image: node:alpine3.12
+  stage: build
+  before_script:
+    - apk add autoconf automake py-pip libtool make tiff jpeg zlib zlib-dev
+    - apk add pkgconf nasm file gcc musl-dev bash g++ libc6-compat libjpeg-turbo-dev libpng-dev
+  script:
+    - yarn --version
+    - yarn install --frozen-lockfile --non-interactive  --ignore-engines
+    - yarn generate
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 2 hrs 20 min
+    when: always
+  except:
+    - content-editing
+    - master
+
 generate:
   image: node:alpine3.12
   stage: build
@@ -56,14 +75,14 @@ generate:
   script:
     - yarn --version
     - yarn install --frozen-lockfile --non-interactive  --ignore-engines
-    - yarn generate --fail-on-error #-b $APP_URL
+    - yarn generate --fail-on-error
   artifacts:
     paths:
       - dist/
     expire_in: 2 hrs 20 min
     when: always
-  except:
-    - content-editing
+  only:
+    - master
 
 building:
   stage: deploy
