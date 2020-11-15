@@ -51,7 +51,8 @@ generate:
   image: node:alpine3.12
   stage: build
   before_script:
-    - apk add autoconf automake libtool make tiff jpeg zlib zlib-dev pkgconf nasm file gcc musl-dev bash g++ libc6-compat libjpeg-turbo-dev libpng-dev
+    - apk add autoconf automake py-pip libtool make tiff jpeg zlib zlib-dev
+    - apk add pkgconf nasm file gcc musl-dev bash g++ libc6-compat libjpeg-turbo-dev libpng-dev
   script:
     - yarn --version
     - yarn install --frozen-lockfile --non-interactive  --ignore-engines
