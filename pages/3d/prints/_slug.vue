@@ -52,56 +52,24 @@
           </div>
         </section>
 
-        <section class="my-4 mb-12">
+        <section v-if="hasSpecs" class="my-4 mb-12">
           <h2
             class="text-2xl leading-4 tracking-tight sm:text-3xl mb-6 font-extrabold"
           >
             Specificaties
           </h2>
 
-          <div v-if="post.productProperties" class="my-4">
-            <h3 class="text-lg leading-6 font-medium text-gray-900">Product</h3>
-            <div>
-              <dl>
-                <div
-                  v-for="(item, key) in post.productProperties"
-                  :key="key"
-                  class="bg-gray-50 px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
-                >
-                  <dt class="text-sm leading-5 font-medium text-gray-500">
-                    {{ item }}
-                  </dt>
-                  <dd
-                    class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2"
-                  >
-                    {{ key }}
-                  </dd>
-                </div>
-              </dl>
-            </div>
-          </div>
+          <property-definition-list
+            :properties="post.specs.product"
+            title="Product"
+            class="my-4"
+          ></property-definition-list>
 
-          <div v-if="post.printProperties" class="my-4">
-            <h3 class="text-lg leading-6 font-medium text-gray-900">Product</h3>
-            <div>
-              <dl>
-                <div
-                  v-for="(item, key) in post.printProperties"
-                  :key="key"
-                  class="bg-gray-50 px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
-                >
-                  <dt class="text-sm leading-5 font-medium text-gray-500">
-                    {{ key }}
-                  </dt>
-                  <dd
-                    class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2"
-                  >
-                    {{ item }}
-                  </dd>
-                </div>
-              </dl>
-            </div>
-          </div>
+          <property-definition-list
+            :properties="post.specs.print"
+            title="Print"
+            class="my-4"
+          ></property-definition-list>
         </section>
 
         <section>
@@ -118,6 +86,7 @@
 </template>
 
 <script>
+import PropertyDefinitionList from '@/components/PropertyDefinitionList'
 import Breadcrumbs from '~/components/Breadcrumbs'
 import Zoomy from '~/components/Zoomy'
 import { AutoSEO } from '~/mixins'
@@ -125,7 +94,7 @@ import { AutoSEO } from '~/mixins'
 import Carousel from '~/components/Carousel'
 export default {
   name: 'DddPrint',
-  components: { Zoomy, Breadcrumbs, Carousel },
+  components: { PropertyDefinitionList, Zoomy, Breadcrumbs, Carousel },
   mixins: [AutoSEO],
   async asyncData(context) {
     const { $content, params, app } = context
@@ -146,6 +115,9 @@ export default {
     }
   },
   computed: {
+    hasSpecs() {
+      return !_.isEmpty(this.post.specs)
+    },
     baseForImages() {
       return `/img/3d/prints/${this.post.slug}`
     },

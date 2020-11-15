@@ -33,7 +33,10 @@ images:
   - alt: 'Voorzijde sleutelhander pikhouweel, rood'
     weight: 45
     src: 8.jpeg
-
+specs:
+    print:
+        print tijd: 1h20'39 [Charlie]
+        kans op falen: zeer klein
 ---
 Sleutelhanger met eigentijds figuurtje 
 
