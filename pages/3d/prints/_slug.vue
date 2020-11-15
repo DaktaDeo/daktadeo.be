@@ -9,11 +9,14 @@
           {{ post.title }}
         </h1>
 
-        <section
-          class="my-4 mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-8"
-        >
+        <section v-if="$device.isMobile">
+          <client-only>
+            <Carousel :images="gallery"></Carousel>
+          </client-only>
+        </section>
+
+        <section v-else class="my-4 mb-12 flex">
           <Zoomy :images="gallery"></Zoomy>
-          <div></div>
         </section>
 
         <section v-if="post.print_categories" class="my-4 mb-12">
@@ -119,9 +122,10 @@ import Breadcrumbs from '~/components/Breadcrumbs'
 import Zoomy from '~/components/Zoomy'
 import { AutoSEO } from '~/mixins'
 
+import Carousel from '~/components/Carousel'
 export default {
   name: 'DddPrint',
-  components: { Zoomy, Breadcrumbs },
+  components: { Zoomy, Breadcrumbs, Carousel },
   mixins: [AutoSEO],
   async asyncData(context) {
     const { $content, params, app } = context

@@ -4,9 +4,10 @@
       <nuxt-image
         sets="300,300:600,600:900"
         :src="`+jpg-featured:${image.src}`"
-        width="375"
-        height="375"
         :alt="image.alt"
+        width="475"
+        height="475"
+        responsive
       />
     </div>
   </agile>
@@ -30,7 +31,7 @@ export default {
           {
             breakpoint: 600,
             settings: {
-              dots: false,
+              dots: true,
             },
           },
 

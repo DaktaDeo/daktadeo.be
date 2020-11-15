@@ -116,6 +116,7 @@ export default {
     handleImages: ['jpeg', 'jpg', 'png'],
   },
   image: {
+    sizes: [320, 420, 768, 1024, 1200],
     presets: [
       {
         name: 'avatar',
@@ -139,8 +140,8 @@ export default {
         modifiers: {
           fit: 'inside',
           format: 'jpg',
-          width: 1024,
-          height: 1024,
+          width: 1200,
+          height: 1200,
         },
       },
       {
