@@ -53,7 +53,7 @@ generate_dev:
     - echo '//npm.fontawesome.com/:_authToken=${FA_TOKEN}'>.npmrc
   script:
     - yarn --version
-    yarn install --frozen-lockfile --non-interactive  --ignore-engines 2> >(grep -v warning 1>&2)
+    - yarn install --frozen-lockfile --non-interactive  --ignore-engines 2> >(grep -v warning 1>&2)
     - yarn generate
   artifacts:
     paths:
