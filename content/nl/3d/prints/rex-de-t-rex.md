@@ -12,7 +12,7 @@ type: prints
 images:
   - alt: 'Rex-de-T-rex'
     weight: 10
-    src: featured-rex-de-t-rex.jpg
+    src: featured.jpg
   - alt: 'Rex op stap'
     weight: 20 
     src: IMG__469.jpg

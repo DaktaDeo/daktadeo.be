@@ -12,7 +12,7 @@ type: prints
 images:
   - alt: 'vijver versiering'
     weight: 10
-    src: featured-waterrad.jpg
+    src: featured.jpg
   - alt: 'draaiend waterrad'
     weight: 90
     scr: draaiend-waterrad.mp4

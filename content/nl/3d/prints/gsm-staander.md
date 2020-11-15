@@ -14,7 +14,7 @@ type: prints
 images:
   - alt: 'gsm-staander'
     weight: 10
-    src: featured-gsm-syaander.jpg
+    src: featured.jpg
  
 
 ---

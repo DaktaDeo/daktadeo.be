@@ -14,7 +14,7 @@ type: prints
 images:
   - alt: 'laadstation-apple'
     weight: 10
-    src: featured-laadstation.jpg
+    src: featured.jpg
   - alt: 'laadstation'
     weight: 20
     src: laadstation-2.jpg

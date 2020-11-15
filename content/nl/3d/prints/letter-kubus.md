@@ -9,7 +9,7 @@ type: prints
 images:
   - alt: 'kubusje met letters,wit'
     weight: 10
-    src: featured-kubus.jpg
+    src: featured.jpg
   - alt: 'kubusje in wording'
     weight: 90
     scr: kubus-op-printer.mp4
