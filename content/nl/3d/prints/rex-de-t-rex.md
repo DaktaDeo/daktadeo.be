@@ -10,12 +10,15 @@ print_categories:
 - Speelgoed
 type: prints
 images:
-  - alt: omschrijving
+  - alt: 'Rex-de-T-rex'
     weight: 10
-    src: featured.jpg
-  - alt: omschrijving
-    weight: 91 
-    src: 
+    src: featured-rex-de-t-rex.jpg
+  - alt: 'Rex op stap'
+    weight: 20 
+    src: IMG__469.jpg
+  - alt: 'Flexibele Rex'
+    weight: 30 
+    src: IMG__468.jpg
 ---
 
 
