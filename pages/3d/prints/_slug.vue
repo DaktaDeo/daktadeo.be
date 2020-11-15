@@ -25,15 +25,7 @@
           >
             Gerelateerde producten
           </h2>
-          <ul class="flex space-x-2 flex-wrap">
-            <li v-for="cat in post.print_categories" :key="cat" class="mt-1.5">
-              <span
-                class="whitespace-no-wrap inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium leading-5 border text-gray-800"
-              >
-                {{ cat }}
-              </span>
-            </li>
-          </ul>
+          <tag-list :items="post.print_categories"></tag-list>
         </section>
 
         <section v-if="post.body" class="my-4 mb-12">
@@ -87,6 +79,7 @@
 
 <script>
 import PropertyDefinitionList from '@/components/PropertyDefinitionList'
+import TagList from '@/components/TagList'
 import Breadcrumbs from '~/components/Breadcrumbs'
 import Zoomy from '~/components/Zoomy'
 import { AutoSEO } from '~/mixins'
@@ -94,7 +87,7 @@ import { AutoSEO } from '~/mixins'
 import Carousel from '~/components/Carousel'
 export default {
   name: 'DddPrint',
-  components: { PropertyDefinitionList, Zoomy, Breadcrumbs, Carousel },
+  components: { TagList, PropertyDefinitionList, Zoomy, Breadcrumbs, Carousel },
   mixins: [AutoSEO],
   async asyncData(context) {
     const { $content, params, app } = context
