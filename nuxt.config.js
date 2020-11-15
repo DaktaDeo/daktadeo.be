@@ -25,6 +25,9 @@ export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
+  // https://stackoverflow.com/questions/58205391/nuxtjs-use-asyncdata-method-in-layout-or-component
+  fetchOnServer: false,
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'DaktaDeo.',

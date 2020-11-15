@@ -2,7 +2,7 @@
   <footer class="bg-primary-color-dark">
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-        <div class="space-y-8 xl:col-span-1">
+        <div class="space-y-7 xl:col-span-1">
           <div class="h-10 fill-light-silver fill-dot inline-svg">
             <div v-html="require(`~/assets/logos/daktadeo.svg?raw`)" />
           </div>
@@ -22,10 +22,9 @@
               target="_blank"
               class="hover:text-gray-500"
             >
-              <img
-                :src="require(`~/assets/fa/${channel.name}.svg`)"
-                :alt="channel.name"
-              />
+              <div class="h-6 w-6 inline-svg fill-current">
+                <div v-html="require(`~/assets/fa/${channel.name}.svg?raw`)" />
+              </div>
             </a>
           </div>
         </div>
@@ -191,14 +190,5 @@ export default {
       default: 'text-base leading-6 text-gray-500 hover:text-gray-100',
     },
   },
-  // async asyncData(context) {
-  //   const { $content, app } = context
-  //   const defaultLocale = app.i18n.locale
-  //   const data = await $content(`${defaultLocale}/data.yml`).fetch()
-  //
-  //   return {
-  //     data,
-  //   }
-  // },
 }
 </script>
