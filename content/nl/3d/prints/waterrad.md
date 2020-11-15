@@ -1,6 +1,6 @@
 ---
 title: Waterrad
-date: '20201214T1430'
+date: '20201215T1316'
 tags:
 - speelgoed
 - tuin
@@ -12,8 +12,8 @@ type: prints
 images:
   - alt: 'vijver versiering'
     weight: 10
-    src: featured waterrad.jpg
+    src: featured-waterrad.jpg
   - alt: 'draaiend waterrad'
     weight: 90
-    scr: draaiend waterrad.mp4
+    scr: draaiend-waterrad.mp4
 ---
