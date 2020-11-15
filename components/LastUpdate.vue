@@ -12,11 +12,9 @@ export default {
   name: 'LastUpdate',
   props: {
     date: {
-      type: Object,
+      type: String,
       required: false,
-      default() {
-        return {}
-      },
+      default: null,
     },
   },
   computed: {

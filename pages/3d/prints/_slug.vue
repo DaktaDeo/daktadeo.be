@@ -8,6 +8,7 @@
         >
           {{ post.title }}
         </h1>
+        <tag-list :items="post.print_categories" class="my-4 mb-12"></tag-list>
 
         <section v-if="$device.isMobile">
           <client-only>
@@ -19,16 +20,7 @@
           <Zoomy :images="gallery"></Zoomy>
         </section>
 
-        <section v-if="post.print_categories" class="my-4 mb-12">
-          <h2
-            class="text-2xl leading-4 tracking-tight sm:text-3xl mb-4 font-extrabold"
-          >
-            Gerelateerde producten
-          </h2>
-          <tag-list :items="post.print_categories"></tag-list>
-        </section>
-
-        <section v-if="post.body" class="my-4 mb-12">
+        <section v-if="hasContent" class="my-4 mb-12">
           <h2
             class="text-2xl leading-4 tracking-tight sm:text-3xl mb-6 font-extrabold"
           >
@@ -39,7 +31,7 @@
           >
             Omschrijving
           </h3>
-          <div class="markdown">
+          <div class="markdown my-4">
             <nuxt-content :document="post" />
           </div>
         </section>
@@ -109,6 +101,9 @@ export default {
     }
   },
   computed: {
+    hasContent() {
+      return !_.isEmpty(this.post.body.children)
+    },
     hasSpecs() {
       return !_.isEmpty(this.post.specs)
     },
