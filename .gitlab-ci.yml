@@ -49,7 +49,7 @@ generate_dev:
     - apk add pkgconf nasm file gcc musl-dev bash g++ libc6-compat libjpeg-turbo-dev libpng-dev
   script:
     - yarn --version
-    - yarn install --frozen-lockfile --non-interactive  --ignore-engines 2> >(grep -v warning 1>&2)
+    - yarn install --frozen-lockfile --non-interactive  --ignore-engines
     - yarn generate
   artifacts:
     paths:
@@ -68,7 +68,7 @@ generate:
     - apk add pkgconf nasm file gcc musl-dev bash g++ libc6-compat libjpeg-turbo-dev libpng-dev
   script:
     - yarn --version
-    - yarn install --frozen-lockfile --non-interactive  --ignore-engines 2> >(grep -v warning 1>&2)
+    - yarn install --frozen-lockfile --non-interactive  --ignore-engines
     - yarn generate --fail-on-error
   artifacts:
     paths:
