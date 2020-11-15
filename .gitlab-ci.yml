@@ -55,7 +55,6 @@ generate_dev:
     expire_in: 2 hrs 20 min
     when: always
   except:
-    - content-editing
     - master
 
 generate:
@@ -136,5 +135,3 @@ building:
   dependencies:
     - generate
     - generate_dev
-  except:
-    - content-editing
