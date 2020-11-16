@@ -177,9 +177,13 @@
 
 <script>
 export default {
-  name: 'Footer',
   props: {
     socials: {
+      type: Array,
+      required: false,
+      default: () => [],
+    },
+    nav: {
       type: Array,
       required: false,
       default: () => [],
