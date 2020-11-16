@@ -5,11 +5,11 @@
       class="h-56 sm:h-72 md:absolute md:h-full md:w-1/2"
       :class="{ 'md:right-0': !isEven, 'md:left-0': isEven }"
     >
-      <img
+      <nuxt-image
         class="w-full h-full object-cover"
         :src="image.src"
         :alt="image.alt"
-      />
+      ></nuxt-image>
     </div>
 
     <div
@@ -46,13 +46,13 @@
         </p>
         <div class="mt-8">
           <div class="inline-flex rounded-md shadow">
-            <a
-              :href="cta.link"
+            <nuxt-link
+              :to="cta.link"
               :class="cta.color_classes"
               class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-on-primary-color bg-primary-color hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
             >
               {{ cta.text }}
-            </a>
+            </nuxt-link>
           </div>
         </div>
       </div>

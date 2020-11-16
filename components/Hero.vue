@@ -1,7 +1,7 @@
 <template>
   <div class="relative bg-primary-color-dark hero" role="banner">
     <div class="max-h-full hero">
-      <div class="max-w-screen-xl mx-auto pt-32 px-4 pb-8 sm:px-6 lg:px-8">
+      <div class="max-w-screen-xl mx-auto pt-1/4 px-4 pb-8 sm:px-6 lg:px-8">
         <div class="text-center">
           <div
             class="mt-1 leading-10 text-gray-200 sm:leading-none sm:tracking-tight"
