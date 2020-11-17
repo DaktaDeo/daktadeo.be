@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-primary-color-light">
+  <div class="bg-primary-color-light flex flex-col h-screen justify-between">
     <Header :nav="nav.header" :nav-mobile="nav.mobile"></Header>
     <Nuxt />
     <Footer :socials="socials.follow" :nav="nav.footer"></Footer>
@@ -7,6 +7,7 @@
 </template>
 
 <script>
+// class="mb-auto"
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 export default {
