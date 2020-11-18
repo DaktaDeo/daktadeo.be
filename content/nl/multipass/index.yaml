@@ -1,0 +1,33 @@
+title: "Multipass"
+date: 2017-03-02T12:00:00-05:00
+hero:
+  image: ''
+  title_1: <strong class="dot">Together</strong> we'll create…
+  title_2: <strong class="accent-color-dark">Time</strong> to <strong class="deo">Help you Help</strong> your Clients
+  tagline: 'Discover, Define, Develop, Deliver, Evolve –repeat'
+features:
+  - heading: Wie zoekt..
+    icon:
+      name: cactus
+      color: green
+    tagline: ..die vind!
+    copy: 'Bevraag jouw data op een intuive manier, dankzij onze ingebouwde zoekmachine.
+    Een beetje zoals Google dus; maar dan voor speciaal voor jou! 🤩'
+    id: 10
+
+  - heading: One size fits most..
+    image_path: /fontawesome/recycle.svg
+    icon:
+      name: leaf-oak
+      color: dark-green
+    tagline: ..maar dan op jouw maat
+    copy: Robuust Data Management en flexibiliteit. Organiseer jouw data op jouw manier. Verander. Speel. Groei.
+    id: 20
+
+  - heading: Intuitief
+    id: 30
+    icon:
+      name: drumstick-bite
+      color: dark-pink
+    tagline: Leren door gebruik
+    copy: ''
