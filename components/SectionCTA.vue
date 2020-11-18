@@ -62,7 +62,7 @@
 
 <script>
 export default {
-  name: 'FeatureCTA',
+  name: 'SectionCTA',
   props: {
     heading: {
       type: Object,
