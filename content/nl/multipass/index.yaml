@@ -8,7 +8,7 @@ hero:
 features:
   - heading: Wie zoekt..
     icon:
-      name: cactus
+      name: radar
       color: green
     tagline: ..die vind!
     copy: 'Bevraag jouw data op een intuive manier, dankzij onze ingebouwde zoekmachine.
@@ -18,7 +18,7 @@ features:
   - heading: One size fits most..
     image_path: /fontawesome/recycle.svg
     icon:
-      name: leaf-oak
+      name: tshirt
       color: dark-green
     tagline: ..maar dan op jouw maat
     copy: Robuust Data Management en flexibiliteit. Organiseer jouw data op jouw manier. Verander. Speel. Groei.
@@ -27,7 +27,7 @@ features:
   - heading: Intuitief
     id: 30
     icon:
-      name: drumstick-bite
+      name: alien-monster
       color: dark-pink
     tagline: Leren door gebruik
     copy: ''
