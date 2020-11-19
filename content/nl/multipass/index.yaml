@@ -3,7 +3,7 @@ date: 2017-03-02T12:00:00-05:00
 hero:
   image: ''
   title_1: <strong class="dot">Together</strong> we'll create…
-  title_2: <strong class="accent-color-dark">Time</strong> to <strong class="deo">Help you Help</strong> your Clients
+  title_2: <strong class="accent-color-dark">Tools</strong> to save <strong class="deo">Time </strong>
   tagline: 'Discover, Define, Develop, Deliver, Evolve –repeat'
 features:
   - heading: Wie zoekt..
@@ -12,7 +12,7 @@ features:
       color: green
     tagline: ..die vind!
     copy: 'Bevraag jouw data op een intuive manier, dankzij onze ingebouwde zoekmachine.
-    Een beetje zoals Google dus; maar dan voor speciaal voor jou! 🤩'
+    Een beetje zoals Google dus; maar dan speciaal voor jou! 🤩'
     id: 10
 
   - heading: One size fits most..
