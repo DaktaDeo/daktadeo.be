@@ -8,6 +8,7 @@
 
     <Features :items="features"></Features>
     <Sections :items="sections"></Sections>
+    <under-construction></under-construction>
   </div>
 </template>
 
@@ -15,9 +16,10 @@
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
 import Sections from '@/components/Sections'
+import UnderConstruction from '~/components/UnderConstruction'
 
 export default {
-  components: { Sections, Features, Hero },
+  components: { UnderConstruction, Sections, Features, Hero },
   async asyncData(context) {
     const { $content, app } = context
     const defaultLocale = app.i18n.locale
