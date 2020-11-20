@@ -5,7 +5,14 @@
       :key="item.id"
       :class="item.color_classes"
     >
+      <section-partners
+        v-if="item.type === 'partners'"
+        :heading="item.heading"
+        :content="item.content"
+        :partners="item.partners"
+      ></section-partners>
       <SectionCTA
+        v-else
         :cta="item.cta"
         :heading="item.heading"
         :image="item.image"
@@ -17,10 +24,11 @@
 </template>
 
 <script>
+import SectionPartners from '@/components/SectionPartners'
 import SectionCTA from '~/components/SectionCTA'
 
 export default {
-  components: { SectionCTA },
+  components: { SectionPartners, SectionCTA },
   props: {
     items: {
       type: Array,

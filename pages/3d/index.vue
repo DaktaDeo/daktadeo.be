@@ -7,6 +7,40 @@
     ></Hero>
 
     <Features :items="features"></Features>
+    <section v-if="prints" class="px-4 py8 md:py-16 pt-4">
+      <div
+        class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none pb-4"
+      >
+        <h2
+          class="text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl"
+        >
+          Prints
+        </h2>
+        <p class="text-xl leading-7 text-gray-500">
+          Met 3D printen kan je de gekste dingen maken:
+        </p>
+      </div>
+
+      <ul
+        class="space-y-12 sm:grid sm:grid-cols-3 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-5 lg:gap-x-8"
+      >
+        <li v-for="print in prints" :key="print.slug">
+          <div class="space-y-4">
+            <div class="relative">
+              <NuxtLink :to="`3d/prints/${print.slug}`">
+                <nuxt-image
+                  sets="300,300:600,600:900"
+                  class="absolute object-cover h-full w-full shadow-lg rounded-lg"
+                  :src="`+jpg-featured:/img/3d/prints/${print.slug}/featured.jpg`"
+                  width="200"
+                  height="200"
+                />
+              </NuxtLink>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
     <Sections :items="sections"></Sections>
   </div>
 </template>
@@ -21,7 +55,7 @@ export default {
   async asyncData(context) {
     const { $content, app } = context
     const defaultLocale = app.i18n.locale
-    const page = await $content(`${defaultLocale}/index`).fetch()
+    const page = await $content(`${defaultLocale}/3d/index`).fetch()
     const prints = await $content(`${defaultLocale}/3d/prints`, { deep: true })
       .without(['body'])
       .where({ type: 'prints' })
