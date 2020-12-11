@@ -37,13 +37,11 @@
         </div>
         <h2
           v-if="heading.subtitle"
-          class="mt-2 text-white text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10"
+          :class="`mt-2 text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl sm:leading-10 ${heading.class}`"
         >
           {{ heading.subtitle }}
         </h2>
-        <p class="mt-3 text-lg leading-7 markdown">
-          {{ content }}
-        </p>
+        <div class="mt-3 text-lg leading-7" v-html="content"></div>
         <div class="mt-8">
           <div class="inline-flex rounded-md shadow">
             <nuxt-link

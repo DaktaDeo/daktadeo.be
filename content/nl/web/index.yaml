@@ -50,13 +50,27 @@ features:
 
 sections:
   - heading:
-      title: "Full Stack; Web Apps"
-      subtitle: "Ideetje of hulp nodig voor jouw app? "
+      title: "Websites"
+      subtitle: "Ideetje voor een website?"
+      class: "text-gray-800"
     cta:
-      text: Let's Start! 💪
+      text: "Lekker Makkelijk! 😄"
+      link: /web/websites
+      color_classes: bg-dakta text-gray-100
+    color_classes: bg-deo text-black
+    content: "Een website bij ons betekent dat je er eigenlijk <strong>zo goed als niks van hoeft aan te trekken!</strong>
+              Jij zorgt voor de tekst, beeldmateriaal en sociale media - wij doen de rest."
+    id: 1
+    weight: 10
+  - heading:
+      title: "Full Stack; Web Apps"
+      subtitle: "Hulp nodig voor je webapp?"
+      class: "text-gray-800"
+    cta:
+      text: "Let's Start! 💪"
       link: /web/full-stack
-      color_classes: bg-dakta white
-    color_classes: bg-deo white
+      color_classes: bg-accent-color-dark text-gray-100
+    color_classes: bg-accent-color text-black
     content: "Laravel + VueJs + Vuetify/Tailwind + K8s + Docker + Gitlab/Github + CI/CI + MySQL + Vim + Brew + Artisan + Yarn + Agile + Photoshop + Nikon + .. == Full Stack :)"
     id: 2
     weight: 20

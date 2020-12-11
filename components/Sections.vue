@@ -1,5 +1,5 @@
 <template>
-  <section v-if="hasItems">
+  <section v-if="hasItems" :class="classes">
     <div
       v-for="(item, index) in items"
       :key="item.id"
@@ -33,6 +33,11 @@ export default {
     items: {
       type: Array,
       required: true,
+    },
+    classes: {
+      type: String,
+      required: false,
+      default: '',
     },
   },
   computed: {
