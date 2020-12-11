@@ -35,7 +35,7 @@ Op dit moment (=11/12/2020) gebruiken we vooral deze tools:
 - Photoshop + Affinity Suite + Sketch + Nikon
 - MacOs + Ubuntu + Alpine + Debian
 - Stackoverflow + Google + Google Apps + Slack
-- Vim + phpstorm + vscode + brew + artisan + yarn + Chrome + iTerm 😉
+- Phpstorm + Gitkraken + vim + vscode + brew + artisan + yarn + Chrome + iTerm + ... 😉
 
 [meer op stackshare](https://stackshare.io/daktadeo/daktadeo)
 
