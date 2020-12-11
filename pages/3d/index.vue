@@ -84,8 +84,8 @@ export default {
 .hero {
   background-image: linear-gradient(
       to right bottom,
-      rgba(246, 246, 246, 0.25),
-      rgb(48, 72, 75)
+      rgba(209, 213, 219, 0.25),
+      rgb(31, 41, 55)
     ),
     url('~assets/img/3d/hero.png');
   background-position: center center;

@@ -54,31 +54,4 @@ features:
       color: light-silver
     tagline: Werelderfgoed & kunst.
     copy: Wist je dat er al 1000'en kunstwerken, gebouwen en werelderfgoed digitaal gescand zijn? En ja.. die kan je printen! Wil je graag een paarse 'David' of de buste van Cleopatra met marble effect?
-sections:
-  - heading:
-      title: "Partners"
-      subtitle: "Ondernemen doe je beter samen"
-    color_classes: bg-primary-color-light black
-    type: partners
-    content: "We werken samen met enkele vree toffe mensen. Je kan er niet alleen terecht
-    om onze producten even vast te pakken, en je bestelling af te halen – maar ook voor
-    een frisse kapbeurt of een vree schoon handgemaakt juweel! 🙂"
-    partners:
-      - name: Kapsalon Peggy — Peggy
-        address: "Zwijnaardsesteenweg 380, 9000 Gent"
-        maps: "https://goo.gl/maps/1a6AhpfoBdHJUJGZ9"
-        categories:
-        - kapsalon
-      - name: Haarboetiek — Landrada
-        address: "Jules de Saint-Genoisstraat 109, 9050 Gent"
-        maps: "https://goo.gl/maps/xp7jdP77a4df4MJ88"
-        categories:
-          - kapsalon
-      - name: Juweelidee — Ilse
-        address: "Jules de Saint-Genoisstraat 134, 9050 Gent"
-        maps: 'https://goo.gl/maps/zEgXjWQTaf82C6T68'
-        website: 'http://juweelidee.be'
-        categories:
-          - kapsalon
-    id: 1
-    weight: 10
+
