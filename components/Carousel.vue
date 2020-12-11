@@ -64,7 +64,7 @@ export default {
       color: #888
   &__dot
     margin: 0 10px
-    button
+    &button
       background-color: #eee
       border: none
       border-radius: 50%
@@ -78,8 +78,7 @@ export default {
       transition-duration: .3s
       width: 10px
     &--current,
-    &:hover
-      button
+    &:hover button
         background-color: #888
 // Slides styles
 .slide
@@ -89,7 +88,7 @@ export default {
   display: flex
   justify-content: center
   //padding: 40px
-  h3
+  &h3
     font-size: 32px
     font-weight: 300
 // Slides backgrounds

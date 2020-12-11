@@ -5,7 +5,7 @@
 deploymentApiVersion: apps/v1
 replicaCount: 1
 image:
-  repository: node:alpine3.12
+  repository: registry.gitlab.com/daktadeo/multipass/multipass-rocks/builder:latest
   tag: stable
   pullPolicy: Always
   secrets:
@@ -36,8 +36,8 @@ service:
   url: http://my.host.com/
   additionalHosts:
   commonName:
-  externalPort: 5000
-  internalPort: 5000
+  externalPort: 80
+  internalPort: 80
 ingress:
   tls:
     enabled: true

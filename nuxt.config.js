@@ -35,19 +35,39 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    // script: [
-    //   { src: 'https://code.jquery.com/jquery-3.5.1.min.js' },
-    //   { src: '/xzoom.js' },
-    //   { src: '/oldstuff.js' },
-    // ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favicon-32x32.png',
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favicon-16x16.png',
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/apple-touch-icon.png',
+      },
+      { rel: 'manifest', href: '/site.webmanifest' },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['@/assets/css/main.css'],
+  css: ['@/assets/css/main.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: ['~plugins/filters.js', '~/plugins/vue-agile'],
+  plugins: [
+    '~plugins/markdown.js',
+    '~plugins/filters.js',
+    '~plugins/vue-scrollactive.js',
+    '~/plugins/vue-agile',
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -70,8 +90,15 @@ export default {
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/svg-module
     '@nuxtjs/svg',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-25132847-1',
+      },
+    ],
   ],
 
+  // multipass -> {"csrfToken":"1uhih34B2sxUxObGX2gtFcFXfniMcriuFmuZrFuP","env":"production","userId":null}
   // Modules (https://go.nuxtjs.dev/config-modules) --> sort order is important
   modules: [
     // https://go.nuxtjs.dev/axios
@@ -94,12 +121,24 @@ export default {
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
-  // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  router: {
+    prefetchPayloads: true,
+    prefetchLinks: true,
+    trailingSlash: undefined,
+  },
 
   browserconfig: {
     TileColor: '#fff',
-    square150x150logo: { '@': { src: 'icon.png' } },
+    square150x150logo: { '@': { src: 'apple-touch-icon.png' } },
+  },
+
+  // Content module configuration (https://go.nuxtjs.dev/config-content)
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css',
+      },
+    },
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
@@ -111,11 +150,19 @@ export default {
         _: 'lodash',
       }),
     ],
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
   },
+
   optimizedImages: {
     optimizeImages: true,
     handleImages: ['jpeg', 'jpg', 'png'],
   },
+
   image: {
     sizes: [320, 420, 768, 1024, 1200],
     presets: [
@@ -132,8 +179,8 @@ export default {
         modifiers: {
           fit: 'cover',
           format: 'jpg',
-          width: 300,
-          height: 300,
+          width: 320,
+          height: 240,
         },
       },
       {
@@ -156,6 +203,7 @@ export default {
       },
     ],
   },
+
   i18n: {
     locales: ['nl', 'en'],
     defaultLocale: 'nl',

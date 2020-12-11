@@ -19,10 +19,10 @@ images:
   - alt: 'resultaat-in-clubkleur'
     weight: 20
     src: medaille-2.jpg
-   - alt: 'samen-met-ontwerp'
+  - alt: 'samen-met-ontwerp'
     weight: 30
     src: medaille-met-ontwerp.jpg
-   - alt: 'verhouding'
+  - alt: 'verhouding'
     weight: 40
     src: in-verhouding.jpg
   - alt: 'mislukte print'
