@@ -1,0 +1,62 @@
+title: "Web"
+date: 2020-04-09
+hero:
+  image: ''
+  title_1: <strong class="dot">Together</strong> we'll create…
+  title_2: <strong class="accent-color-dark">Clever Tools</strong> that <strong class="deo">Work </strong>for <strong class="dot">Humans</strong>
+  tagline: 'Discover, Define, Develop, Deliver, Evolve –repeat'
+features:
+  - heading: Discover
+    icon:
+      name: keynote
+    tagline: You talk. We listen.
+    copy: "Everyone is different. Together we'll map out what you already have and how that aligns with your future goals."
+    id: 10
+
+  - heading: Define
+    icon:
+      name: microscope
+    tagline: Analyse, Research & Plan.
+    copy: "Together we'll find those automatisation opportunities that matter. We will connect systems, apps and existing software."
+    id: 20
+
+  - heading: Develop
+    icon:
+      name: file-code
+    tagline: You name it. We build it.
+    copy: "Together we'll build connections, workflows and implement (new) apps that grow with your team - all within your budget and with the highest ROI."
+    id: 30
+
+  - heading: Deliver
+    icon:
+      name: truck
+    tagline: You talk. We listen.
+    copy: "We learned a lot -A LOT - of frameworks, tools, apps, ... so you don't have to. <br/> The most valuable lesson we learned on the way is: before writing a line of code to stop and think - does this really need to be done from scratch?"
+    id: 40
+
+  - heading: Evolve
+    icon:
+      name: graduation-cap
+    tagline: 15+ years of experience
+    copy: "We value authenticity, transparency and don't believe we know everything. This means that you'll know when we don't know something, we will happily research/learn it."
+    id: 50
+
+  - heading: -repeat
+    icon:
+      name: repeat
+    tagline: Ready for a long term partnership?
+    copy: "We are! We like to grow with you.<br/><br/> Let's build a long term relationship that values mutual respect, transparancy, honesty and empathy."
+    id: 60
+
+sections:
+  - heading:
+      title: "Full Stack; Web Apps"
+      subtitle: "Ideetje of hulp nodig voor jouw app? "
+    cta:
+      text: Let's Start! 💪
+      link: /web/full-stack
+      color_classes: bg-dakta white
+    color_classes: bg-deo white
+    content: "Laravel + VueJs + Vuetify/Tailwind + K8s + Docker + Gitlab/Github + CI/CI + MySQL + Vim + Brew + Artisan + Yarn + Agile + Photoshop + Nikon + .. == Full Stack :)"
+    id: 2
+    weight: 20

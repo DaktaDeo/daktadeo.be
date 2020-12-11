@@ -30,7 +30,7 @@
           </div>
         </div>
         <div
-          v-if="heading.text"
+          v-if="heading.title"
           class="text-base leading-6 font-semibold uppercase tracking-wider"
         >
           {{ heading.title }}
