@@ -109,9 +109,9 @@
                 Company
               </h4>
               <ul class="mt-4 space-y-4">
-                <li>
-                  <a href="#" :class="linkClasses"> About </a>
-                </li>
+                <!--                <li>-->
+                <!--                  <a href="#" :class="linkClasses"> About </a>-->
+                <!--                </li>-->
                 <!--                <li>-->
                 <!--                  <a-->
                 <!--                    href="#"-->
@@ -128,9 +128,9 @@
                 <!--                    Press-->
                 <!--                  </a>-->
                 <!--                </li>-->
-                <li>
-                  <a href="#" :class="linkClasses"> Partners </a>
-                </li>
+                <!--                <li>-->
+                <!--                  <a href="#" :class="linkClasses"> Partners </a>-->
+                <!--                </li>-->
               </ul>
             </div>
             <div class="mt-12 md:mt-0">
@@ -154,10 +154,12 @@
                   </a>
                 </li>
                 <li>
-                  <a href="/privacy" :class="linkClasses"> Privacy </a>
+                  <nuxt-link to="/privacy" :class="linkClasses"
+                    >Privacy
+                  </nuxt-link>
                 </li>
                 <li>
-                  <a href="/terms" :class="linkClasses"> Terms </a>
+                  <nuxt-link to="/terms" :class="linkClasses">Terms </nuxt-link>
                 </li>
               </ul>
             </div>
