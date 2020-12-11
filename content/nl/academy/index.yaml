@@ -2,8 +2,8 @@ title: "Academy"
 date: 2017-03-02T12:00:00-05:00
 hero:
   image: ''
-  title_1: <strong class="dot">Together</strong> we'll create…
-  title_2: <strong class="accent-color-dark">Confidence</strong> in <strong class="deo">Tech</strong>
+  title_1: "<strong class='dot'>Together</strong> we'll create…"
+  title_2: '<strong class="accent-color-dark">Confidence</strong> in <strong class="deo">Tech</strong>'
   tagline: 'Discover, Define, Develop, Deliver, Evolve –repeat'
 features:
   - heading: 'Reviews: Gear'
@@ -11,7 +11,7 @@ features:
       name: computer-classic
       color: green
     tagline: Gadgets, Gear, Hardware..
-    copy: 'Al die gadgets, al die verkoopspraatjes... wat doet er eigenlijk wel toe?
+    copy: 'Al die gadgets, al die verkooppraatjes... wat doet er eigenlijk wel toe?
      Met gefundeerde beslissingen voorkom je een miskoop. Leer hier hoe.'
     id: 10
 
@@ -21,7 +21,7 @@ features:
       name: books
       color: dark-green
     tagline: Lezen === kennis
-    copy:  Weet je niet waar starten? Start vandaag! Met eentje uit onze leeslijst zit het zeker goed. 🥰
+    copy:  "Weet je niet waar starten? Start vandaag! Met eentje uit onze leeslijst zit het zeker goed. 🥰"
     id: 20
 
   - heading: 'Reviews: Apps'

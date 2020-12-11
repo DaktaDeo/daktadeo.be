@@ -1,6 +1,6 @@
 ---
 title: "Full Stack web-development"
-date: 2020-04-07
+date: 2020-12-11T18:17:56+01:00 
 draft: false
 ---
 ## We are full-stack

@@ -30,7 +30,6 @@
 
 <script>
 export default {
-  name: 'Zoomy',
   props: {
     images: {
       type: Array,
