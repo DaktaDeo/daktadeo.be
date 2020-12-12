@@ -5,6 +5,7 @@ tags:
 - speelgoed
 print_categories:
 - Speelgoed
+- Geschenk
 type: prints
 images:
   - alt: 'kubusje met letters,wit'
@@ -14,3 +15,4 @@ images:
     weight: 90
     scr: kubus-op-printer.mp4
 ---
+Heb je hieraan al gedacht? 3D timetracker: Je hebt een aantal projectjes waar je aan werkt? Iedere zijde is een project en de letter helpt je focus houden. Of wat als je kleuter letters wilt leren al spelenderwijs?
