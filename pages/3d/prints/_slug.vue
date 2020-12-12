@@ -10,13 +10,7 @@
         </h1>
         <tag-list :items="post.print_categories" class="my-4 mb-12"></tag-list>
 
-        <section v-if="$device.isMobile">
-          <client-only>
-            <Carousel :images="gallery"></Carousel>
-          </client-only>
-        </section>
-
-        <section v-else class="my-4 mb-12">
+        <section class="my-4 mb-12">
           <Zoomy :images="gallery"></Zoomy>
         </section>
 
@@ -70,16 +64,13 @@ import Breadcrumbs from '~/components/Breadcrumbs'
 import Zoomy from '~/components/Zoomy'
 import { AutoSEO } from '~/mixins'
 
-import Carousel from '~/components/Carousel'
 export default {
-  name: 'DddPrint',
   components: {
     LastUpdate,
     TagList,
     PropertyDefinitionList,
     Zoomy,
     Breadcrumbs,
-    Carousel,
   },
   mixins: [AutoSEO],
   async asyncData(context) {
