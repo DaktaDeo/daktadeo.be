@@ -21,4 +21,4 @@ images:
     src: op-printer.jpg
 
 ---
-Symbool van 2020
+Symbool van 2020. Wil je een herinnering aan het speciale jaar 2020. Kies een rode kleurtje. Ook voor 2021 kan je er eentje kopen. Met een ander kleur ook een andere betekenis.
