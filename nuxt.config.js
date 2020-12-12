@@ -208,10 +208,10 @@ export default {
     strategy: 'prefix_except_default',
     seo: false,
     locales: [
-      {
-        code: 'en',
-        iso: 'en-US',
-      },
+      // {
+      //   code: 'en',
+      //   iso: 'en-US',
+      // },
       {
         code: 'nl',
         iso: 'nl-BE',
