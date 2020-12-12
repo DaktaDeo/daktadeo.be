@@ -1,7 +1,7 @@
 <template>
-  <div v-if="images" class="flex">
-    <div class="mr-2 flex-grow-0">
-      <ul class="grid grid-cols-1 xl:grid-cols-2 gap-2">
+  <div v-if="images" class="grid grid-cols-12 gap-2">
+    <div class="col-span-1">
+      <ul class="grid grid-cols-1 gap-1">
         <li v-for="image in images" :key="image.src">
           <a :href="image.src" @click.prevent="activeImage = image">
             <nuxt-image
@@ -14,7 +14,7 @@
         </li>
       </ul>
     </div>
-    <div v-if="activeImage" class="flex-grow">
+    <div v-if="activeImage" class="col-span-10">
       <nuxt-image
         class="mx-auto"
         sets="300,300:600,600:900"

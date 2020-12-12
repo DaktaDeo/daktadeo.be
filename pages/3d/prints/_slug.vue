@@ -16,7 +16,7 @@
           </client-only>
         </section>
 
-        <section v-else class="my-4 mb-12 flex">
+        <section v-else class="my-4 mb-12">
           <Zoomy :images="gallery"></Zoomy>
         </section>
 
