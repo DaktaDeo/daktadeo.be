@@ -5,7 +5,7 @@ blurb: 'retro kapstok terug bruikbaar'
 tags:
 - huishouding
 - interieur
-- accesoire badkamer
+- accessoire badkamer
 - deurhanger
 print_categories:
 - Geschenk
@@ -18,7 +18,7 @@ images:
     src: featured.jpg
   - alt: 'ontwerpen'
     weight: 20
-    src: ontwerp-haakjes.jpg
+    src: ontwerp-haakje.jpg
   - alt: 'vergelijking-origineel-en-geprint'
     weight: 30
     src: origineel-en-geprint.jpg
@@ -27,4 +27,4 @@ images:
     src: haakjes-in-verhouding.jpg
 
 ---
-Retro kapstok opgefrist en terug bruikbaar
+Retro kapstok opgefrist en terug bruikbaar. Fix-und-Fertig!
