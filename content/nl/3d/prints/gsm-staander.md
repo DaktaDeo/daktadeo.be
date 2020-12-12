@@ -18,4 +18,4 @@ images:
  
 
 ---
-heel handig attribuut
+Heel handig attribuut op je tafel of in de kast, waar je je smartphone oplaadt. Een telefoon als gebruiksinstrument wordt nu een sierelement. Met deze gsm of smartphone staander spaar je ook plaats.
