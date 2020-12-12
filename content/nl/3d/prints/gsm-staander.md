@@ -5,7 +5,7 @@ blurb: 'handig hulpje'
 tags:
 - huishouding
 - interieur
-- accesoire gsm
+- accessoire gsm
 print_categories:
 - Geschenk
 - Woning
