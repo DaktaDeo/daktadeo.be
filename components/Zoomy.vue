@@ -3,10 +3,10 @@
     <div class="col-span-1">
       <ul class="grid grid-cols-1 gap-1">
         <li
-          v-for="image in images"
+          v-for="(image, $index) in images"
           :key="image.src"
           class="cursor-pointer"
-          @click="changeActiveImage(image)"
+          @click="activeIndex = $index"
         >
           <nuxt-image
             :src="`+jpg-thumbnail:${image.src}`"
@@ -18,16 +18,19 @@
         </li>
       </ul>
     </div>
-    <div v-if="activeImage" class="col-span-10">
-      <nuxt-image
-        class="absolute object-cover h-full w-full shadow-lg rounded-lg"
-        sets="300,300:600,600:900"
-        :src="`+jpg-featured:${activeImage}`"
-        width="640"
-        height="480"
-        :alt="activeImageAlt"
-        responsive
-      />
+    <div class="col-span-10">
+      <div v-for="(image, $index) in images" :key="image.src">
+        <nuxt-image
+          v-show="$index === activeIndex"
+          class="absolute object-cover h-full w-full shadow-lg rounded-lg"
+          sets="300,300:600,600:900"
+          :src="`+jpg-featured:${image.src}`"
+          width="640"
+          height="480"
+          :alt="image.alt"
+          responsive
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -42,6 +45,7 @@ export default {
   },
   data() {
     return {
+      activeIndex: 0,
       activeImage: null,
       activeImageAlt: null,
     }
