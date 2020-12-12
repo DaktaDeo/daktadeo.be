@@ -23,12 +23,12 @@ images:
     src: featured.jpg
   - alt: 'Twee losse codering ringen, wit' 
     weight: 21 
-    src: IMG_3509.jpg'
-  - alt: 'alle losse onderdelen met ventje ernaast ivm verhouding, wit'
+    src: IMG_3509.jpg
+  - alt: 'Alle losse onderdelen met ventje ernaast ivm verhouding, wit'
     weight: 25 
     src: IMG_3510.jpg
 ---
-A nice way to vouchers, money or scrolls to pack and give away!
-The codeword is freely adjustable and can be changed at any time!!!
+Een leuke manier om vouchers, geld of scrolls in te pakken en weg te geven!
+Het codewoord is vrij instelbaar en kan op elk moment worden gewijzigd.
 
 
