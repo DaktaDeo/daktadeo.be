@@ -10,8 +10,8 @@
         </h1>
         <tag-list :items="post.print_categories" class="my-4 mb-12"></tag-list>
 
-        <section class="my-4 mb-12">
-          <Zoomy :images="gallery"></Zoomy>
+        <section v-if="images" class="my-4 mb-12">
+          <Zoomy :images="images"></Zoomy>
         </section>
 
         <section v-if="hasContent" class="my-4 mb-12">
@@ -87,8 +87,16 @@ export default {
       },
     }
 
+    const images = _.map(post.images, (image) => {
+      return {
+        ...image,
+        src: `/img/3d/prints/${post.slug}/${image.src}`,
+      }
+    })
+
     return {
       post,
+      images,
     }
   },
   computed: {
@@ -97,17 +105,6 @@ export default {
     },
     hasSpecs() {
       return !_.isEmpty(this.post.specs)
-    },
-    baseForImages() {
-      return `/img/3d/prints/${this.post.slug}`
-    },
-    gallery() {
-      return _.map(this.post.images, (image) => {
-        return {
-          ...image,
-          src: `${this.baseForImages}/${image.src}`,
-        }
-      })
     },
     crumbs() {
       return [

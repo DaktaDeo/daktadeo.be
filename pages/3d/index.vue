@@ -27,7 +27,7 @@
         <li v-for="print in prints" :key="print.slug">
           <div class="space-y-4">
             <div class="relative">
-              <NuxtLink :to="`3d/prints/${print.slug}`">
+              <nuxt-link :to="`/3d/prints/${print.slug}`">
                 <nuxt-image
                   sets="300,300:600,600:900"
                   class="absolute object-cover h-full w-full shadow-lg rounded-lg"
@@ -35,7 +35,7 @@
                   width="200"
                   height="200"
                 />
-              </NuxtLink>
+              </nuxt-link>
             </div>
           </div>
         </li>
