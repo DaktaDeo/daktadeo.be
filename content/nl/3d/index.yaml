@@ -20,7 +20,7 @@ features:
       name: leaf-oak
       color: dark-green
     tagline: Plastiek..dat wel.. maar dan anders.
-    copy: Printen doen we in plastiek gemaakt word uit duurzame grondstoffen (oa mais). Sterker nog, in de nabije toekomst kan het zelfs terug gerecycleerd worden als grondstof voor nieuwe prints!
+    copy: Printen doen we in plastiek dat gemaakt wordt uit duurzame grondstoffen (oa mais). Sterker nog, in de nabije toekomst kan het zelfs terug gerecycleerd worden als grondstof voor nieuwe prints!
     id: 20
 
   - heading: Maatwerk
@@ -45,7 +45,7 @@ features:
       name: hands-heart
       color: dark-red
     tagline: Iets herstellen geeft voldoening.
-    copy: Reparatie is bovendien zeer duurzaam en vaak economischer dan vervangen. Wisselstukken zijn daarentegen niet altijd te vinden. Met een 3D geprint tussenstukje en wat creativiteit lossen we dat op.
+    copy: Reparatie is  zeer duurzaam en vaak economischer dan vervangen. Wisselstukken zijn daarentegen niet altijd te vinden. Met een 3D geprint tussenstukje en wat creativiteit lossen we dat op.
 
   - heading: The Sky is The Limit
     id: 60
