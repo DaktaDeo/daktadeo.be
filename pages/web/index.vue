@@ -7,7 +7,7 @@
     ></Hero>
 
     <Features :items="features"></Features>
-    <Sections :items="sections" classes="flex"></Sections>
+    <Sections :items="sections" classes="md:flex"></Sections>
     <div v-if="page.body" class="relative px-4 sm:px-6 lg:px-8 mt-8">
       <article class="text-lg max-w-prose mx-auto">
         <div class="prose prose-sm sm:prose lg:prose-lg xl:prose-lg mx-auto">
