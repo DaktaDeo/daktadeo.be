@@ -19,9 +19,10 @@
       <h5 class="text-lg leading-6 font-medium text-gray-900">
         {{ subTitle }}
       </h5>
-      <p class="mt-2 text-base leading-6 text-gray-500">
-        {{ content }}
-      </p>
+      <div
+        class="mt-2 text-base leading-6 text-gray-500"
+        v-html="content"
+      ></div>
     </div>
   </div>
 </template>

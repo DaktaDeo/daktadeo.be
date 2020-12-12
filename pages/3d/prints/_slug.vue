@@ -10,14 +10,8 @@
         </h1>
         <tag-list :items="post.print_categories" class="my-4 mb-12"></tag-list>
 
-        <section v-if="$device.isMobile">
-          <client-only>
-            <Carousel :images="gallery"></Carousel>
-          </client-only>
-        </section>
-
-        <section v-else class="my-4 mb-12 flex">
-          <Zoomy :images="gallery"></Zoomy>
+        <section v-if="images" class="my-4 mb-12">
+          <Zoomy :images="images"></Zoomy>
         </section>
 
         <section v-if="hasContent" class="my-4 mb-12">
@@ -70,16 +64,13 @@ import Breadcrumbs from '~/components/Breadcrumbs'
 import Zoomy from '~/components/Zoomy'
 import { AutoSEO } from '~/mixins'
 
-import Carousel from '~/components/Carousel'
 export default {
-  name: 'DddPrint',
   components: {
     LastUpdate,
     TagList,
     PropertyDefinitionList,
     Zoomy,
     Breadcrumbs,
-    Carousel,
   },
   mixins: [AutoSEO],
   async asyncData(context) {
@@ -96,8 +87,16 @@ export default {
       },
     }
 
+    const images = _.map(post.images, (image) => {
+      return {
+        ...image,
+        src: `/img/3d/prints/${post.slug}/${image.src}`,
+      }
+    })
+
     return {
       post,
+      images,
     }
   },
   computed: {
@@ -106,17 +105,6 @@ export default {
     },
     hasSpecs() {
       return !_.isEmpty(this.post.specs)
-    },
-    baseForImages() {
-      return `/img/3d/prints/${this.post.slug}`
-    },
-    gallery() {
-      return _.map(this.post.images, (image) => {
-        return {
-          ...image,
-          src: `${this.baseForImages}/${image.src}`,
-        }
-      })
     },
     crumbs() {
       return [

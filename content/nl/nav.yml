@@ -19,21 +19,21 @@ header:
     weight: 30
     to: '/web'
     blurb: 'dit is een blurb'
-  - name: More
-    weight: 30
-    id: 3
-    type: one-col
-    children:
-      - name: Blog
-        id: 31
-        weight: 0
-        to: '/blog'
-        blurb: 'Learn about tips, product updates and company culture'
-      - name: Security
-        id: 32
-        weight: 10
-        to: '/security'
-        blurb: 'Understand how we take your privacy seriously'
+#  - name: More
+#    weight: 30
+#    id: 3
+#    type: one-col
+#    children:
+#      - name: Blog
+#        id: 31
+#        weight: 0
+#        to: '/blog'
+#        blurb: 'Learn about tips, product updates and company culture'
+#      - name: Security
+#        id: 32
+#        weight: 10
+#        to: '/security'
+#        blurb: 'Understand how we take your privacy seriously'
 mobile:
   - name: .3D
     id: 11
@@ -54,14 +54,14 @@ mobile:
   - name: divider
     id: 3333
     weight: 100
-  - name: Blog
-    id: 31
-    weight: 100
-    to: '/blog'
-  - name: Security
-    id: 32
-    weight: 200
-    to: '/security'
+#  - name: Blog
+#    id: 31
+#    weight: 100
+#    to: '/blog'
+#  - name: Security
+#    id: 32
+#    weight: 200
+#    to: '/security'
 footer:
   - name: Solutions
     weight: 0

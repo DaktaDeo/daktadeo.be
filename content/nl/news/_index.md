@@ -1,4 +1,0 @@
----
-title: "Blog"
-aliases: [/news/]
----
