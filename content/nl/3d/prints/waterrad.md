@@ -7,7 +7,7 @@ tags:
 - versiering vijver
 print_categories:
 - Speelgoed
-- tuin
+- Tuin
 type: prints
 images:
   - alt: 'vijver versiering'
@@ -17,3 +17,4 @@ images:
     weight: 90
     scr: draaiend-waterrad.mp4
 ---
+Breng kleine beweging in je tuin. Komt het kikkertje er op springen?
