@@ -19,8 +19,10 @@ body {
 // class="mb-auto"
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import { AutoSEO } from '~/mixins'
 export default {
   components: { Footer, Header },
+  mixins: [AutoSEO],
   async fetch() {
     this.socials = await this.$content(`${this.$i18n.locale}/socials`).fetch()
     this.nav = await this.$content(`${this.$i18n.locale}/nav`).fetch()

@@ -15,9 +15,11 @@
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
 import Sections from '@/components/Sections'
+import { AutoSEO } from '~/mixins'
 
 export default {
   components: { Sections, Features, Hero },
+  mixins: [AutoSEO],
   async asyncData(context) {
     const { $content, app } = context
     const defaultLocale = app.i18n.locale

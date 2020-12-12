@@ -205,20 +205,20 @@ export default {
   },
 
   i18n: {
-    locales: ['nl', 'en'],
-    defaultLocale: 'nl',
-    vueI18n: {
-      fallbackLocale: 'nl',
-      messages: {
-        nl: {
-          welcome: 'Welkom',
-        },
-        en: {
-          welcome: 'Welcome',
-        },
+    strategy: 'prefix_except_default',
+    seo: false,
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
       },
-      noPrefixDefaultLocale: true,
-    },
+      {
+        code: 'nl',
+        iso: 'nl-BE',
+        isCatchallLocale: true,
+      },
+    ],
+    defaultLocale: 'nl',
   },
 
   sitemap: [
