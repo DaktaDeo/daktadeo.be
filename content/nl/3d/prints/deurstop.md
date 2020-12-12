@@ -16,4 +16,4 @@ images:
     src: featured.jpg
 
 ---
-heel handig attribuut
+Heel handig attribuut. In de zomer wil je wel eens je deur op een kier staan hebben. Met dit kleine hebbeding doe je dat discreet.
