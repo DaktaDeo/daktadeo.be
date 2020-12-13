@@ -6,15 +6,16 @@ export default {
     const defaults = {
       url: 'https://daktadeo.be',
       social_title:
-        'DaktaDeo. → 3D printing & Web Application Development in Laravel + Vue.js',
-      site_title: 'Daktadeo. → 3D printing & Web App Dev in Laravel + Vue.js',
+        'DaktaDeo. → 3D printing & Web App Development in Laravel + Vue.js',
+      site_title:
+        'Daktadeo. → 3D printing & Web App Development in Laravel + Vue.js',
       site: 'DaktaDeo.',
       description:
-        '3D printing & Full Stack Web Application Development in Laravel + Vue.js',
+        'We print and design physical things in 3D. We do Full Stack Web Application Development in Laravel & Vue.js',
       image: 'https://cdn.multipass.rocks/daktadeo/card.png',
       locale: 'nl_BE',
       twitter: '@daktadeo',
-      twitter_card: 'https://cdn.multipass.rocks/daktadeo/card.png',
+      twitter_card: 'summary_large_image',
       themeColor: '#80A5A9',
     }
     const values = [
