@@ -39,10 +39,8 @@ images:
    src: afiche.jpg
  - alt: 'Klaar ter verzending'
    weight: 90 
-   src: verzending.jpg
+   src: verzending_up.jpg
    
-
-
 ---
-eigentijdse Kerst decoratie
+eigentijdse Kerstdecoratie.
 

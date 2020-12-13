@@ -22,4 +22,4 @@ images:
     weight: 90
     src: handvat-3.jpg
 ---
-Handvat heeft verbeterde en aangepaste vorm waardoor de greep steviger is.
+Handvat heeft verbeterde en aangepaste vorm waardoor de greep steviger is. Ideaal als vervanger als een handvat beschadigd is door val of zweet.

@@ -8,7 +8,8 @@ tags:
 - dino
 - beenderen
 print_categories:
-- Real Life 
+- Real Life
+- Speelgoed 
 type: prints
 images:
   - alt: 'Onderkaak en bovenkaak samen als geheel, wit'
@@ -16,6 +17,6 @@ images:
     src: featured.jpg
   - alt: 'Bovenkaak in wording op de 3D printer, wit'
     weight: 90 
-    src:  1.jpg
+    src: 1.jpg
 ---
-Kop van T-Rex als scelet
+Kop van T-Rex als skelet

@@ -15,10 +15,10 @@ images:
     src: featured.jpg
   - alt: 'Rex op stap'
     weight: 20 
-    src: IMG__469.jpg
+    src: IMG_469.jpg
   - alt: 'Flexibele Rex'
     weight: 30 
-    src: IMG__468.jpg
+    src: IMG_468.jpg
 ---
-
+Een dino geeft altijd creativiteitsvreugde.
 

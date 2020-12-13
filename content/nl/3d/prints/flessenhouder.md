@@ -5,8 +5,8 @@ blurb: 'handig hulpje'
 tags:
 - huishouding
 - buitenleven
-- accesoire fiets
-- accesoire step
+- accessoire fiets
+- accessoire step
 print_categories:
 - Geschenk
 - Woning
@@ -28,4 +28,4 @@ images:
  
 
 ---
-heel handig attribuut voor fiets, step
+Heel handig attribuut voor fiets of step. Kan voor verschillende groottes gemaakt worden. Van 250 ml tot 1 liter.

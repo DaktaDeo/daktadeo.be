@@ -5,7 +5,8 @@ blurb: 'handig hulpje'
 tags:
 - huishouding
 - interieur
-- accesoire gsm en watch
+- accessoire gsm
+- accessoire watch
 print_categories:
 - Geschenk
 - Woning
@@ -20,4 +21,4 @@ images:
     src: laadstation-2.jpg
 
 ---
-heel handig attribuut
+heel handig attribuut. Spaart plaats en je Apple gsm wordt van gebruiksmiddel een decoratie item.

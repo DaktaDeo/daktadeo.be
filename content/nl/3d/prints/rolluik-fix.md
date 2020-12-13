@@ -5,7 +5,7 @@ tags:
 - DIY
 - reparatie
 print_categories:
-- Repartie 
+- Reparatie 
 type: prints
 images:
   - alt: 'eindresultaat te vervangen onderdeel, eigen ontwerp'
@@ -13,13 +13,13 @@ images:
     src: featured.jpg
   - alt: 'onderdeel half geprint op 3D printer'
     weight: 90 
-    src: 3179.jpg
+    src: IMG_3179.jpg
   - alt: 'onderdeel volledig geprint op 3D printer'
     weight: 91 
-    src: 3180.jpg
+    src: IMG_3180.jpg
   - alt: 'onderdeel past precies op motorsysteem van rolluik'
     weight: 95 
-    src: 3182.jpg
+    src: IMG_3182.jpg
 ---
-
+Een overbelast stuk wordt snel gerepareerd. Gemakkelijk te monteren. Je kan weer lekker in het donker slapen en overdag de kamer helder houden.
 
