@@ -1,5 +1,5 @@
 <template>
-  <div v-if="page" class="relative px-4 sm:px-6 lg:px-8 mt-8">
+  <div v-if="page" class="relative px-4 sm:px-6 lg:px-8 mt-8 py-8">
     <article class="text-lg max-w-prose mx-auto">
       <h1>
         <nuxt-link :to="`/${section}`">

@@ -5,15 +5,17 @@ export default {
     // https://github.com/AlekseyPleshkov/nuxt-social-meta
     const defaults = {
       url: 'https://daktadeo.be',
-      title:
-        'DaktaDeo. | 3D printing | Web Application Development in Laravel + Vue.js ',
+      social_title:
+        'DaktaDeo. → 3D printing & Web App Development in Laravel + Vue.js',
+      site_title:
+        'Daktadeo. → 3D printing & Web App Development in Laravel + Vue.js',
       site: 'DaktaDeo.',
       description:
-        '3D printing. Full Stack Web Application Development in Laravel + Vue.js',
-      img: 'https://cdn.multipass.rocks/daktadeo/Logo_DaktaDeo.pngr',
+        'We print and design physical things in 3D. We do Full Stack Web Application Development in Laravel & Vue.js',
+      image: 'https://cdn.multipass.rocks/daktadeo/card.png',
       locale: 'nl_BE',
       twitter: '@daktadeo',
-      twitter_card: 'Logo DaktaDeo',
+      twitter_card: 'summary_large_image',
       themeColor: '#80A5A9',
     }
     const values = [
@@ -37,7 +39,7 @@ export default {
       // Facebook & LinkedIn
       {
         property: 'og:title',
-        content: _.get(this, 'post.meta.title', defaults.title),
+        content: _.get(this, 'post.meta.title', defaults.social_title),
       },
       {
         property: 'og:site_name',
@@ -87,7 +89,7 @@ export default {
       },
       {
         name: 'twitter:title',
-        content: _.get(this, 'post.meta.title', defaults.title),
+        content: _.get(this, 'post.meta.title', defaults.social_title),
       },
       {
         name: 'twitter:description',

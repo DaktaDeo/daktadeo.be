@@ -109,6 +109,11 @@
                 Company
               </h4>
               <ul class="mt-4 space-y-4">
+                <li>
+                  <NuxtLink to="/contact" :class="linkClasses"
+                    >Contact</NuxtLink
+                  >
+                </li>
                 <!--                <li>-->
                 <!--                  <a href="#" :class="linkClasses"> About </a>-->
                 <!--                </li>-->
