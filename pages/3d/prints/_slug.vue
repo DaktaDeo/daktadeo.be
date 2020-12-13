@@ -1,6 +1,5 @@
 <template>
   <div v-if="post">
-    <Breadcrumbs :crumbs="crumbs"></Breadcrumbs>
     <div class="w-full max-w-screen-xl mx-auto">
       <div class="px-4 sm:px-6 lg:px-8 py5 md:py-4">
         <h1
@@ -60,7 +59,6 @@
 import PropertyDefinitionList from '@/components/PropertyDefinitionList'
 import TagList from '@/components/TagList'
 import LastUpdate from '@/components/LastUpdate'
-import Breadcrumbs from '~/components/Breadcrumbs'
 import Zoomy from '~/components/Zoomy'
 import { AutoSEO } from '~/mixins'
 
@@ -70,7 +68,6 @@ export default {
     TagList,
     PropertyDefinitionList,
     Zoomy,
-    Breadcrumbs,
   },
   mixins: [AutoSEO],
   async asyncData(context) {
