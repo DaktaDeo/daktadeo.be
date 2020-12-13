@@ -13,8 +13,5 @@ images:
   - alt: 'vijver versiering'
     weight: 10
     src: featured.jpg
-  - alt: 'draaiend waterrad'
-    weight: 90
-    scr: draaiend-waterrad.mp4
 ---
 Breng kleine beweging in je tuin. Komt het kikkertje er op springen?

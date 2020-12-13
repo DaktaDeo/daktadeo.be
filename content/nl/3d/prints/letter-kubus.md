@@ -11,8 +11,5 @@ images:
   - alt: 'kubusje met letters,wit'
     weight: 10
     src: featured.jpg
-  - alt: 'kubusje in wording'
-    weight: 90
-    scr: kubus-op-printer.mp4
 ---
 Heb je hieraan al gedacht? 3D timetracker: Je hebt een aantal projectjes waar je aan werkt? Iedere zijde is een project en de letter helpt je focus houden. Of wat als je kleuter letters wilt leren al spelenderwijs?

@@ -1,5 +1,5 @@
 ---
-title: -Sneeuwkristallen'
+title: Sneeuwkristallen
 date: '20200508T1330'
 tags:
 - decoratie
@@ -34,12 +34,9 @@ images:
  - alt: 'Afgewerkte set 6 kritallen,wit'
    weight: 81 
    src: afgewerkte-set-wit.jpg
- - alt: 'Afiche'
-   weight: 85 
-   src: afiche.jpg
  - alt: 'Klaar ter verzending'
    weight: 90 
-   src: verzending_up.jpg
+   src: verzending.jpg
    
 ---
 eigentijdse Kerstdecoratie.
