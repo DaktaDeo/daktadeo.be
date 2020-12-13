@@ -21,7 +21,7 @@ module.exports = {
   plugins: ['prettier', 'lodash'],
   // add your custom rules here
   rules: {
-    'no-v-html': 'off',
+    'vue/no-v-html': 'off',
   },
   settings: {
     lodash: {

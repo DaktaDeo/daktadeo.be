@@ -1,6 +1,5 @@
 <template>
   <div v-if="post">
-    <Breadcrumbs :crumbs="crumbs"></Breadcrumbs>
     <div class="w-full max-w-screen-xl mx-auto">
       <div class="px-4 sm:px-6 lg:px-8 py5 md:py-4">
         <h1
@@ -8,32 +7,13 @@
         >
           {{ post.title }}
         </h1>
+        <tag-list :items="post.print_categories" class="my-4 mb-12"></tag-list>
 
-        <section
-          class="my-4 mb-12 grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-8"
-        >
-          <Zoomy :images="gallery"></Zoomy>
-          <div></div>
+        <section v-if="images" class="my-4 mb-12">
+          <Zoomy :images="images"></Zoomy>
         </section>
 
-        <section v-if="post.print_categories" class="my-4 mb-12">
-          <h2
-            class="text-2xl leading-4 tracking-tight sm:text-3xl mb-4 font-extrabold"
-          >
-            Gerelateerde producten
-          </h2>
-          <ul class="flex space-x-2 flex-wrap">
-            <li v-for="cat in post.print_categories" :key="cat" class="mt-1.5">
-              <span
-                class="whitespace-no-wrap inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium leading-5 border text-gray-800"
-              >
-                {{ cat }}
-              </span>
-            </li>
-          </ul>
-        </section>
-
-        <section v-if="post.body" class="my-4 mb-12">
+        <section v-if="hasContent" class="my-4 mb-12">
           <h2
             class="text-2xl leading-4 tracking-tight sm:text-3xl mb-6 font-extrabold"
           >
@@ -44,84 +24,51 @@
           >
             Omschrijving
           </h3>
-          <div class="markdown">
+          <div class="markdown my-4">
             <nuxt-content :document="post" />
           </div>
         </section>
 
-        <section class="my-4 mb-12">
+        <section v-if="hasSpecs" class="my-4 mb-12">
           <h2
             class="text-2xl leading-4 tracking-tight sm:text-3xl mb-6 font-extrabold"
           >
             Specificaties
           </h2>
 
-          <div v-if="post.productProperties" class="my-4">
-            <h3 class="text-lg leading-6 font-medium text-gray-900">Product</h3>
-            <div>
-              <dl>
-                <div
-                  v-for="(item, key) in post.productProperties"
-                  :key="key"
-                  class="bg-gray-50 px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
-                >
-                  <dt class="text-sm leading-5 font-medium text-gray-500">
-                    {{ item }}
-                  </dt>
-                  <dd
-                    class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2"
-                  >
-                    {{ key }}
-                  </dd>
-                </div>
-              </dl>
-            </div>
-          </div>
+          <property-definition-list
+            :properties="post.specs.product"
+            title="Product"
+            class="my-4"
+          ></property-definition-list>
 
-          <div v-if="post.printProperties" class="my-4">
-            <h3 class="text-lg leading-6 font-medium text-gray-900">Product</h3>
-            <div>
-              <dl>
-                <div
-                  v-for="(item, key) in post.printProperties"
-                  :key="key"
-                  class="bg-gray-50 px-4 py-2 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6"
-                >
-                  <dt class="text-sm leading-5 font-medium text-gray-500">
-                    {{ key }}
-                  </dt>
-                  <dd
-                    class="mt-1 text-sm leading-5 text-gray-900 sm:mt-0 sm:col-span-2"
-                  >
-                    {{ item }}
-                  </dd>
-                </div>
-              </dl>
-            </div>
-          </div>
+          <property-definition-list
+            :properties="post.specs.print"
+            title="Print"
+            class="my-4"
+          ></property-definition-list>
         </section>
 
-        <section>
-          <div class="leading-6 text-gray-500 text-sm">
-            Laatste aanpassing:
-            <time :datetime="post.updatedAt">
-              {{ post.updatedAt | formatDateTimeLong }}
-            </time>
-          </div>
-        </section>
+        <last-update :date="post.updatedAt"></last-update>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Breadcrumbs from '~/components/Breadcrumbs'
+import PropertyDefinitionList from '@/components/PropertyDefinitionList'
+import TagList from '@/components/TagList'
+import LastUpdate from '@/components/LastUpdate'
 import Zoomy from '~/components/Zoomy'
 import { AutoSEO } from '~/mixins'
 
 export default {
-  name: 'DddPrint',
-  components: { Zoomy, Breadcrumbs },
+  components: {
+    LastUpdate,
+    TagList,
+    PropertyDefinitionList,
+    Zoomy,
+  },
   mixins: [AutoSEO],
   async asyncData(context) {
     const { $content, params, app } = context
@@ -137,21 +84,24 @@ export default {
       },
     }
 
+    const images = _.map(post.images, (image) => {
+      return {
+        ...image,
+        src: `/img/3d/prints/${post.slug}/${image.src}`,
+      }
+    })
+
     return {
       post,
+      images,
     }
   },
   computed: {
-    baseForImages() {
-      return `/img/3d/prints/${this.post.slug}`
+    hasContent() {
+      return !_.isEmpty(this.post.body.children)
     },
-    gallery() {
-      return _.map(this.post.images, (image) => {
-        return {
-          ...image,
-          src: `${this.baseForImages}/${image.src}`,
-        }
-      })
+    hasSpecs() {
+      return !_.isEmpty(this.post.specs)
     },
     crumbs() {
       return [
