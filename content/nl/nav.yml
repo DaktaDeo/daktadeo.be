@@ -1,0 +1,86 @@
+header:
+  - name: .3D
+    id: 11
+    weight: 0
+    to: '/3d'
+    blurb: 'dit is een blurb 1'
+  - name: .Academy
+    id: 12
+    weight: 10
+    to: '/academy'
+    blurb: 'dit is een blurb'
+  - name: MultiPass
+    id: 13
+    weight: 20
+    to: '/multipass'
+    blurb: 'dit is een blurb'
+  - name: .Web
+    id: 14
+    weight: 30
+    to: '/web'
+    blurb: 'dit is een blurb'
+#  - name: More
+#    weight: 30
+#    id: 3
+#    type: one-col
+#    children:
+#      - name: Blog
+#        id: 31
+#        weight: 0
+#        to: '/blog'
+#        blurb: 'Learn about tips, product updates and company culture'
+#      - name: Security
+#        id: 32
+#        weight: 10
+#        to: '/security'
+#        blurb: 'Understand how we take your privacy seriously'
+mobile:
+  - name: .3D
+    id: 11
+    weight: 0
+    to: '/3d'
+  - name: .Academy
+    id: 12
+    weight: 10
+    to: '/academy'
+  - name: MultiPass
+    id: 13
+    weight: 20
+    to: '/multipass'
+  - name: .Web
+    id: 14
+    weight: 30
+    to: '/web'
+  - name: divider
+    id: 3333
+    weight: 100
+#  - name: Blog
+#    id: 31
+#    weight: 100
+#    to: '/blog'
+#  - name: Security
+#    id: 32
+#    weight: 200
+#    to: '/security'
+footer:
+  - name: Solutions
+    weight: 0
+    id: 1
+    type: two-col
+    children:
+      - name: 3D printing
+        id: 11
+        weight: 0
+        to: '/3d'
+      - name: Academy
+        id: 12
+        weight: 10
+        to: '/academy'
+      - name: MultiPass
+        id: 13
+        weight: 20
+        to: '/multipass'
+      - name: Web Development
+        id: 14
+        weight: 30
+        to: '/web'

@@ -1,54 +1,25 @@
 <template>
   <div v-if="page">
     <Hero
-      :sub-title="page.hero.title_2"
       :title="page.hero.title_1"
+      :sub-title="page.hero.title_2"
       :tag-line="page.hero.tagline"
     ></Hero>
-    <div v-if="hasFeatures" class="w-full max-w-screen-xl mx-auto">
-      <section class="px-4 py5 md:py-4">
-        <ul class="md:grid md:grid-cols-3 md:gap-x-12 md:gap-y-8">
-          <li
-            v-for="feature in page.features"
-            :key="feature.id"
-            class="mt-10 md:mt-0"
-          >
-            <feature-block
-              :sub-title="feature.tagline"
-              :title="feature.heading"
-              :content="feature.copy"
-              :icon="feature.icon"
-            ></feature-block>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <div v-if="hasSections">
-      <section>
-        <div
-          v-for="(item, index) in items"
-          :key="item.id"
-          :class="item.color_classes"
-        >
-          <FeatureCTA
-            :cta="item.cta"
-            :heading="item.heading"
-            :image="item.image"
-            :content="item.content"
-            :index="index"
-          ></FeatureCTA>
-        </div>
-      </section>
-    </div>
+
+    <Features :items="features"></Features>
+    <Sections :items="sections"></Sections>
   </div>
 </template>
 
 <script>
 import Hero from '@/components/Hero'
-import FeatureBlock from '@/components/FeatureBlock'
-import FeatureCTA from '@/components/FeatureCTA'
+import Features from '@/components/Features'
+import Sections from '@/components/Sections'
+import { AutoSEO } from '~/mixins'
+
 export default {
-  components: { FeatureCTA, FeatureBlock, Hero },
+  components: { Sections, Features, Hero },
+  mixins: [AutoSEO],
   async asyncData(context) {
     const { $content, app } = context
     const defaultLocale = app.i18n.locale
@@ -68,13 +39,10 @@ export default {
     }
   },
   computed: {
-    hasFeatures() {
-      return !_.isEmpty(this.page.features)
+    features() {
+      return _.sortBy(this.page.features, 'weight')
     },
-    hasSections() {
-      return !_.isEmpty(this.page.sections)
-    },
-    items() {
+    sections() {
       return _.sortBy(this.page.sections, 'weight')
     },
   },
@@ -84,8 +52,8 @@ export default {
 .hero {
   background-image: linear-gradient(
       to right bottom,
-      rgba(246, 246, 246, 0.25),
-      rgb(48, 72, 75)
+      rgba(209, 213, 219, 0.25),
+      rgb(31, 41, 55)
     ),
     url('~assets/img/hero.jpg');
   background-position: center center;

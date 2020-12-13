@@ -1,0 +1,31 @@
+.__nim_w::before {
+  content: '';
+  background-image: url('~assets/fa/wand-sparkles.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  opacity: .30;
+  background-size: 2rem 2rem; /* matches text-size, scales, lovely */
+}
+
+.__nim_w img {
+  font-weight: 300;
+  line-height: 2;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+.__nim_w img::after {
+  font-size: .875em;
+  font-style: normal;
+  content: "Oops, seems this one's broken. Sorry. =(";
+  display: block;
+  margin-top: 1em;
+}
+
+

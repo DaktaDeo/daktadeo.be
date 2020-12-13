@@ -10,12 +10,15 @@ print_categories:
 - Speelgoed
 type: prints
 images:
-  - alt: omschrijving
+  - alt: 'Rex-de-T-rex'
     weight: 10
     src: featured.jpg
-  - alt: omschrijving
-    weight: 91 
-    src: 
+  - alt: 'Rex op stap'
+    weight: 20 
+    src: IMG_0469.jpg
+  - alt: 'Flexibele Rex'
+    weight: 30 
+    src: IMG_0468.jpg
 ---
-
+Een dino geeft altijd creativiteitsvreugde.
 

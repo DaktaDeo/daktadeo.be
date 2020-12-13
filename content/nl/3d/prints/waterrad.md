@@ -1,19 +1,17 @@
 ---
 title: Waterrad
-date: '20201214T1430'
+date: '20201215T1316'
 tags:
 - speelgoed
 - tuin
 - versiering vijver
 print_categories:
 - Speelgoed
-- tuin
+- Tuin
 type: prints
 images:
   - alt: 'vijver versiering'
     weight: 10
-    src: featured waterrad.jpg
-  - alt: 'draaiend waterrad'
-    weight: 90
-    scr: draaiend waterrad.mp4
+    src: featured.jpg
 ---
+Breng kleine beweging in je tuin. Komt het kikkertje er op springen?
