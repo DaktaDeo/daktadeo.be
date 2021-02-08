@@ -21,7 +21,7 @@
         <h3 class="text-sm font-medium text-yellow-800">Under Construction</h3>
         <div class="mt-2 text-sm text-yellow-700">
           <p>
-            Hey! We zijn nog vollop aan het werk om dit luikje uit te werken.
+            Hey! We zijn nog volop aan het werk om dit luikje uit te werken.
             Toch wilden we al delen wat er is! .. Rome is immers ook niet
             gebouwd op 1 dag 😜
           </p>
