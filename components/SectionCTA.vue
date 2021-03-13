@@ -9,6 +9,7 @@
         class="w-full h-full object-cover"
         :src="image.src"
         :alt="image.alt"
+        :lazy="false"
       ></nuxt-image>
     </div>
 

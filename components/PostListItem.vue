@@ -22,6 +22,7 @@
         :src="`+jpg-featured:${doc.blurb.image}`"
         width="720"
         height="405"
+        :lazy="false"
       />
       <p v-if="doc.blurb.text" v-html="doc.blurb.text"></p>
     </div>
