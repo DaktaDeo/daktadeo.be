@@ -90,6 +90,8 @@ export default {
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/svg-module
     '@nuxtjs/svg',
+    // https://image.nuxtjs.org/getting-started/installation
+    '@nuxt/image',
     [
       '@nuxtjs/google-analytics',
       {

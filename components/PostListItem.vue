@@ -17,7 +17,7 @@
       v-if="doc.blurb"
       class="text-grey-darkest text-base leading-normal mt-1"
     >
-      <nuxt-image
+      <nuxt-img
         v-if="doc.blurb.image"
         :src="`+jpg-featured:${doc.blurb.image}`"
         width="720"
@@ -32,7 +32,13 @@
     >
       <nuxt-link
         :to="doc.path"
-        class="text-grey-darker hover:text-black text-sm no-underline hover:underline"
+        class="
+          text-grey-darker
+          hover:text-black
+          text-sm
+          no-underline
+          hover:underline
+        "
       >
         {{ readMoreText }}
       </nuxt-link>
@@ -52,6 +58,7 @@ export default {
       type: Object,
       required: true,
       default: () =>
+        // eslint-disable-next-line vue/require-valid-default-prop
         function () {
           return { title: '', path: '', description: '' }
         },

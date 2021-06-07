@@ -5,16 +5,24 @@
       class="h-56 sm:h-72 md:absolute md:h-full md:w-1/2"
       :class="{ 'md:right-0': !isEven, 'md:left-0': isEven }"
     >
-      <nuxt-image
+      <nuxt-img
         class="w-full h-full object-cover"
         :src="image.src"
         :alt="image.alt"
         :lazy="false"
-      ></nuxt-image>
+      ></nuxt-img>
     </div>
 
     <div
-      class="relative max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16"
+      class="
+        relative
+        max-w-screen-xl
+        mx-auto
+        px-4
+        py-12
+        sm:px-6
+        lg:px-8 lg:py-16
+      "
     >
       <div
         class="text-center md:text-left"
@@ -48,7 +56,25 @@
             <nuxt-link
               :to="cta.link"
               :class="cta.color_classes"
-              class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-on-primary-color bg-primary-color hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+              class="
+                inline-flex
+                items-center
+                justify-center
+                px-5
+                py-3
+                border border-transparent
+                text-base
+                leading-6
+                font-medium
+                rounded-md
+                text-on-primary-color
+                bg-primary-color
+                hover:text-white
+                focus:outline-none focus:shadow-outline
+                transition
+                duration-150
+                ease-in-out
+              "
             >
               {{ cta.text }}
             </nuxt-link>

@@ -9,7 +9,14 @@
     <Features :items="features"></Features>
     <section v-if="prints" class="px-4 py8 md:py-16 pt-4">
       <div
-        class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none pb-4"
+        class="
+          space-y-5
+          sm:space-y-4
+          md:max-w-xl
+          lg:max-w-3xl
+          xl:max-w-none
+          pb-4
+        "
       >
         <h2
           class="text-3xl leading-9 font-extrabold tracking-tight sm:text-4xl"
@@ -22,15 +29,26 @@
       </div>
 
       <ul
-        class="space-y-12 sm:grid sm:grid-cols-3 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-5 lg:gap-x-8"
+        class="
+          space-y-12
+          sm:grid sm:grid-cols-3 sm:gap-x-6 sm:gap-y-12 sm:space-y-0
+          lg:grid-cols-5 lg:gap-x-8
+        "
       >
         <li v-for="print in prints" :key="print.slug">
           <div class="space-y-4">
             <div class="relative">
               <nuxt-link :to="`/3d/prints/${print.slug}`">
-                <nuxt-image
+                <nuxt-img
                   sets="300,300:600,600:900"
-                  class="absolute object-cover h-full w-full shadow-lg rounded-lg"
+                  class="
+                    absolute
+                    object-cover
+                    h-full
+                    w-full
+                    shadow-lg
+                    rounded-lg
+                  "
                   :src="`+jpg-featured:/img/3d/prints/${print.slug}/featured.jpg`"
                   width="200"
                   height="200"
