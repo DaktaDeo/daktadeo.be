@@ -30,4 +30,8 @@ features:
       name: alien-monster
       color: dark-pink
     tagline: Leren door gebruik
-    copy: ''
+    copy: 'Multipass helpt me productief werken omdat het me overzicht biedt op mijn contacten en taken.'
+    cta:
+      text: "Ga naar Multipass 🧐"
+      link: "https://beta.multipass.rocks/"
+      color_classes: bg-dakta text-gray-100
