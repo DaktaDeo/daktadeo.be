@@ -8,7 +8,7 @@
 
     <Features :items="features"></Features>
     <Sections :items="sections"></Sections>
-    <under-construction></under-construction>
+    
   </div>
 </template>
 
