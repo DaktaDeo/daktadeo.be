@@ -42,25 +42,21 @@
           {{ heading.subtitle }}
         </h2>
         <div class="mt-3 text-lg leading-7" v-html="content"></div>
-        <div class="mt-8">
-          <div class="inline-flex rounded-md shadow">
-            <nuxt-link
-              :to="cta.link"
-              :class="cta.color_classes"
-              class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-on-primary-color bg-primary-color hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
-            >
-              {{ cta.text }}
-            </nuxt-link>
-          </div>
-        </div>
+        <call-to-action-button
+          v-if="cta.link"
+          class="mt-8"
+          :cta="cta"
+        ></call-to-action-button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import CallToActionButton from '~/components/CallToActionButton'
 export default {
   name: 'SectionCTA',
+  components: { CallToActionButton },
   props: {
     heading: {
       type: Object,
