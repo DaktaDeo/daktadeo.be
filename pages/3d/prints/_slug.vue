@@ -87,8 +87,8 @@
 import PropertyDefinitionList from '@/components/PropertyDefinitionList'
 import TagList from '@/components/TagList'
 import LastUpdate from '@/components/LastUpdate'
-import Zoomy from '~/components/Zoomy'
-import { AutoSEO } from '~/mixins'
+import Zoomy from '@/components/Zoomy'
+import { AutoSEO } from '@/mixins'
 
 export default {
   components: {
@@ -100,7 +100,7 @@ export default {
   mixins: [AutoSEO],
   async asyncData(context) {
     const { $content, params, app } = context
-    const slug = params.slug
+    const { slug } = params
     const post = await $content(`${app.i18n.locale}/3d/prints`, slug).fetch()
 
     if (_.isNil(post.meta)) post.meta = {}

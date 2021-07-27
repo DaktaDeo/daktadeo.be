@@ -63,6 +63,7 @@
 
 <script>
 import PostListItem from '@/components/PostListItem'
+
 export default {
   components: { PostListItem },
   props: {

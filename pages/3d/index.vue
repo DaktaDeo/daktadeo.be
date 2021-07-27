@@ -80,6 +80,7 @@ export default {
       .fetch()
 
     return {
+      // eslint-disable-next-line no-shadow
       prints: _.map(prints, (page) => ({
         ...page,
         path: _.replace(page.path, `/${defaultLocale}`, ''),

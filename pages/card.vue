@@ -8,6 +8,7 @@
 
 <script>
 import { AutoSEO } from '@/mixins'
+
 export default {
   mixins: [AutoSEO],
   async asyncData(context) {

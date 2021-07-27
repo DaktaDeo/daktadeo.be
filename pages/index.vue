@@ -15,7 +15,7 @@
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
 import Sections from '@/components/Sections'
-import { AutoSEO } from '~/mixins'
+import { AutoSEO } from '@/mixins'
 
 export default {
   components: { Sections, Features, Hero },
@@ -30,6 +30,7 @@ export default {
       .fetch()
 
     return {
+      // eslint-disable-next-line no-shadow
       prints: _.map(prints, (page) => ({
         ...page,
         path: _.replace(page.path, `/${defaultLocale}`, ''),

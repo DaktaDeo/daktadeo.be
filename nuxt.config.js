@@ -7,6 +7,7 @@ const createSitemapRoutesPrints = async () => {
   let prints1 = []
   if (prints1.length === 0)
     prints1 = await $content('nl/3d/prints').only(['slug']).fetch()
+  // eslint-disable-next-line no-restricted-syntax
   for (const post of prints1) {
     routes.push(`/3d/prints/${post.slug}`)
   }
@@ -59,7 +60,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['@/assets/css/main.css'],
+  css: ['@/assets/css/main.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [

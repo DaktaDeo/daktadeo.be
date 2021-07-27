@@ -23,7 +23,7 @@
         width="720"
         height="405"
         :lazy="false"
-      />
+      ></nuxt-img>
       <p v-if="doc.blurb.text" v-html="doc.blurb.text"></p>
     </div>
     <div
@@ -57,11 +57,7 @@ export default {
     doc: {
       type: Object,
       required: true,
-      default: () =>
-        // eslint-disable-next-line vue/require-valid-default-prop
-        function () {
-          return { title: '', path: '', description: '' }
-        },
+      default: () => ({ title: '', path: '', description: '' }),
     },
   },
 }
