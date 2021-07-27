@@ -13,13 +13,8 @@
     "start": "nuxt start",
     "start:do": "node sammy.js; serve -s _static -l tcp://0.0.0.0:${PORT:-8080} -n",
     "test": "jest",
-    "format": "prettier --write \"{,!(node_modules)/**/}*.{css,js,vue}\""
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "format": "prettier --write \"{,!(node_modules)/**/}*.{css,js,vue}\"",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "*.{css,vue}": "stylelint",
@@ -69,8 +64,10 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^7.14.0",
     "eslint-webpack-plugin": "^2.4.1",
     "fibers": "^5.0.0",
+    "husky": "^7.0.1",
     "imagemin-gifsicle": "^7.0.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",

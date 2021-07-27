@@ -24,15 +24,15 @@ import { AutoSEO } from '@/mixins'
 export default {
   components: { Footer, Header },
   mixins: [AutoSEO],
-  async fetch() {
-    this.socials = await this.$content(`${this.$i18n.locale}/socials`).fetch()
-    this.nav = await this.$content(`${this.$i18n.locale}/nav`).fetch()
-  },
   data() {
     return {
       socials: [],
       nav: [],
     }
+  },
+  async fetch() {
+    this.socials = await this.$content(`${this.$i18n.locale}/socials`).fetch()
+    this.nav = await this.$content(`${this.$i18n.locale}/nav`).fetch()
   },
   created() {
     this.$fetch()
