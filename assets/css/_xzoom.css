@@ -1,5 +1,7 @@
 /* Compatibility styles for frameworks like bootstrap, foundation e.t.c */
-.xzoom-source img, .xzoom-preview img, .xzoom-lens img {
+.xzoom-source img,
+.xzoom-preview img,
+.xzoom-lens img {
   display: block;
   max-width: none;
   max-height: none;
@@ -18,18 +20,22 @@
 }
 
 .xzoom {
-  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
-  box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
-.xzoom2, .xzoom3, .xzoom4, .xzoom5 {
-  -webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
-  -moz-box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
-  box-shadow: 0 0 5px 0 rgba(0,0,0,0.5);
+.xzoom2,
+.xzoom3,
+.xzoom4,
+.xzoom5 {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Thumbs */
-.xzoom-source, .xzoom-hidden {
+.xzoom-source,
+.xzoom-hidden {
   display: block;
   position: static;
   float: none;
@@ -45,13 +51,13 @@
 .xzoom-preview {
   border: 1px solid #888;
   background: #2f4f4f;
-  box-shadow: 0 0 10px rgba(0,0,0,0.50);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Lens */
 .xzoom-lens {
   border: 1px solid #555;
-  box-shadow: 0 0 10px rgba(0,0,0,0.50);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   cursor: crosshair;
 }
 
@@ -60,16 +66,16 @@
   background-position: center center;
   background-repeat: no-repeat;
   border-radius: 100%;
-  opacity: .7;
+  opacity: 0.7;
   width: 48px;
   height: 48px;
 }
 
 /* Additional class that applied to thumb when it is active */
 .xactive {
-  -webkit-box-shadow: 0 0 3px 0 rgba(74,169,210,1);
-  -moz-box-shadow: 0 0 3px 0 rgba(74,169,210,1);
-  box-shadow: 0 0 3px 0 rgba(74,169,210,1);
+  -webkit-box-shadow: 0 0 3px 0 rgba(74, 169, 210, 1);
+  -moz-box-shadow: 0 0 3px 0 rgba(74, 169, 210, 1);
+  box-shadow: 0 0 3px 0 rgba(74, 169, 210, 1);
   border: 1px solid #4aaad2;
 }
 

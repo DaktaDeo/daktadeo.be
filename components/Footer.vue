@@ -29,12 +29,25 @@
           </div>
         </div>
         <div
-          class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-2 xl:mt-0 xl:col-span-2"
+          class="
+            mt-12
+            grid grid-cols-1
+            md:grid-cols-2
+            gap-2
+            xl:mt-0 xl:col-span-2
+          "
         >
           <div class="md:grid md:grid-cols-2 md:gap-2">
             <div>
               <h4
-                class="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase"
+                class="
+                  text-sm
+                  leading-5
+                  font-semibold
+                  text-gray-400
+                  tracking-wider
+                  uppercase
+                "
               >
                 Solutions
               </h4>
@@ -61,7 +74,14 @@
             </div>
             <div class="mt-12 md:mt-0">
               <h4
-                class="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase"
+                class="
+                  text-sm
+                  leading-5
+                  font-semibold
+                  text-gray-400
+                  tracking-wider
+                  uppercase
+                "
               >
                 Support
               </h4>
@@ -104,7 +124,14 @@
           <div class="md:grid md:grid-cols-2 md:gap-2">
             <div>
               <h4
-                class="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase"
+                class="
+                  text-sm
+                  leading-5
+                  font-semibold
+                  text-gray-400
+                  tracking-wider
+                  uppercase
+                "
               >
                 Company
               </h4>
@@ -140,7 +167,14 @@
             </div>
             <div class="mt-12 md:mt-0">
               <h4
-                class="text-sm leading-5 font-semibold text-gray-400 tracking-wider uppercase"
+                class="
+                  text-sm
+                  leading-5
+                  font-semibold
+                  text-gray-400
+                  tracking-wider
+                  uppercase
+                "
               >
                 Legal
               </h4>

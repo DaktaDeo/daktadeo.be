@@ -7,6 +7,7 @@ const createSitemapRoutesPrints = async () => {
   let prints1 = []
   if (prints1.length === 0)
     prints1 = await $content('nl/3d/prints').only(['slug']).fetch()
+  // eslint-disable-next-line no-restricted-syntax
   for (const post of prints1) {
     routes.push(`/3d/prints/${post.slug}`)
   }
@@ -90,6 +91,8 @@ export default {
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/svg-module
     '@nuxtjs/svg',
+    // https://image.nuxtjs.org/getting-started/installation
+    '@nuxt/image',
     [
       '@nuxtjs/google-analytics',
       {
@@ -165,17 +168,15 @@ export default {
 
   image: {
     sizes: [320, 420, 768, 1024, 1200],
-    presets: [
-      {
-        name: 'avatar',
+    presets: {
+      avatar: {
         modifiers: {
           format: 'jpg',
           width: 50,
           height: 50,
         },
       },
-      {
-        name: 'jpg-cover',
+      jpg_cover: {
         modifiers: {
           fit: 'cover',
           format: 'jpg',
@@ -183,8 +184,7 @@ export default {
           height: 240,
         },
       },
-      {
-        name: 'jpg-featured',
+      jpg_featured: {
         modifiers: {
           fit: 'inside',
           format: 'jpg',
@@ -192,8 +192,7 @@ export default {
           height: 1200,
         },
       },
-      {
-        name: 'jpg-thumbnail',
+      jpg_thumbnail: {
         modifiers: {
           fit: 'inside',
           format: 'jpg',
@@ -201,7 +200,7 @@ export default {
           height: 80,
         },
       },
-    ],
+    },
   },
 
   i18n: {

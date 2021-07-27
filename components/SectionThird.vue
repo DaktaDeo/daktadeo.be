@@ -2,7 +2,7 @@
   <div class="relative">
     <div
       v-if="hasImage"
-      class="h-56 sm:h-72 md:absolute md:h-full md:w-1/2"
+      class="h-56 sm:h-72 md:absolute md:h-full md:w-1/3"
       :class="{ 'md:right-0': !isEven, 'md:left-0': isEven }"
     >
       <nuxt-img
@@ -27,7 +27,7 @@
       <div
         class="text-center md:text-left"
         :class="{
-          'md:w-1/2': hasImage,
+          'md:w-2/3': hasImage,
           'md:w-2/3 m-auto md:text-center my-4': !hasImage,
           'md:mr-auto md:pr-10': !isEven && hasImage,
           'md:ml-auto md:pl-10': isEven && hasImage,
@@ -40,7 +40,14 @@
         </div>
         <div
           v-if="heading.title"
-          class="text-base leading-6 font-semibold uppercase tracking-wider"
+          class="
+            text-base
+            leading-6
+            font-semibold
+            uppercase
+            tracking-wider
+            marcellus
+          "
         >
           {{ heading.title }}
         </div>
@@ -50,7 +57,7 @@
         >
           {{ heading.subtitle }}
         </h2>
-        <div class="mt-3 text-lg leading-7" v-html="content"></div>
+        <div class="mt-3 text-3xl leading-snug" v-html="content"></div>
         <call-to-action-button
           v-if="cta.link"
           class="mt-8"
@@ -62,11 +69,8 @@
 </template>
 
 <script>
-import CallToActionButton from '@/components/CallToActionButton'
-
 export default {
-  name: 'SectionCTA',
-  components: { CallToActionButton },
+  name: 'SectionThird',
   props: {
     heading: {
       type: Object,

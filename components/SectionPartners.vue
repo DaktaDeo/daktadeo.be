@@ -29,6 +29,7 @@
 
 <script>
 import PartnerBlock from '@/components/PartnerBlock'
+
 export default {
   name: 'SectionPartners',
   components: { PartnerBlock },

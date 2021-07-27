@@ -1,6 +1,6 @@
 export default {
   head() {
-    const i18nSeo = this.$nuxtI18nSeo()
+    const i18nSeo = this.$nuxtI18nHead()
 
     // https://github.com/AlekseyPleshkov/nuxt-social-meta
     const defaults = {
@@ -102,9 +102,7 @@ export default {
     ]
 
     const names = _.map(
-      _.filter(values, function (o) {
-        return !_.isEmpty(o.content) && !_.isNil(o.name)
-      }),
+      _.filter(values, (o) => !_.isEmpty(o.content) && !_.isNil(o.name)),
       (tag) => {
         return {
           hid: tag.name,
@@ -115,9 +113,7 @@ export default {
     )
 
     const properties = _.map(
-      _.filter(values, function (o) {
-        return !_.isEmpty(o.content) && !_.isNil(o.property)
-      }),
+      _.filter(values, (o) => !_.isEmpty(o.content) && !_.isNil(o.property)),
       (tag) => {
         return {
           hid: tag.property,

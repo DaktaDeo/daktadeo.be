@@ -17,13 +17,14 @@
       v-if="doc.blurb"
       class="text-grey-darkest text-base leading-normal mt-1"
     >
-      <nuxt-image
+      <nuxt-img
         v-if="doc.blurb.image"
-        :src="`+jpg-featured:${doc.blurb.image}`"
+        preset="jpg_featured"
+        :src="doc.blurb.image"
         width="720"
         height="405"
         :lazy="false"
-      />
+      ></nuxt-img>
       <p v-if="doc.blurb.text" v-html="doc.blurb.text"></p>
     </div>
     <div
@@ -32,7 +33,13 @@
     >
       <nuxt-link
         :to="doc.path"
-        class="text-grey-darker hover:text-black text-sm no-underline hover:underline"
+        class="
+          text-grey-darker
+          hover:text-black
+          text-sm
+          no-underline
+          hover:underline
+        "
       >
         {{ readMoreText }}
       </nuxt-link>
@@ -51,10 +58,7 @@ export default {
     doc: {
       type: Object,
       required: true,
-      default: () =>
-        function () {
-          return { title: '', path: '', description: '' }
-        },
+      default: () => ({ title: '', path: '', description: '' }),
     },
   },
 }

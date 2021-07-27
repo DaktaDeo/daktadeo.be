@@ -16,7 +16,7 @@
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
 import Sections from '@/components/Sections'
-import UnderConstruction from '~/components/UnderConstruction'
+import UnderConstruction from '@/components/UnderConstruction'
 
 export default {
   components: { UnderConstruction, Sections, Features, Hero },

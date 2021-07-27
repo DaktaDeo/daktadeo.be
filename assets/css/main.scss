@@ -8,10 +8,10 @@
 //@import './_xzoom.css';
 @import './_404.css';
 
-
 .dark-img {
   display: none;
 }
+
 .light-img {
   display: block;
 }
@@ -19,12 +19,13 @@
 .dark-mode .light-img {
   display: none;
 }
+
 .dark-mode .dark-img {
   display: block;
 }
 
 .token.inserted:not(.prefix) {
-  background-color: rgba(4,120,87,0.5);
+  background-color: rgba(4, 120, 87, 0.5);
   display: block;
   margin-left: -1rem;
   margin-right: -1rem;
@@ -35,7 +36,8 @@
 .nuxt-content {
   @apply break-words;
 
-  & h2, & h3 {
+  & h2,
+  & h3 {
     /* Fix anchor scrollTo */
     &::before {
       display: block;
@@ -52,6 +54,7 @@
 
       &::before {
         content: "#";
+
         @apply text-gray-500 font-normal text-xl leading-8 -ml-5 pr-2 absolute opacity-100;
       }
 
@@ -63,6 +66,7 @@
         }
       }
     }
+
     &:hover {
       & > a::before {
         @apply opacity-100;
@@ -105,11 +109,11 @@
         @apply outline-none bg-gray-600;
       }
     }
+
     &:hover {
       & > .copy {
         @apply block;
       }
     }
   }
-
 }

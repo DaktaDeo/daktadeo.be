@@ -1,7 +1,17 @@
 <template>
   <nav class="flex" aria-label="Breadcrumb">
     <ol
-      class="max-w-screen-xl w-full mx-auto px-4 flex space-x-4 sm:px-6 lg:px-8 my-4"
+      class="
+        max-w-screen-xl
+        w-full
+        mx-auto
+        px-4
+        flex
+        space-x-4
+        sm:px-6
+        lg:px-8
+        my-4
+      "
     >
       <li class="flex">
         <div class="flex items-center">
@@ -36,7 +46,16 @@
           </svg>
           <nuxt-link
             v-if="link.url"
-            class="text-sm leading-5 font-medium text-gray-600 hover:text-gray-700 transition duration-150 ease-in-out"
+            class="
+              text-sm
+              leading-5
+              font-medium
+              text-gray-600
+              hover:text-gray-700
+              transition
+              duration-150
+              ease-in-out
+            "
             :to="link.url"
             >{{ link.name }}
           </nuxt-link>
