@@ -9,7 +9,8 @@
           @click="$refs.carousel.goTo($index)"
         >
           <nuxt-img
-            :src="`+jpg-thumbnail:${image.src}`"
+            preset="jpg_thumbnail"
+            :src="image.src"
             width="80"
             height="80"
             :alt="image.alt"
@@ -22,9 +23,10 @@
       <agile ref="carousel" :options="agileOptions">
         <div v-for="image in images" :key="image.src" class="slide">
           <nuxt-img
+            preset="jpg_featured"
             class="absolute object-cover h-full w-full shadow-lg rounded-lg"
             sets="300,300:600,600:900"
-            :src="`+jpg-featured:${image.src}`"
+            :src="image.src"
             width="640"
             height="480"
             :alt="image.alt"

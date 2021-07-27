@@ -19,7 +19,8 @@
     >
       <nuxt-img
         v-if="doc.blurb.image"
-        :src="`+jpg-featured:${doc.blurb.image}`"
+        preset="jpg_featured"
+        :src="doc.blurb.image"
         width="720"
         height="405"
         :lazy="false"

@@ -168,17 +168,15 @@ export default {
 
   image: {
     sizes: [320, 420, 768, 1024, 1200],
-    presets: [
-      {
-        name: 'avatar',
+    presets: {
+      avatar: {
         modifiers: {
           format: 'jpg',
           width: 50,
           height: 50,
         },
       },
-      {
-        name: 'jpg-cover',
+      jpg_cover: {
         modifiers: {
           fit: 'cover',
           format: 'jpg',
@@ -186,8 +184,7 @@ export default {
           height: 240,
         },
       },
-      {
-        name: 'jpg-featured',
+      jpg_featured: {
         modifiers: {
           fit: 'inside',
           format: 'jpg',
@@ -195,8 +192,7 @@ export default {
           height: 1200,
         },
       },
-      {
-        name: 'jpg-thumbnail',
+      jpg_thumbnail: {
         modifiers: {
           fit: 'inside',
           format: 'jpg',
@@ -204,7 +200,7 @@ export default {
           height: 80,
         },
       },
-    ],
+    },
   },
 
   i18n: {

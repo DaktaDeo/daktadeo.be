@@ -40,16 +40,10 @@
             <div class="relative">
               <nuxt-link :to="`/3d/prints/${print.slug}`">
                 <nuxt-img
-                  sets="300,300:600,600:900"
-                  class="
-                    absolute
-                    object-cover
-                    h-full
-                    w-full
-                    shadow-lg
-                    rounded-lg
-                  "
-                  :src="`+jpg-featured:/img/3d/prints/${print.slug}/featured.jpg`"
+                  preset="jpg_cover"
+                  sizes="sm:100vw md:50vw lg:400px"
+                  class="cover object-cover h-full w-full shadow-lg rounded-lg"
+                  :src="`/img/3d/prints/${print.slug}/featured.jpg`"
                   width="200"
                   height="200"
                 />
