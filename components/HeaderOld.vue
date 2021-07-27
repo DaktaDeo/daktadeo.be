@@ -3,7 +3,14 @@
     <div class="relative pt-6 pb-4">
       <div class="max-w-screen-xl mx-auto px-4 sm:px-6">
         <nav
-          class="relative flex items-center justify-between sm:h-10 md:justify-center"
+          class="
+            relative
+            flex
+            items-center
+            justify-between
+            sm:h-10
+            md:justify-center
+          "
         >
           <div
             class="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0"
@@ -20,7 +27,19 @@
                 <button
                   id="main-menu"
                   type="button"
-                  class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    p-2
+                    rounded-md
+                    text-gray-400
+                    hover:text-gray-500 hover:bg-gray-100
+                    focus:outline-none focus:bg-gray-100 focus:text-gray-500
+                    transition
+                    duration-150
+                    ease-in-out
+                  "
                   aria-label="Main menu"
                   aria-haspopup="true"
                 >
@@ -45,13 +64,28 @@
             <nuxt-link
               v-for="link in navlinks"
               :key="link.identifier"
-              class="font-medium text-gray-500 hover:text-gray-200 transition duration-150 ease-in-out"
+              class="
+                font-medium
+                text-gray-500
+                hover:text-gray-200
+                transition
+                duration-150
+                ease-in-out
+              "
               :to="link.url"
               >{{ link.name }}</nuxt-link
             >
           </div>
           <div
-            class="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0"
+            class="
+              hidden
+              md:absolute
+              md:flex
+              md:items-center
+              md:justify-end
+              md:inset-y-0
+              md:right-0
+            "
           >
             <!-- <span class="inline-flex rounded-md shadow">
               <a href="#" class="inline-flex items-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-indigo-600 bg-primary-color-dark  hover:text-indigo-500 focus:outline-none focus:border-indigo-300 focus:shadow-outline-indigo active:bg-gray-50 active:text-indigo-700 transition duration-150 ease-in-out">
@@ -73,7 +107,16 @@
           To: "opacity-0 scale-95"
       -->
       <div
-        class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+        class="
+          absolute
+          top-0
+          inset-x-0
+          p-2
+          transition
+          transform
+          origin-top-right
+          md:hidden
+        "
       >
         <div class="rounded-lg shadow-md">
           <div
@@ -89,7 +132,19 @@
               <div class="-mr-2">
                 <button
                   type="button"
-                  class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    p-2
+                    rounded-md
+                    text-gray-400
+                    hover:text-gray-500 hover:bg-gray-100
+                    focus:outline-none focus:bg-gray-100 focus:text-gray-500
+                    transition
+                    duration-150
+                    ease-in-out
+                  "
                   aria-label="Close menu"
                 >
                   <svg
@@ -112,7 +167,14 @@
               <nuxt-link
                 v-for="link in navlinks"
                 :key="link.identifier"
-                class="font-medium text-gray-500 hover:text-gray-200 transition duration-150 ease-in-out"
+                class="
+                  font-medium
+                  text-gray-500
+                  hover:text-gray-200
+                  transition
+                  duration-150
+                  ease-in-out
+                "
                 :to="link.url"
                 >{{ link.name }}</nuxt-link
               >

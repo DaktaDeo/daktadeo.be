@@ -73,10 +73,10 @@ export default {
   components: true,
 
   // https://medium.com/@jpoechill/access-your-nuxt-js-development-server-on-mobile-a4d67ac88bc6
-  server: {
-    port: 8000, // default: 3000
-    host: '0.0.0.0', // default: localhost
-  },
+  // server: {
+  //   port: 8000, // default: 3000
+  //   host: '0.0.0.0', // default: localhost
+  // },
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
@@ -90,6 +90,8 @@ export default {
     '@aceforth/nuxt-optimized-images',
     // https://github.com/nuxt-community/svg-module
     '@nuxtjs/svg',
+    // https://image.nuxtjs.org/getting-started/installation
+    '@nuxt/image',
     [
       '@nuxtjs/google-analytics',
       {

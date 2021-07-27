@@ -5,15 +5,24 @@
       class="h-56 sm:h-72 md:absolute md:h-full md:w-1/2"
       :class="{ 'md:right-0': !isEven, 'md:left-0': isEven }"
     >
-      <nuxt-image
+      <nuxt-img
         class="w-full h-full object-cover"
         :src="image.src"
         :alt="image.alt"
-      ></nuxt-image>
+        :lazy="false"
+      ></nuxt-img>
     </div>
 
     <div
-      class="relative max-w-screen-xl mx-auto px-4 py-12 sm:px-6 lg:px-8 lg:py-16"
+      class="
+        relative
+        max-w-screen-xl
+        mx-auto
+        px-4
+        py-12
+        sm:px-6
+        lg:px-8 lg:py-16
+      "
     >
       <div
         class="text-center md:text-left"

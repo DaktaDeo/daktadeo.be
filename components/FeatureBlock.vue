@@ -12,7 +12,15 @@
     </div>
     <div class="ml-4">
       <h4
-        class="mt-4 text-2xl leading-8 font-extrabold text-gray-900 tracking-tight sm:text-3xl sm:leading-9"
+        class="
+          mt-4
+          text-2xl
+          leading-8
+          font-extrabold
+          text-gray-900
+          tracking-tight
+          sm:text-3xl sm:leading-9
+        "
       >
         {{ title }}
       </h4>

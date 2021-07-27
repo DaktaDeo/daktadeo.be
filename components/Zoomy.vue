@@ -8,7 +8,7 @@
           class="cursor-pointer"
           @click="$refs.carousel.goTo($index)"
         >
-          <nuxt-image
+          <nuxt-img
             :src="`+jpg-thumbnail:${image.src}`"
             width="80"
             height="80"
@@ -21,7 +21,7 @@
     <div class="col-span-12 md:col-span-10">
       <agile ref="carousel" :options="agileOptions">
         <div v-for="image in images" :key="image.src" class="slide">
-          <nuxt-image
+          <nuxt-img
             class="absolute object-cover h-full w-full shadow-lg rounded-lg"
             sets="300,300:600,600:900"
             :src="`+jpg-featured:${image.src}`"

@@ -1,20 +1,21 @@
-# daktadeo-nuxt
+# The source code of daktadeo.be
 
-## Build Setup
+This repo contains the source code & content of [our company website](https://daktadeo.be).
 
-```bash
-# install dependencies
-$ yarn install
+## Credits
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+This website is created & designed by [Veerle Deschepper](https://github.com/orgs/daktadeo/people/gompje). [Everyone at DaktaDeo. & outside collaborators](https://github.com/orgs/daktadeo/people) have and will be creating cool contributions. 
 
-# build for production and launch server
-$ yarn build
-$ yarn start
+## License
 
-# generate static project
-$ yarn generate
-```
+-   The web application falls under the [MIT License](https://choosealicense.com/licenses/mit/)
+-   The content and design are under [exclusive copyright](https://choosealicense.com/no-license/)
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+If you'd like to reuse or repost something, feel free to hit us up at hello@daktadeo.be. Please remember that the design/content is not meant to be forked!
+
+## License
+
+This project and the VueJs/NuxtJs framework are open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+
+

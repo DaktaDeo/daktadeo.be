@@ -1,12 +1,26 @@
 <template>
   <div class="bg-primary-color-dark hero" role="banner">
     <div
-      class="max-w-2xl mx-auto pt-16 pb-4 px-4 sm:pt-26 sm:pb-6 sm:px-6 lg:px-8 lg:max-w-7xl md:pt-36"
+      class="
+        max-w-2xl
+        mx-auto
+        pt-16
+        pb-4
+        px-4
+        sm:pt-26 sm:pb-6 sm:px-6
+        lg:px-8 lg:max-w-7xl
+        md:pt-36
+      "
     >
       <div class="px-0 sm:px-4 lg:px-0">
         <div class="text-center">
           <div
-            class="mt-1 leading-10 text-gray-200 sm:leading-none sm:tracking-tight"
+            class="
+              mt-1
+              leading-10
+              text-gray-200
+              sm:leading-none sm:tracking-tight
+            "
           >
             <div
               v-if="title"
