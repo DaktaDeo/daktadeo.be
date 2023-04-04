@@ -38,7 +38,7 @@ features:
 sections:
   - cta:
       text: Ga naar multipass.rocks &rarr;
-      link: https://beta.multipass.rocks
+      link: https://multipass.rocks
       color_classes: bg-dakta white
     color_classes: bg-primary-color-light black
     id: 4
