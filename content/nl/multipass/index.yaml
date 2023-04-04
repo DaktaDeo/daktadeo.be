@@ -32,8 +32,8 @@ features:
     tagline: Leren door gebruik
     copy: 'Multipass helpt me productief werken omdat het me overzicht biedt op mijn contacten en taken.'
     cta:
-      text: "Ga naar Multipass 🧐"
-      link: "https://beta.multipass.rocks/"
+      text: "Meer weten? 🧐"
+      link: "https://multipass.rocks/"
       color_classes: bg-dakta text-gray-100
 sections:
   - cta:
